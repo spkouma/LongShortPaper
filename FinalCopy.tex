@@ -265,24 +265,32 @@ we need to find which of the sets $\mathcal{E}_j$ is largest.
 
 \subsubsection{3.2.2 Ratio Approximation Formula}
 %inserted a motivation that will explain why on page six we want to maximize epsilon j, also tried to flow into the first step of this modelling process being modelling the config of a single polymer
-We now wish to estimate the size of each $\mathcal{E}_j$, in order to  determine the maximum $\mathcal{E}_j$ which would be the preferential configuration of the experimental system. We begin with modelling The configuration of a single  polymer in a dilute solution by a self-avoiding walk (SAW) in a lattice, where a path in the lattice does not visit any site more than once. A fundamental property of SAWs is the following.
-Let $c_{\ell}$ be
-the number of SAWs that start from a specified lattice site (``the origin'') and visit a total of $\ell$ sites
-(including the starting site).   Then the 
-asymptotic behaviour of $c_{\ell}$ on the three-dimensional cubic lattice is 
-\begin{equation}
-    \label{eq.sawscale}
-       c_{\ell}  \;\sim  \;  A_3 \, {\ell}^{\gamma_3-1}  \mu_3^{\ell}    \hspace{5mm}\hbox{as $\ell\rightarrow\infty$}.
-\end{equation}
-% (This has not been proven rigorously, but even mathematicians do not doubt its truth.) 
-Here $\mu_3$ and $A_3$ depend on the choice of lattice, but $\gamma_3$ is a universal critical exponent
-that is the same for all three-dimensional lattices.  
-Their values are known to be approximately \cite{Chen2002,Madras2013}
+We now wish to estimate the size of each $\mathcal{E}_j$, in order to  determine the maximum $\mathcal{E}_j$,which is the preferential configuration of the experimental system. We begin by modelling the configuration of a single  polymer in a dilute solution by a self-avoiding walk (SAW) in a lattice, where a path in the lattice does not visit any site more than once.
+%reordered this 
+Let the number of SAWs that start from a specified lattice site (``the origin'') and visit a total of $\ell$ sites be represented as $c_{\ell}$. Additionally, let $\mu_3$ and $A_3$ be constants that depend on the choice of lattice, and $\gamma_3$ be a universal critical exponent that is the same for all three-dimensional lattices, their values are known to be approximately, \cite{Chen2002,Madras2013}  
+%%not sure if I should incorporate this in the linear text too
+%Their values are known to be approximately \cite{Chen2002,Madras2013}
 \begin{equation}
    \label{eq.gammas}   \mu_3 \;=\;  4.684, \hspace{5mm}
         \gamma_3 \;=\;  1.162,    \hspace{5mm}\hbox{and}\hspace{5mm}
     A_3  \;=\;    0.2573  \,.  %1.205/4.683 \;=\;  \,.
 \end{equation}
+
+%Am I permitted to say parameters and given????
+\noindent Given the above parameters, a fundamental property of SAWs is that the asymptotic behaviour of $c_{\ell}$ on the three-dimensional cubic lattice is 
+\begin{equation}
+    \label{eq.sawscale}
+       c_{\ell}  \;\sim  \;  A_3 \, {\ell}^{\gamma_3-1}  \mu_3^{\ell}    \hspace{5mm}\hbox{as $\ell\rightarrow\infty$}.
+\end{equation}
+% (This has not been proven rigorously, but even mathematicians do not doubt its truth.) 
+% Here $\mu_3$ and $A_3$ depend on the choice of lattice, but $\gamma_3$ is a universal critical exponent
+% that is the same for all three-dimensional lattices.  
+% Their values are known to be approximately \cite{Chen2002,Madras2013}
+% \begin{equation}
+%   \label{eq.gammas}   \mu_3 \;=\;  4.684, \hspace{5mm}
+%         \gamma_3 \;=\;  1.162,    \hspace{5mm}\hbox{and}\hspace{5mm}
+%     A_3  \;=\;    0.2573  \,.  %1.205/4.683 \;=\;  \,.
+% \end{equation}
 %(Estimation in \cite{Chen2002} is for the number of SAWs with $\ell$ \textit{steps} (i.e.\ $\ell+1$ \textit{sites}), which we write  $c_{\ell+1}=(A_3\mu_3)\ell^{\gamma_3-1}\mu_3^{\ell}$; reference \cite{Chen2002} obtains $A_3\mu_3=1.205$.)
 
 %%Commented this out as it doesn't flow anymore given all derivations will be in the supplement.
@@ -418,18 +426,24 @@ through the following approximation (derived in the supplement):
        \left(  \frac{ V_{latt}A_3W^{\gamma_3-1}(q-1)^2}{aWq} \,
           \frac{(a-j-\frac{1}{2})}{n_S-n(a-j-\frac{1}{2})} \right)^{n+o(n)}   \,.
 \end{equation}
-The quantity on the right of Equation (\ref{eq.Yratio2}) decreases in $j$.  Let $j^*$ be the 
-smallest value of $j$ for which the right-hand side of Equation (\ref{eq.Yratio2}) is less than 1.
+
+
+The quantity on the right of Equation (\ref{eq.Yratio2}) decreases in $j$.  
+% attempted to reword this, used j_min instead, so they know it is a fixed and not a new variable 
+%added still in hopes of getting the point across but may sound childish\
+%will have to replace j* in graphics in supplement possibly
+Let $j_{min}$ be a fixed value that represents the the smallest available number of j sites occupied by nW-mers for which the right-hand side of Equation (\ref{eq.Yratio2}) is still less than 1.
+
 Then we see that $|\mathcal{E}_{j+1}|/|\mathcal{E}_j|<1$ whenever $j\geq j^*$, and 
-$|\mathcal{E}_{j+1}|/|\mathcal{E}_j|\geq 1$ whenever $j< j^*$.
-That is, $|\mathcal{E}_j|$ is decreasing in $j$ when $j\geq j^*$, and 
+$|\mathcal{E}_{j+1}|/|\mathcal{E}_j|\geq 1$ whenever $j< j_{min}$.
+That is, $|\mathcal{E}_j|$ is decreasing in $j$ when $j\geq j_{min}$, and 
 increasing when $j< j^*$.
 It follows that $|\mathcal{E}_j|$ is maximized at $j=j^*$, and that we can find $j^*$ by seeing 
 where the right-hand side of Equation (\ref{eq.Yratio2}) is close to 1.   
 
 %equation containers everywhere, unlabeled though, not sure what journal wants.
 %moved the definition of K to prior in sequence, and made it an equation
-We let, 
+\noindent We let, 
 \begin{equation}
     \label{}
 K \;=\;   \frac{ V_{latt} }{aW}\, \frac{   A_3W^{\gamma_3-1}(q-1)^2}{q} \,,
