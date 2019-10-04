@@ -22,7 +22,7 @@
 %% version of every file you have used.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%\listfiles
-%%ythis is a test
+
 
 
 \newcommand*\mycommand[1]{\texttt{\emph{#1}}}
@@ -75,6 +75,7 @@ In this study, we examine the role of polyelectrolyte chain length in the adsorp
 
 We used poly(allylamine hydrochloride) (PAH) as received from Polysciences, Inc. Poly(acrylic acid sodium salt) (PAA) of two different molecular weights ($M_{w}$ 2K and 450K) was purchased from Sigma-Aldrich and modified as described in section 5.3.2.  The two different molecular weights of PAA were chosen based on the large difference in the average chain length (i.e., by greater than 2 orders of magnitude).  Furthermore, dynamic light scattering characterization (Brookhaven BI9000; Thorn EMI Electron B2FBK RFI photomultiplier tube; Coherent Technologies Compass 315M-150 laser) of the low and high molecular weight PAA, showed very little overlap in the histograms of the hydrodynamic radius of the polymers under the solution conditions used for the adsorption experiments.  Chemical structures for the polycation, unmodified polyanion, 
 
+%I don't know how to bruteforce this formatting issue above ( I am following the formatting given by the original manuscript
 \begin{figure}[H]
     \begin{subfigure}[b]{0.3\textwidth}
         \includegraphics[scale=0.4]{fig1A.png}
@@ -312,24 +313,24 @@ place $N$ identical $\ell$-mers is
 % For $\mathcal{E}_j$, we have $j$ adsorbed $nW$-mers, $na-nj$ adsorbed $W$-mers, 
 % $n_L-j$ desorbed $nW$-mers, and $n_S-n(a-j)$ desorbed $W$-mers.   Thus, recalling 
 % Equations (\ref{eq.sawscale}) and  (\ref{eq.Npoly}), we have
-\begin{equation}
-    |\mathcal{E}_j|  
-      \; = \; \frac{ \Psi_L^{n_L-j} }{(n_L-j)!} \,
-          \frac{ \Psi_S^{n_S-n(a-j)} }{(n_S-n(a-j))!} \,
-           \frac{\tilde{w}_1\tilde{w}_2\cdots \tilde{w}_j}{j!}
-                     \,   \frac{\tilde{u}_{nj+1}\tilde{u}_{nj+2}\cdots \tilde{u}_{an}}{(n(a-j))!}
+% \begin{equation}
+%     |\mathcal{E}_j|  
+%       \; = \; \frac{ \Psi_L^{n_L-j} }{(n_L-j)!} \,
+%           \frac{ \Psi_S^{n_S-n(a-j)} }{(n_S-n(a-j))!} \,
+%           \frac{\tilde{w}_1\tilde{w}_2\cdots \tilde{w}_j}{j!}
+%                      \,   \frac{\tilde{u}_{nj+1}\tilde{u}_{nj+2}\cdots \tilde{u}_{an}}{(n(a-j))!}
 %                                  \nonumber   \\
 %            & & \hspace{7mm}  \times \, \frac{\tilde{w}_1\tilde{w}_2\cdots \tilde{w}_j}{j!}
 %                     \,   \frac{\tilde{u}_{nj+1}\tilde{u}_{nj+2}\cdots \tilde{u}_{an}}{(n(a-j))!}  % \,e^{-nW\epsilon/kT}
         \label{eq.Yj}
-\end{equation}
-where 
-\begin{equation}
-    \label{eq.psidef}   
-   \Psi_L\;=\;V_{latt} A_3 (nW)^{\gamma_3-1} \mu_{3}^{nW}   
-    \hspace{5mm}\hbox{and} \hspace{5mm}
-     \Psi_S \;=\; V_{latt}A_3W^{\gamma_3-1}\mu_3^W \,.
-\end{equation}
+% \end{equation}
+% where 
+% \begin{equation}
+%     \label{eq.psidef}   
+%   \Psi_L\;=\;V_{latt} A_3 (nW)^{\gamma_3-1} \mu_{3}^{nW}   
+%     \hspace{5mm}\hbox{and} \hspace{5mm}
+%      \Psi_S \;=\; V_{latt}A_3W^{\gamma_3-1}\mu_3^W \,.
+% \end{equation}
 
 
 
@@ -420,10 +421,10 @@ If the solution is fairly dilute, then we see that the left side of (\ref{eq.jst
 and hence only a small fraction of the surface is covered by short polymers.
 
 
-[\textit{Remark:}  Observe that $n_L$ does not appear in Equation (\ref{eq.jstar}).  
-In the expression for $|\mathcal{E}_{j+1}|/|\mathcal{E}_j|$,   only $n_S$ appears inside the 
-expression that is raised to the power $n$, while $n_L$ appears outside this expression and is
-raised to the power 1.]  
+%[\textit{Remark:}  Observe that $n_L$ does not appear in Equation (\ref{eq.jstar}).  
+%In the expression for $|\mathcal{E}_{j+1}|/|\mathcal{E}_j|$,   only $n_S$ appears inside the 
+%expression that is raised to the power $n$, while $n_L$ appears outside this expression and is
+%raised to the power 1.]  
 
 \section{4. Results and Discussion}
 
