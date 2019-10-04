@@ -264,7 +264,8 @@ we need to find which of the sets $\mathcal{E}_j$ is largest.
 
 
 \subsubsection{3.2.2 Ratio Approximation Formula}
-We now wish to estimate the size of each $\mathcal{E}_j$ which will determine the preferential configurations of the experimental system. The configuration of a single  polymer in a dilute solution is often modeled by a self-avoiding walk (SAW) in a lattice, where a path in the lattice does not visit any site more than once. A fundamental property of SAWs is the following.
+%inserted a motivation that will explain why on page six we want to maximize epsilon j, also tried to flow into the first step of this modelling process being modelling the config of a single polymer
+We now wish to estimate the size of each $\mathcal{E}_j$, in order to  determine the maximum $\mathcal{E}_j$ which would be the preferential configuration of the experimental system. We begin with modelling The configuration of a single  polymer in a dilute solution by a self-avoiding walk (SAW) in a lattice, where a path in the lattice does not visit any site more than once. A fundamental property of SAWs is the following.
 Let $c_{\ell}$ be
 the number of SAWs that start from a specified lattice site (``the origin'') and visit a total of $\ell$ sites
 (including the starting site).   Then the 
@@ -424,17 +425,39 @@ $|\mathcal{E}_{j+1}|/|\mathcal{E}_j|\geq 1$ whenever $j< j^*$.
 That is, $|\mathcal{E}_j|$ is decreasing in $j$ when $j\geq j^*$, and 
 increasing when $j< j^*$.
 It follows that $|\mathcal{E}_j|$ is maximized at $j=j^*$, and that we can find $j^*$ by seeing 
-where the right-hand side of Equation (\ref{eq.Yratio2}) is close to 1.   Thus $j^*$ satisfies
-\[     1  \;\approx \; 
+where the right-hand side of Equation (\ref{eq.Yratio2}) is close to 1.   
+
+%equation containers everywhere, unlabeled though, not sure what journal wants.
+%moved the definition of K to prior in sequence, and made it an equation
+We let, 
+\begin{equation}
+    \label{}
+K \;=\;   \frac{ V_{latt} }{aW}\, \frac{   A_3W^{\gamma_3-1}(q-1)^2}{q} \,,
+\end{equation}
+
+
+%changed the text here slightly for flow
+%added noindents to fix the format, not sure if that's allowed, either by journal or by best practices
+\noindent Therefore $j^*$ satisfies,
+\begin{equation}
+    \label{}
+    1  \;\approx \; 
      K  \,
      %\frac{ V_{latt}A_3W^{\gamma_3-1}(q-1)^2}{aWq} \,
           \frac{a-j^*-\frac{1}{2}}{n_S-n(a-j^*-\frac{1}{2})}    \,,  
-             \hspace{5mm}\hbox{where}\hspace{5mm}
-             K \;=\;   \frac{ V_{latt} }{aW}\, \frac{   A_3W^{\gamma_3-1}(q-1)^2}{q} \,,
-\]
-which can be rewritten as 
-\[       a-j^*-\frac{1}{2} \; \approx\;    \frac{n_S}{K+n}   \,.
-\]
+             %\hspace{5mm}\hbox{where}\hspace{5mm}
+             %K \;=\;   \frac{ V_{latt} }{aW}\, \frac{   A_3W^{\gamma_3-1}(q-1)^2}{q} \,,
+\end{equation}
+
+\noindent which can be rewritten as, 
+\begin{equation}
+    \label{}
+a-j^*-\frac{1}{2} \; \approx\;    \frac{n_S}{K+n}   \,.
+\end{equation}
+
+%added new page as formatting was off
+\newpage
+
 We observe that $K\gg n$; indeed,  $V_{latt}/aWn \,=\,V_{latt}/A_{latt}\gg 1$.  
 Thus we can replace $K+n$ by $K$ in the above, and omit the term $\frac{1}{2}$, resulting in the   
 approximation 
@@ -558,6 +581,8 @@ Figure 7 demonstrates the decreasing behaviour of the ratio of probabilities $\l
 (Spyros)
 We proceed to bridge the model based on the the ratio of configurations $\mathcal{E}_{j}$ to that of preferential entropy values, using a derivation of the Boltzmann entropy expression from the ratio of configurations (derivation in supplement), and then graphed the experimental data using the derived expression for entropy. As depicted in Figure 8, there is a decreasing, yet positive rate of change of S for the incremental addition of j long chains on the colloid surface. Not only is there a positive entropy increase as one adds additional long chain Polymers to the surface, but it is also steadily decreasing the increments of entropy change as more and more long chains are added to the surface, suggestive of entropy approaching a plateau, or more specifically, a maximum value. 
 
+
+% this figure is within the range of kT's (4.11×10−21J) but the value that fluctuates is 6 orders less, not sure if I should omit completely
 \begin{figure}[H]
 \includegraphics[scale=0.6]{fig12.png}
 \caption{Change in Entropy}
