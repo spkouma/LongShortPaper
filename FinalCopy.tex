@@ -246,13 +246,17 @@ which we shall call $\mathcal{E}$.
 Since the only energy in this model comes from the adsorption contacts between monomer and surface,
 and since the number of such contacts is the same (namely $A_{latt}$) in every configuration
 in $\mathcal{E}$, we see that the energy of every configuration of $\mathcal{E}$ is exactly the same.
-Therefore, according to the Boltzmann distribution, \textit{every configuration in $\mathcal{E}$ is equally
-likely}.  Thus the calculation of probabilities of events is equivalent to counting the configurations.
-In particular, writing $|\mathcal{A}|$ for the number of configurations in a set $\mathcal{A}$, we have
-\[
-    \hbox{Probability that $j$ long polymers are adsorbed}  \;=\; 
-    \frac{|\mathcal{E}_j|}{|\mathcal{E}|}\,,   \hspace{5mm}(j=0,1,\ldots,a).
-\]
+Therefore, according to the Boltzmann distribution, every configuration in $\mathcal{E}$ is equally
+% changed this sentence partially
+likely. Thus to calculate the probabilities of events we count the configurations.
+Specifically, $|\mathcal{A}|$ is the number of configurations in a set $\mathcal{A}$, and the probability that $j$ long polymers are adsorbed is $\frac{|\mathcal{E}_j|}{|\mathcal{E}|}$   where $(j=0,1,\ldots,a)$.
+
+%% replace this with a linear text above
+% we have
+% \[
+%     \hbox{Probability that $j$ long polymers are adsorbed}  \;=\; 
+%     \frac{|\mathcal{E}_j|}{|\mathcal{E}|}\,,   \hspace{5mm}(j=0,1,\ldots,a).
+% \]
 Thus, to find the most likely number of $nW$-mers (and $W$-mers) to be adsorbed onto the sphere,
 we need to find which of the sets $\mathcal{E}_j$ is largest.
 
@@ -260,7 +264,7 @@ we need to find which of the sets $\mathcal{E}_j$ is largest.
 
 
 \subsubsection{3.2.2 Ratio Approximation Formula}
-We now wish to estimate the size of each $\mathcal{E}_j$ given that this will give us a clear idea of preferential configurations of the experimental system.The configuration of a single  polymer in a dilute solution is often modeled by a self-avoiding walk (SAW) in a lattice, i.e.\  a path in the lattice that does not visit any site more than once. A fundamental property of SAWs is the following.
+We now wish to estimate the size of each $\mathcal{E}_j$ which will determine the preferential configurations of the experimental system. The configuration of a single  polymer in a dilute solution is often modeled by a self-avoiding walk (SAW) in a lattice, where a path in the lattice does not visit any site more than once. A fundamental property of SAWs is the following.
 Let $c_{\ell}$ be
 the number of SAWs that start from a specified lattice site (``the origin'') and visit a total of $\ell$ sites
 (including the starting site).   Then the 
@@ -280,14 +284,15 @@ Their values are known to be approximately \cite{Chen2002,Madras2013}
 \end{equation}
 %(Estimation in \cite{Chen2002} is for the number of SAWs with $\ell$ \textit{steps} (i.e.\ $\ell+1$ \textit{sites}), which we write  $c_{\ell+1}=(A_3\mu_3)\ell^{\gamma_3-1}\mu_3^{\ell}$; reference \cite{Chen2002} obtains $A_3\mu_3=1.205$.)
 
-Since the number of sites in the lattice corresponding to the region of solution is $V_{latt}$, 
-we have $V_{latt}c_{\ell}$ ways to place a polymer of size ${\ell}$.  As we are neglecting the
-possibility of overlapping polymers in the dilute solution, it follows that the number of ways to 
-place $N$ identical $\ell$-mers is 
-\begin{equation}
-  \label{eq.Npoly}
-   \frac{(V_{latt}c_{\ell})^N}{N!}  \,.   
-\end{equation}
+%%Commented this out as it doesn't flow anymore given all derivations will be in the supplement.
+%Since the number of sites in the lattice corresponding to the region of solution is $V_{latt}$, 
+%we have $V_{latt}c_{\ell}$ ways to place a polymer of size ${\ell}$.  
+%As we are neglecting the possibility of overlapping polymers in the dilute solution, it follows that the number of ways to 
+%place $N$ identical $\ell$-mers is 
+%\begin{equation}
+%  \label{eq.Npoly}
+%   \frac{(V_{latt}c_{\ell})^N}{N!}  \,.   
+%\end{equation}
 
 \smallskip
 
