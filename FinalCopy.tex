@@ -137,17 +137,17 @@ It has been recognized that long polymers are
 preferentially adsorbed compared to shorter polymers,
 due to the short polymer's greater gain of
 translational entropy per monomer in three dimensions
-as compared to two (see for example Sections 4.4.2.1
-and 5.4.1 of G.J. Fleer et al)\cite{Fleer1993}.
-In light of the small number of polymers on each
+as compared to two 
+%(see for example Sections 4.4.2.1 and 5.4.1 of G.J. Fleer et al)
+\cite{Fleer1993}.In light of the small number of polymers on each
 spherical surface, we adapt existing methods to a
 fully discrete model to analyze this phenomenon.
 
 We shall use a lattice model to describe our experimental situation.  
 Lattices will appear in two ways:  (1) covering the surface of a sphere by a two-dimensional lattice, and
-(2) filling space with a regular three-dimensional lattice.  
-The geometry of the lattices will not be important.  We shall use the simple cubic lattice for our
-three-dimensional lattice.  
+(2) filling space with a regular three-dimensional cubic lattice.  
+The geometry of the lattices will not be important.  
+%We shall use the simple cubic lattice for our three-dimensional lattice.
 We shall assume that the two-dimensional lattice has coordination number $q$ 
 (that is, each site on the surface has exactly $q$ neighbouring sites).  We assume that 
 the distance between lattice sites corresponds to the distance between adjacent monomers within a 
@@ -159,21 +159,37 @@ our model and keep the concentrations the same, we shall consider only a single 
 of volume $V_1:=V_{sol}/n_{sphere}$.  We shall refer to this as our model system.
 We shall view this small three-dimensional region of the solution in our model system as being filled by a 
 cubic lattice.
-Let $V_{latt}$ be the number of lattice sites in our solution region of volume $V_1$. 
+Let $V_{latt}$ be the number of lattice sites in our solution region of volume $V_1$.
 
-We shall consider polymers of two different lengths, which we shall call ``short'' and ``long.''  Their lengths
-will be described by two positive integer parameters $W$ and $n$.
 
-\begin{verse}
-A \textbf{short polymer} will consist of $W$ monomers.  
-Let $n_S$ be the number of short polymers in the model system. 
-\\
-A \textbf{long polymer} will consist of $nW$ monomers.  
-Let $n_L$ be the number of long polymers in the model system. 
-\end{verse}
+
+%%Proceeded to sub in subsequent duplicate definition here below this section 
+% We shall consider polymers of two different lengths, which we shall call ``short'' and ``long.''  Their lengths
+% will be described by two positive integer parameters $W$ and $n$.
+
+% \begin{verse}
+% A \textbf{short polymer} will consist of $W$ monomers.  
+% Let $n_S$ be the number of short polymers in the model system. 
+% \\
+% A \textbf{long polymer} will consist of $nW$ monomers.  
+% Let $n_L$ be the number of long polymers in the model system. 
+% \end{verse}
+
+%after shifting the below definitions this off course was out of place as it was defining things too late.
 We shall often refer to our short and long polymers as $W$-mers and $nW$-mers respectively.
 We shall want the total mass of the two kinds of monomers in our system to be the same, so we 
 shall assume that $n_S \,=\, n\cdot n_L$.
+
+% this used to be in list form (latex verse format) but I linearized it as per Ozzy's request
+% not sure if I should be using commas and if I should boldface the Values, Expressions
+%also the parenthesis "(because..."  clashes with "n(a-j)"
+We let the number of $nW$-mers in solution to be $n_L-j$, the number of $W$-mers adsorbed on the surface to be $n(a-j)$ (because there are $anW$ sites on the surface, all occupied, of which $jnW$ are occupied by $nW$-mers, leaving $anW-jnW$ to be  occupied by $W$-mers), and the number of $W$-mers in solution to be  $n_S-n(a-j)$.
+
+
+% %commented this out and shifted up as well
+% We shall often refer to our short and long polymers as $W$-mers and $nW$-mers respectively.
+% We shall want the total mass of the two kinds of monomers in our system to be the same, so we 
+% shall assume that $n_S \,=\, n\cdot n_L$.
 
 Let $A_{latt}$ be the number of lattice sites on the surface of one sphere, and let $a$
 be the number of long polymers that would exactly cover all the sites of the surface:
@@ -191,23 +207,25 @@ The difference in approach is due to the fact that the polymers are dense on the
 dilute in the solution.  We shall model the polymer configurations in the solution as a collection of 
 self-avoiding walks in the cubic lattice, with no interaction between walks (because of the dilute solution).
 For the polymers adsorbed densely on the surface lattice, we shall use mean-field calculations 
-of the Flory-Huggins type 
+of the Flory-Huggins type \cite{Flory1953}.
 % (similar to the lattice approach in Park et al., Macromolecules 2001;
-(see also Section XII.1 of \cite{Flory1953}).
+%(see also Section XII.1 of \cite{Flory1953}).
 
 Recall that our ensemble consists of $n_S$ (short) $W$-mers and $n_L$ (long) $nW$-mers.
 Of these, some are adsorbed onto the surface of the sphere, and the others float freely in the 
-solution of volume $V_1$.  We write $j$ for the number of (long) $nW$-mers that are adsorbed 
+solution of volume $V$.  We write $j$ for the number of (long) $nW$-mers that are adsorbed 
 onto the surface in a particular configuration of the system.  This implies that
-\begin{verse}
- ($i$) the number of $nW$-mers in solution is $n_L-j$;
- \\
- ($ii$) the number of $W$-mers adsorbed on the surface is $n(a-j)$ (because there are $anW$ sites on the
- surface, all occupied, of which $jnW$ are occupied by $nW$-mers, leaving $anW-jnW$ to be 
- occupied by $W$-mers); and
- \\
- ($iii$) the number of $W$-mers in solution is $n_S-n(a-j)$.
- \end{verse}  
+
+%%removed this and moved it to page 8 this may create issues in fluidity, will investigate further
+% \begin{verse}
+%  ($i$) the number of $nW$-mers in solution is $n_L-j$;
+%  \\
+%  ($ii$) the number of $W$-mers adsorbed on the surface is $n(a-j)$ (because there are $anW$ sites on the
+%  surface, all occupied, of which $jnW$ are occupied by $nW$-mers, leaving $anW-jnW$ to be 
+%  occupied by $W$-mers); and
+%  \\
+%  ($iii$) the number of $W$-mers in solution is $n_S-n(a-j)$.
+%  \end{verse}  
 We shall write $\mathcal{E}_j$ for the set of all configurations that have exactly $j$ $nW$-mers adsorbed 
 onto the surface.  Observe that the possible values of $j$ are the integers from 0 to $a$.
 The full space of configurations in our model is $\cup_{j=0}^a {\mathcal{E}_j}$, 
@@ -225,15 +243,12 @@ In particular, writing $|\mathcal{A}|$ for the number of configurations in a set
 \]
 Thus, to find the most likely number of $nW$-mers (and $W$-mers) to be adsorbed onto the sphere,
 we need to find which of the sets $\mathcal{E}_j$ is largest.
-We now proceed to estimate the size of each $\mathcal{E}_j$.
+
 
 
 
 \subsubsection{3.2.2 Ratio Approximation Formula}
-
-The configuration of a single  polymer in a dilute solution is often modeled by
-a self-avoiding walk (SAW) in a lattice, i.e.\  a path in the lattice that does not visit any site more than once.
-A fundamental property of SAWs is the following.  
+We now wish to estimate the size of each $\mathcal{E}_j$ given that this will give us a clear idea of preferential configurations of the experimental system.The configuration of a single  polymer in a dilute solution is often modeled by a self-avoiding walk (SAW) in a lattice, i.e.\  a path in the lattice that does not visit any site more than once. A fundamental property of SAWs is the following.
 Let $c_{\ell}$ be
 the number of SAWs that start from a specified lattice site (``the origin'') and visit a total of $\ell$ sites
 (including the starting site).   Then the 
@@ -251,8 +266,7 @@ Their values are known to be approximately \cite{Chen2002,Madras2013}
         \gamma_3 \;=\;  1.162,    \hspace{5mm}\hbox{and}\hspace{5mm}
     A_3  \;=\;    0.2573  \,.  %1.205/4.683 \;=\;  \,.
 \end{equation}
-(Estimation in \cite{Chen2002} is for the 
-number of SAWs with $\ell$ \textit{steps} (i.e.\ $\ell+1$ \textit{sites}), which we write  $c_{\ell+1}=(A_3\mu_3)\ell^{\gamma_3-1}\mu_3^{\ell}$; reference \cite{Chen2002} obtains $A_3\mu_3=1.205$.)
+%(Estimation in \cite{Chen2002} is for the number of SAWs with $\ell$ \textit{steps} (i.e.\ $\ell+1$ \textit{sites}), which we write  $c_{\ell+1}=(A_3\mu_3)\ell^{\gamma_3-1}\mu_3^{\ell}$; reference \cite{Chen2002} obtains $A_3\mu_3=1.205$.)
 
 Since the number of sites in the lattice corresponding to the region of solution is $V_{latt}$, 
 we have $V_{latt}c_{\ell}$ ways to place a polymer of size ${\ell}$.  As we are neglecting the
