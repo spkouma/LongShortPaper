@@ -153,13 +153,13 @@ We shall assume that the two-dimensional lattice has coordination number $q$
 the distance between lattice sites corresponds to the distance between adjacent monomers within a 
 polymer.  We assume that in equilibrium, \textit{every lattice site in the surface is covered by an adsorbed 
 monomer}.
-
+%Changed all V1 to V, in order to avoid confusion of it being some sort of index, as used in epsilon_i later on 
 Our experiment has a large number $n_{sphere}$ of spheres in a solution of volume $V_{sol}$.  To simplify 
 our model and keep the concentrations the same, we shall consider only a single sphere in a solution
-of volume $V_1:=V_{sol}/n_{sphere}$.  We shall refer to this as our model system.
+of volume $V:=V_{sol}/n_{sphere}$.  We shall refer to this as our model system.
 We shall view this small three-dimensional region of the solution in our model system as being filled by a 
 cubic lattice.
-Let $V_{latt}$ be the number of lattice sites in our solution region of volume $V_1$.
+Let $V_{latt}$ be the number of lattice sites in our solution region of volume $V$.
 
 
 
@@ -191,15 +191,24 @@ We let the number of $nW$-mers in solution to be $n_L-j$, the number of $W$-mers
 % We shall want the total mass of the two kinds of monomers in our system to be the same, so we 
 % shall assume that $n_S \,=\, n\cdot n_L$.
 
-Let $A_{latt}$ be the number of lattice sites on the surface of one sphere, and let $a$
-be the number of long polymers that would exactly cover all the sites of the surface:
-\[    a  \;=\;  \frac{A_{latt}}{nW}   \,  .  \]
+%reversed the sequence, by starting with definition and then introducing term as per Ozzy
+Let the number of lattice sites on the surface of one sphere be $A_{latt}$, and let the number of long polymers that would 
+% removed exactly
+%removed a from linear font, as it is introduced as an expression
+fully cover all the sites of the surface be:
+% we are labelling all equations as per Ozzy's request
+\begin{equation}
+    \label{eq.Number of Long Polymers that Fully Cover All Sites}
+       a  \;:=\;  \frac{A_{latt}}{nW}
+\end{equation}
+
 Then $na$ is the number of short polymers that can completely cover the surface.
 For simplicity, we assume that $a$ is an integer.
 
-We shall see that the underlying entropic reason that
-mostly long chains get adsorbed is that $V_{latt}\gg A_{latt}$, i.e.\ there are many more possible locations in 
-the three-dimensional solution than on the two-dimensional surface.
+%%removed as this is something that shall be discussed in results
+% We shall see that the underlying entropic reason that
+% mostly long chains get adsorbed is that $V_{latt}\gg A_{latt}$, i.e.\ there are many more possible locations in 
+% the three-dimensional solution than on the two-dimensional surface.
 
 
 We shall model our polymer configurations in the solution in a slightly different way from those on the surface.
@@ -214,9 +223,12 @@ of the Flory-Huggins type \cite{Flory1953}.
 Recall that our ensemble consists of $n_S$ (short) $W$-mers and $n_L$ (long) $nW$-mers.
 Of these, some are adsorbed onto the surface of the sphere, and the others float freely in the 
 solution of volume $V$.  We write $j$ for the number of (long) $nW$-mers that are adsorbed 
-onto the surface in a particular configuration of the system.  This implies that
+onto the surface in a particular configuration of the system.
 
 %%removed this and moved it to page 8 this may create issues in fluidity, will investigate further
+%This implies that
+
+
 % \begin{verse}
 %  ($i$) the number of $nW$-mers in solution is $n_L-j$;
 %  \\
