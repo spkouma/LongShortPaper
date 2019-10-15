@@ -59,7 +59,8 @@
 
 \end{abstract}
 
-\section{2. Introduction}
+%Professor Madras informed me that section number isn't a standard for macromolecule
+\section{2.Introduction}
 
 In the interest of developing new molecular architectures that cover a wide range of length scales, various methods to self-assemble and organize polymers on surfaces continue to be explored, from covalent attachment techniques\cite{doi:10.1002/ijch.199600050,B210143M,doi:10.1002/masy.200450305} to physisorption approaches.\cite{Chen1992,Serizawa2002}  Recently, a new technique for preparing polymer thin films which uses electrostatic interactions between oppositely charged polyelectrolytes to assemble a multilayer organic film, has attracted attention from broad areas of materials science.\cite{Decher1997}  Polyelectrolyte multilayer films (PEMs) are built-up layer-by-layer (LBL) by alternating adsorption of polycations and polyanions from aqueous solution onto a surface.\cite{Decher2006}  Growing interest in these self-assembled films can in part be attributed to the fact that their fabrication is experimentally simple, and versatile with respect to the surfaces and materials that can be utilized.  Furthermore, industrial applications of functional polyelectrolyte multilayer films (PEMs), for example as biomedical materials, have given impetus to explore in detail the driving forces in LBL formation, interactions between adsorbed polyelectrolyte layers, and the limitations for LBL self-assembly of polyelectrolytes.
 
@@ -131,8 +132,11 @@ The competitive adsorption of long (450 K) versus short (2 K) chains of PAA was 
 
 \subsubsection{3.2 Theoretical}
 
-\subsubsection{3.2.1 Development of Mean-field lattice model}
+\subsubsection{3.2.1 Development of Mean-Field lattice model}
 
+%Refer to 1st page of parkbarret
+Here we develop a combinatorial approximation method that outputs the likelihood of each possible configuration, with which we model the preferential behaviour of the system.
+%my intro above hopefully it flows...
 It has been recognized that long polymers are
 preferentially adsorbed compared to shorter polymers,
 due to the short polymer's greater gain of
@@ -141,7 +145,7 @@ as compared to two
 %(see for example Sections 4.4.2.1 and 5.4.1 of G.J. Fleer et al)
 \cite{Fleer1993}.In light of the small number of polymers on each
 spherical surface, we adapt existing methods to a
-fully discrete model to analyze this phenomenon.
+fully discrete model to analyze this phenomenon.  We will also maintain the assumption from the experiment, that the enthalpic energy is identical in both the scenarios of either complete short or long-chain adsorption to the colloid surface. 
 
 We shall use a lattice model to describe our experimental situation.  
 Lattices will appear in two ways:  (1) covering the surface of a sphere by a two-dimensional lattice, and
@@ -175,29 +179,32 @@ Let $V_{latt}$ be the number of lattice sites in our solution region of volume $
 % Let $n_L$ be the number of long polymers in the model system. 
 % \end{verse}
 
-%after shifting the below definitions this off course was out of place as it was defining things too late.
-We shall often refer to our short and long polymers as $W$-mers and $nW$-mers respectively.
-We shall want the total mass of the two kinds of monomers in our system to be the same, so we 
-shall assume that $n_S \,=\, n\cdot n_L$.
+
+
+We shall often refer to our short and long-chain polymers as $W$-mers and $nW$-mers respectively.
+%check for repetition
+Of these, some are adsorbed onto the surface of the sphere, and the others float freely in the 
+solution of volume $V$. 
+Additionally, we let the total mass of the two kinds of monomers in our system be the same, so we assume that $n_S \,=\, n\cdot n_L$.
 
 % this used to be in list form (latex verse format) but I linearized it as per Ozzy's request
 % not sure if I should be using commas and if I should boldface the Values, Expressions
 %also the parenthesis "(because..."  clashes with "n(a-j)"
 
 %insert definition of j here!!!
-We let the number of $nW$-mers in solution to be $n_L-j$, the number of $W$-mers adsorbed on the surface to be $n(a-j)$ (because there are $anW$ sites on the surface, all occupied, of which $jnW$ are occupied by $nW$-mers, leaving $anW-jnW$ to be  occupied by $W$-mers), and the number of $W$-mers in solution to be  $n_S-n(a-j)$.
+We let the number of $nW$-mers (long-chains) in solution to be $n_L-j$, the number of $W$-mers (short-chains) adsorbed on the surface to be $n(a-j)$, because there are $anW$ sites on the surface, all occupied, of which $jnW$ are occupied by $nW$-mers (long-chains), leaving $anW-jnW$ to be  occupied by $W$-mers (short-chains), and the number of $W$-mers (short-chains) in solution to be  $n_S-n(a-j)$.
 
 
 % %commented this out and shifted up as well
-% We shall often refer to our short and long polymers as $W$-mers and $nW$-mers respectively.
+% We shall often refer to our short and long polymers as $W$-mers (short-chains) and $nW$-mers (long-chains) respectively.
 % We shall want the total mass of the two kinds of monomers in our system to be the same, so we 
 % shall assume that $n_S \,=\, n\cdot n_L$.
 
 %reversed the sequence, by starting with definition and then introducing term as per Ozzy
-Let the number of lattice sites on the surface of one sphere be $A_{latt}$, and let the number of long polymers that would 
+The number of lattice sites on the surface of one sphere is $A_{latt}$, and the number of long polymers that would 
 % removed exactly
 %removed a from linear font, as it is introduced as an expression
-fully cover all the sites of the surface be:
+fully cover all the sites of the surface is:
 % we are labelling all equations as per Ozzy's request
 \begin{equation}
     \label{eq.Number of Long Polymers that Fully Cover All Sites}
@@ -222,25 +229,25 @@ of the Flory-Huggins type \cite{Flory1953}.
 % (similar to the lattice approach in Park et al., Macromolecules 2001;
 %(see also Section XII.1 of \cite{Flory1953}).
 
-% Recall that our ensemble consists of $n_S$ (short) $W$-mers and $n_L$ (long) $nW$-mers.
-% Of these, some are adsorbed onto the surface of the sphere, and the others float freely in the 
-% solution of volume $V$.  We write $j$ for the number of (long) $nW$-mers that are adsorbed 
-% onto the surface in a particular configuration of the system.
+%Recall that our ensemble consists of $n_S$ (short) $W$-mers (short-chains) and $n_L$ (long) $nW$-mers (long-chains).
+%Of these, some are adsorbed onto the surface of the sphere, and the others float freely in the 
+%solution of volume $V$.  We write $j$ for the number of (long) $nW$-mers (long-chains) that are adsorbed 
+%onto the surface in a particular configuration of the system.
 
 %%removed this and moved it to page 8 this may create issues in fluidity, will investigate further
 %This implies that
 
 
 % \begin{verse}
-%  ($i$) the number of $nW$-mers in solution is $n_L-j$;
+%  ($i$) the number of $nW$-mers (long-chains) in solution is $n_L-j$;
 %  \\
-%  ($ii$) the number of $W$-mers adsorbed on the surface is $n(a-j)$ (because there are $anW$ sites on the
-%  surface, all occupied, of which $jnW$ are occupied by $nW$-mers, leaving $anW-jnW$ to be 
-%  occupied by $W$-mers); and
+%  ($ii$) the number of $W$-mers (short-chains) adsorbed on the surface is $n(a-j)$ (because there are $anW$ sites on the
+%  surface, all occupied, of which $jnW$ are occupied by $nW$-mers (long-chains), leaving $anW-jnW$ to be 
+%  occupied by $W$-mers (short-chains)); and
 %  \\
-%  ($iii$) the number of $W$-mers in solution is $n_S-n(a-j)$.
+%  ($iii$) the number of $W$-mers (short-chains) in solution is $n_S-n(a-j)$.
 %  \end{verse}  
-We shall write $\mathcal{E}_j$ for the set of all configurations that have exactly $j$ $nW$-mers adsorbed 
+We shall write $\mathcal{E}_j$ for the set of all configurations that have exactly $j$ $nW$-mers (long-chains) adsorbed 
 onto the surface.  Observe that the possible values of $j$ are the integers from 0 to $a$.
 The full space of configurations in our model is $\cup_{j=0}^a {\mathcal{E}_j}$, 
 which we shall call $\mathcal{E}$.
@@ -259,7 +266,8 @@ Specifically, $|\mathcal{A}|$ is the number of configurations in a set $\mathcal
 %     \hbox{Probability that $j$ long polymers are adsorbed}  \;=\; 
 %     \frac{|\mathcal{E}_j|}{|\mathcal{E}|}\,,   \hspace{5mm}(j=0,1,\ldots,a).
 % \]
-Thus, to find the most likely number of $nW$-mers (and $W$-mers) to be adsorbed onto the sphere,
+Thus, to find the most likely number of $nW$-mers (long-chains) %(and $W$-mers (short-chains))
+to be adsorbed onto the sphere,
 we need to find which of the sets $\mathcal{E}_j$ is largest.
 
 
@@ -270,7 +278,27 @@ we need to find which of the sets $\mathcal{E}_j$ is largest.
 We now wish to estimate the size of each $\mathcal{E}_j$, in order to  determine the maximum $\mathcal{E}_j$,which is the preferential configuration of the experimental system. We begin by modelling the configuration of a single  polymer in a dilute solution by a self-avoiding walk (SAW) in a lattice, where a path in the lattice does not visit any site more than once.
 %reordered this 
 %put it back as it was as per Madras
-Let the number of SAWs that start from a specified lattice site (``the origin'') and visit a total of $\ell$ sites be represented as $c_{\ell}$. Additionally, let $\mu_3$ and $A_3$ be constants that depend on the choice of lattice, and $\gamma_3$ be a universal critical exponent that is the same for all three-dimensional lattices, their values are known to be approximately, \cite{Chen2002,Madras2013}  
+Let the number of SAWs that start from a specified lattice site (``the origin'') and visit a total of $\ell$ sites be represented as $c_{\ell}$. 
+
+%%KILLED THIS AND PUT ORIGINAL BACK
+%Additionally, let $\mu_3$ and $A_3$ be constants that depend on the choice of lattice, and $\gamma_3$ be a universal critical exponent that is the same for all three-dimensional lattices, their values are known to be approximately, \cite{Chen2002,Madras2013} 
+
+%%KEPT MY SEQ VERSION OF THIS PART
+%The configuration of a single  polymer in a dilute solution is often modeled by a self-avoiding walk (SAW) in a lattice, i.e.\  a path in the lattice that does not visit any site more than once.
+A fundamental property of SAWs is the following.  
+Let $c_{\ell}$ be
+the number of SAWs that start from a specified lattice site (``the origin'') and visit a total of $\ell$ sites
+(including the starting site).   Then the 
+asymptotic behaviour of $c_{\ell}$ on the three-dimensional cubic lattice is 
+\begin{equation}
+    \label{eq.sawscale}
+       c_{\ell}  \;\sim  \;  A_3 \, {\ell}^{\gamma_3-1}  \mu_3^{\ell}    \hspace{5mm}\hbox{as $\ell\rightarrow\infty$}.
+\end{equation}
+% (This has not been proven rigorously, but even mathematicians do not doubt its truth.) 
+Here $\mu_3$ and $A_3$ depend on the choice of lattice, but $\gamma_3$ is a universal critical exponent
+that is the same for all three-dimensional lattices.  
+Their values are known to be approximately \cite{Chen2002,Madras2013}
+
 %%not sure if I should incorporate this in the linear text too
 %Their values are known to be approximately \cite{Chen2002,Madras2013}
 \begin{equation}
@@ -280,11 +308,12 @@ Let the number of SAWs that start from a specified lattice site (``the origin'')
 \end{equation}
 
 %Am I permitted to say parameters and given????
-\noindent Given the above parameters, a fundamental property of SAWs is that the asymptotic behaviour of $c_{\ell}$ on the three-dimensional cubic lattice is 
-\begin{equation}
-    \label{eq.sawscale}
-       c_{\ell}  \;\sim  \;  A_3 \, {\ell}^{\gamma_3-1}  \mu_3^{\ell}    \hspace{5mm}\hbox{as $\ell\rightarrow\infty$}.
-\end{equation}
+%\noindent Given the above parameters, a fundamental property of SAWs is that the asymptotic behaviour of $c_{\ell}$ on the three-dimensional cubic lattice is 
+%\begin{equation}
+%    \label{eq.sawscale}
+%       c_{\ell}  \;\sim  \;  A_3 \, {\ell}^{\gamma_3-1}  \mu_3^{\ell}    \hspace{5mm}\hbox{as $\ell\rightarrow\infty$}.
+%\end{equation}
+
 % (This has not been proven rigorously, but even mathematicians do not doubt its truth.) 
 % Here $\mu_3$ and $A_3$ depend on the choice of lattice, but $\gamma_3$ is a universal critical exponent
 % that is the same for all three-dimensional lattices.  
@@ -308,12 +337,12 @@ Let the number of SAWs that start from a specified lattice site (``the origin'')
 
 \smallskip
 
-% For a particular choice of $j$, we want to know the number of ways to place $j$ $nW$-mers 
-% and $a(n-j)$ $W$-mers on the surface, without overlapping, to fill all $anW$ lattice sites on the surface.
+% For a particular choice of $j$, we want to know the number of ways to place $j$ $nW$-mers (long-chains) 
+% and $a(n-j)$ $W$-mers (short-chains) on the surface, without overlapping, to fill all $anW$ lattice sites on the surface.
 % This is a hard combinatorial problem, so we shall use the following mean-field (Flory-Huggins) approach.
 % We shall place one polymer at a time, starting with the long ones.
 % Let $\tilde{w}_k$ be the number of ways to place the $k^{th}$ $nW$-mer on the surface, given that
-% $(k-1)$ $nW$-mers have already been placed.  
+% $(k-1)$ $nW$-mers (long-chains) have already been placed.  
 % To begin with, there are $anW-(k-1)nW$ available sites for the first monomer.  Recall that  $q$ is the number of
 % neighbours of each site in the surface lattice.
 % In the absence of other polymers, there would be $q$ choices for the second monomer in the chain,
@@ -340,7 +369,7 @@ Let the number of SAWs that start from a specified lattice site (``the origin'')
 %      \label{eq.wk2}
 % \end{eqnarray}
 % Similarly, let $\tilde{u}_{\ell}$ be the number of ways to place the $\ell^{th}$ $W$-mer on the surface, given that
-% ${\ell}-1$ $W$-mers (or a total of $(\ell-1)W$ monomers) have already been placed.   The same 
+% ${\ell}-1$ $W$-mers (short-chains) (or a total of $(\ell-1)W$ monomers) have already been placed.   The same 
 % argument as for $\tilde{w}_k$ gives
 % \begin{eqnarray}
 %   \tilde{u}_{\ell}  
@@ -353,8 +382,8 @@ Let the number of SAWs that start from a specified lattice site (``the origin'')
 % To evaluate $|\mathcal{E}_j|$, we assume that the unadsorbed solution
 % is dilute enough that we don't need to worry about mutual exclusion between the free floating
 % polymers.   
-% For $\mathcal{E}_j$, we have $j$ adsorbed $nW$-mers, $na-nj$ adsorbed $W$-mers, 
-% $n_L-j$ desorbed $nW$-mers, and $n_S-n(a-j)$ desorbed $W$-mers.   Thus, recalling 
+% For $\mathcal{E}_j$, we have $j$ adsorbed $nW$-mers (long-chains), $na-nj$ adsorbed $W$-mers (short-chains), 
+% $n_L-j$ desorbed $nW$-mers (long-chains), and $n_S-n(a-j)$ desorbed $W$-mers (short-chains).   Thus, recalling 
 % Equations (\ref{eq.sawscale}) and  (\ref{eq.Npoly}), we have
 % \begin{equation}
 %     |\mathcal{E}_j|  
@@ -378,71 +407,26 @@ Let the number of SAWs that start from a specified lattice site (``the origin'')
 
 
 
-To determine which value of $j$ maximizes $|\mathcal{E}_j|$, we look at ratios of consecutive terms:
-% \begin{eqnarray}
-%     \frac{|\mathcal{E}_{j+1}|}{|\mathcal{E}_j|}   & = & 
-%  \frac{
-%      \left(\frac{\Psi_L^{n_{L}-j-1}}{(n_L-j-1)!}\right)\cdot\left(\frac{\Psi_S^{n_S-n(a-j-1)}}{
-%     (n_S-n(a-j-1))!}\right) 
-%       }{
-%  \left(\frac{\Psi_L^{n_{L}-j}}{(n_L-j)!}\right)\cdot\left(\frac{\Psi_S^{n_S-n(a-j)}}{
-%     (n_S-n(a-j))!}\right)  }  \,   \frac{\tilde{w}_{j+1} }{  \tilde{u}_{nj+1}\cdots \tilde{u}_{n(j+1)} } 
-%     \nonumber \\
-%     & & \hspace{42mm}  
-%      \times   \, \frac{ j! \, (na-nj)!}{(j+1)!\, (na-nj-n)!}  
-%     \nonumber    \\
-%     & = & \frac{\Psi_S^n}{\Psi_L}
-%   % \frac{ \left(  V_{latt} A_3 W^{\gamma_3-1}\right)^{n-1}}{n^{\gamma_3-1}}
-%     \,   \frac{\tilde{w}_{j+1} }{  \tilde{u}_{nj+1}\cdots \tilde{u}_{n(j+1)} }   \,\left(  \frac{n_L-j}{j+1}\right)
-%     \nonumber \\
-%     & &   \hspace{8mm}  \times \;  \frac{(na-nj)\cdots (na-nj-n+1)}{(n_S-na+nj+1)\cdots(n_S-na+nj+n)} \,.
-%         \label{eq.Yratio1}
-% \end{eqnarray}
-% By Equation (\ref{eq.psidef}), we have
-% \begin{equation}
-%   \label{eq.psiratio} 
-%       \frac{\Psi_S^n}{\Psi_L}   \;=\;   \frac{ (V_{latt}\, A_3 \,W^{\gamma_3-1})^{n-1}}{n^{\gamma_3-1}}\,.
-% \end{equation}
-% From Equations (\ref{eq.wk2}) and (\ref{eq.uell2}), we find
-% \begin{eqnarray}
-%      \frac{\tilde{w}_{j+1} }{  \tilde{u}_{nj+1}\cdots \tilde{u}_{n(j+1)} }  & = & 
-%         \left( \frac{(q-1)^2}{qanW}\right)^{n-1}   \times \,
-%     \frac{   \frac{(anW-jnW)!}{(anW-(j+1)nW)!}  }{
-%         \prod_{\ell=0}^{n-1} \frac{ (anW-(nj+\ell)W)!}{(anW-(nj+\ell+1)W)!}   }
-%      \nonumber  \\
-%      & = & \left( \frac{(q-1)^2}{qanW}\right)^{n-1}  \,\times\, 1.
-%      \label{eq.Yratioa}     
-% \end{eqnarray}
-% Next we use the approximation   $(a+1)(a+2)\cdots (a+m-1) \,\approx \,(a+\frac{m}{2})^m$
-% (essentially, replacing the geometric mean by the arithmetic mean) to obtain
-% \begin{equation}
-%       \frac{(na-nj)\cdots (na-nj-n+1)}{(n_S-na+nj+1)\cdots(n_S-na+nj+n)} 
-%       \; \approx \;    \frac{ [na-(j+\frac{1}{2})n]^n }{ [n_S-na+nj+\frac{n}{2}]^n} \,.\hspace{3mm}
-%   %     \nonumber  \\
-%   %     & \approx & \left(  \frac{n(a-j-\frac{1}{2})}{n_S-(a-j-\frac{1}{2})}\right)^n  .
-%       \label{eq.Yratiob}
-% \end{equation} 
-through the following approximation (derived in the supplement):
+To determine which value of $j$ maximizes $|\mathcal{E}_j|$, we look at ratios of consecutive terms
+%took a risk at not putting a period there
+through the following approximation, of which a full derivation can be found in the the supplementary materials :
 \begin{equation}
     \label{eq.Yratio2}
        \frac{|\mathcal{E}_{j+1}|}{|\mathcal{E}_j|} \; \approx \; 
        \left(  \frac{ V_{latt}A_3W^{\gamma_3-1}(q-1)^2}{aWq} \,
           \frac{(a-j-\frac{1}{2})}{n_S-n(a-j-\frac{1}{2})} \right)^{n+o(n)}   \,.
 \end{equation}
+We observe that the quantity on the right of Equation (\ref{eq.Yratio2}) decreases in $j$.
 
-
-The quantity on the right of Equation (\ref{eq.Yratio2}) decreases in $j$.  
-% attempted to reword this, used j_min instead, so they know it is a fixed and not a new variable 
-%added still in hopes of getting the point across but may sound childish\
-%will have to replace j* in graphics in supplement possibly
 %only concern is that min will throw people off, given that we are searching for a max....
-Let $j_{fixed}$ be a fixed value that represents the the smallest available number of j sites occupied by nW-mers for which the right-hand side of Equation (\ref{eq.Yratio2}) is still less than 1.
-
-Then we see that $|\mathcal{E}_{j+1}|/|\mathcal{E}_j|<1$ whenever $j\geq j_{fixed}$, and 
-$|\mathcal{E}_{j+1}|/|\mathcal{E}_j|\geq 1$ whenever $j< j_{fixed}$.
-That is, $|\mathcal{E}_j|$ is decreasing in $j$ when $j\geq j_{fixed}$, and 
-increasing when $j< j_{fixed}$.
-It follows that $|\mathcal{E}_j|$ is maximized at $j=j_{fixed}$, and that we can find $j_{fixed}$ by seeing 
+Let $j^*$ be the smallest value of $j$ for which the right-hand side of Equation (\ref{eq.Yratio2}) is still less than 1. We shall show show that $j^*$ is the most probable value of $j$ 
+%added this parenthesis as Ozzy notated the significance of j*. May be repetitive
+(the number of $nW$-mers adsorbed on the surface).
+We see that $|\mathcal{E}_{j+1}|/|\mathcal{E}_j|<1$ whenever $j\geq j^*$, and 
+$|\mathcal{E}_{j+1}|/|\mathcal{E}_j|\geq 1$ whenever $j< j^*$.
+That is, $|\mathcal{E}_j|$ is decreasing in $j$ when $j\geq j^*$, and 
+increasing when $j< j^*$.
+It follows that $|\mathcal{E}_j|$ is maximized at $j=j^*$, and that we can find $j^*$ by seeing 
 where the right-hand side of Equation (\ref{eq.Yratio2}) is close to 1.   
 
 %equation containers everywhere, unlabeled though, not sure what journal wants.
@@ -467,30 +451,14 @@ K \;=\;   \frac{ V_{latt} }{aW}\, \frac{   A_3W^{\gamma_3-1}(q-1)^2}{q} \,,
              %K \;=\;   \frac{ V_{latt} }{aW}\, \frac{   A_3W^{\gamma_3-1}(q-1)^2}{q} \,,
 \end{equation}
 
-\noindent which can be rewritten as, 
+\noindent As explained in the supplement, this leads to the approximation,
 
-% %removed for reasons detailed below
-% \begin{equation}
-%     \label{}
-% a-j_{fixed}-\frac{1}{2} \; \approx\;    \frac{n_S}{K+n}   \,.
-% \end{equation}
-
-%added new page as formatting was off
-
-
-%jumped straight to the final approximation, as Ozzy asking why we did all of that which would require getting in the technicalities of how the mechanics of this approximation theory 
-%%Bring this back!!!!
-%since that is (look at paper copy)
-
-%We observe that $K\gg n$; indeed,  $V_{latt}/aWn \,=\,V_{latt}/A_{latt}\gg 1$.  
-%Thus we can replace $K+n$ by $K$ in the above, and omit the term $\frac{1}{2}$, resulting in the   
-%approximation 
 \begin{equation}
     \label{eq.jstar}
-     1-\frac{j_{fixed}}{a}     \; \approx   \; 
+     1-\frac{j^*}{a}     \; \approx   \; 
         \left(  \frac{n_S\,W}{V_{latt} }\right) \,\left(   \frac{q}{A_3W^{\gamma_3-1}(q-1)^2}\right)  \,.
 \end{equation}
-The above equation can be interpreted as follows.  The left hand side, $1-\frac{j_{fixed}}{a}$, is the fraction of the colloid sphere's surface that is covered by short monomers.  The ratio $n_SW/V_{latt}$ gives
+The above equation can be interpreted as follows.  The left hand side, $1-\frac{j^*}{a}$, is the fraction of the colloid sphere's surface that is covered by short monomers.  The ratio $n_SW/V_{latt}$ gives
 the concentration of monomers corresponding to those appearing on the short chains only.
 %%commented it out as Ozzy asks if this is necessary
 %The quantity in the second set of parentheses in Equation (\ref{eq.jstar}) cannot be large, since $q<(q-1)^2$ and $\gamma_3>1$.
@@ -577,7 +545,7 @@ Enthalpic contributions include the interaction type and strength between the po
 
 \subsubsection{4.1.5a Enthalpic Considerations}
 
-In considering the preferential adsorption of PAA onto PAH-coated particles, we assume uniform capping of the $SiO_2$ with the polycation, PAH.  Thus all potential adsorption surface sites are assumed to be entirely composed of PAH repeat units, and the adsorption occurs on a chemically homogeneous surface.  This is a reasonable assumption for PAH adsorbed in excess concentration and under solution conditions that render it a weakly charged polycation (i.e., adsorption solution adjusted to pH = 9, near the pK of PAH).\cite{Burke2003,Smith2003}  This implies that all electrostatic attractions between identical polycations and polyanions are energetically equivalent (i.e., of equivalent $k_B$T, since in both cases each PAA sample contains an equal number of repeat units).\cite{Dubas1999}  Additionally, the enthaplic loss derived from displacement of counterions from their associated polyelectrolytes is also similar for the short and long chain systems.  Hence, if we assume that the electrostatics is one of the dominant driving forces in multilayer formation, we can simplify the thermodynamic comparison by presenting an ideal case in which the enthalpic energy is identical in the two cases, under identical solvent conditions (i.e., pH value and salt concentration). 
+In considering the preferential adsorption of PAA onto PAH-coated particles, we assume uniform capping of the $SiO_2$ with the polycation, PAH.  Thus all potential adsorption surface sites are assumed to be entirely composed of PAH repeat units, and the adsorption occurs on a chemically homogeneous surface.  This is a reasonable assumption for PAH adsorbed in excess concentration and under solution conditions that render it a weakly charged polycation (i.e., adsorption solution adjusted to pH = 9, near the pK of PAH).\cite{Burke2003,Smith2003}  This implies that all electrostatic attractions between identical polycations and polyanions are energetically equivalent (i.e., of equivalent $k_B$T, since in both cases each PAA sample contains an equal number of repeat units).\cite{Dubas1999}  Additionally, the enthaplic loss derived from displacement of counterions from their associated polyelectrolytes is also similar for the short and long chain systems.  Hence, if we assume that the electrostatics is one of the dominant driving forces in multilayer formation, we can simplify the thermodynamic comparison by presenting an ideal case in which the enthalpic energy is identical in the two cases, under identical solvent conditions (i.e., pH value and ionic strength). 
 
 Interestingly, the addition of a high concentration of electrolyte has been shown to influence the adsorption of polyelectrolytes of varying chain lengths.  In previous adsorption studies of a strongly charged polyelectrolyte, poly(styrene sulfonate) onto a chemically homogeneous $Fe_2O_3$ surface, preferential adsorption was observed for shorter chains from a salt-free solution while longer chains were preferred in the presence of 0.1 M NaCl.\cite{Ramachandran1987,Ramachandran1988}  Adsorption studies of PAA,\cite{Wright1987} polyacrylate,\cite{Bain1982} and carboxymethyl cellulose\cite{Bain1982} adsorbed onto $BaSO_4$ report similar preferential adsorption of low molecular weight components in the absence of salt.  However, these adsorption isotherms reveal significant displacement of the low molecular weight with the high molecular weight in the presence of 0.5 M NaCl.\cite{Bain1982} This adsorption behavior is rationalized using a sequential adsorption process, which suggests that first, smaller chains are adsorbed.\cite{DeLaat1995}  For example, short PAA chains initially adsorbed eventually generate an electrostatic barrier from charge overcompensation occurring on the positive surface.  This barrier strongly affects the diffusion of chains towards the PAA covered surface.  Specifically, the barrier can prevent longer chains from accessing the surface, and thus limits their displacement of pre-adsorbed shorter chains.  With an increased salt concentration the barrier is lowered, permitting longer chains to reach the surface and adsorb.  At this point, the adsorption preference is shifted to longer chains as experimentally observed.\cite{DeLaat1995}  We therefore suggest that our observation of preferred adsorption of longer PAA chains onto PAH after a 24 h adsorption period is likely restricted to the time-window past which such displacement effects are likely to occur.  Further supporting evidence for the occurrence of short-chain displacement is given by recent adsorption experiments of model cationic oligomers onto colloids,\cite{Shin2001} and short polyions assembled onto proteins,\cite{Houska2004} which suggest that shorter chains have more difficulty forming loops and tails under assembly conditions where the polyion is weakly ionized.  As such, adsorbed short-chain polyions can be more easily displaced by longer chains from failure to make a sufficient number of ionic contacts.  
 
@@ -592,29 +560,32 @@ In determining the effect of entropy on the preferential adsorption of short ver
 
 \subsubsection{4.2.1 Validation of Model to Experimental Data}
 
-Figure 7 demonstrates the decreasing behaviour of the ratio of probabilities $\left(\frac{\mathcal{E}_{j+1}}{\mathcal{E}_j}\right)$, as described by the mean field lattice model. Using the experimental data we observe the ratio of probabilities approaching one, from functional values greater than one, corresponding to $\mathcal{E}_j$ approaching a maximum value.
+To verify the mean field lattice model, we test it with the data from the experiment. This is shown in Figure 7, which demonstrates the decreasing behaviour of the ratio of probabilities $\left(\frac{\mathcal{E}_{j+1}}{\mathcal{E}_j}\right)$ as a function of quantity of $nW$-mers (long-chains) adsorbed to the colloid surface. We observe the ratio of probabilities approaching one, from functional values greater than one, corresponding to $\mathcal{E}_j$ approaching a maximum value. This implies, that the system has a preference for full coverage of colloid surface by $nW$-mers (long-chains). 
 
 
 \begin{figure}[H]
 \includegraphics[scale=0.50]{fig11.png}
-\caption{Ratio of Probabilities}
+\caption{Ratio of Probabilities as a function of number of long-chain mers bound to the colloid surface}
 \label{figure 11}
 \end{figure}
 
-(Spyros)
-We proceed to bridge the model based on the the ratio of configurations $\mathcal{E}_{j}$ to that of preferential entropy values, using a derivation of the Boltzmann entropy expression from the ratio of configurations (derivation in supplement), and then graphed the experimental data using the derived expression for entropy. As depicted in Figure 8, there is a decreasing, yet positive rate of change of S for the incremental addition of j long chains on the colloid surface. Not only is there a positive entropy increase as one adds additional long chain Polymers to the surface, but it is also steadily decreasing the increments of entropy change as more and more long chains are added to the surface, suggestive of entropy approaching a plateau, or more specifically, a maximum value. 
+%%killed this given it would open a can of worms in an adjacent discipline
+%We proceed to bridge the model based on the the ratio of configurations $\mathcal{E}_{j}$ to that of preferential entropy values, using a derivation of the Boltzmann entropy expression from the ratio of configurations (derivation in supplement), and then graphed the experimental data using the derived expression for entropy. As depicted in Figure 8, there is a decreasing, yet positive rate of change of S for the incremental addition of j long chains on the colloid surface. Not only is there a positive entropy increase as one adds additional long chain Polymers to the surface, but it is also steadily decreasing the increments of entropy change as more and more long chains are added to the surface, suggestive of entropy approaching a plateau, or more specifically, a maximum value. 
 
 
-% this figure is within the range of kT's (4.11×10−21J) but the value that fluctuates is 6 orders less, not sure if I should omit completely
-\begin{figure}[H]
-\includegraphics[scale=0.6]{fig12.png}
-\caption{Change in Entropy}
-\label{figure 12}
-\end{figure}
+% % this figure is within the range of kT's (4.11×10−21J) but the value that fluctuates is 6 orders less, not sure if I should omit completely
+% \begin{figure}[H]
+% \includegraphics[scale=0.6]{fig12.png}
+% \caption{Change in Entropy}
+% \label{figure 12}
+% \end{figure}
 
-Our experiment has shown a clear preference for short chains to remain in the solution, to that of the surface of the colloid, because the preferential pathway of the system is to remove the obstruction of long chains in the solution, as this would vastly increase the freedom  of short chains in solution and thus remove any constraints on the entropic ranges of the short chains. Therefore, it is believed that long chains are forced to the surfaces of the colloids, given that it is the only path that would not restrict the short chains. This is now also demonstrated by the model, because we observe that as one adds more and more long chains to the colloid the probability of that occurrence of specific number of long chains increases. Therefore, from the perspective of the colloid surface, the probability of having maximal coverage by long chains is greater than the probability of full coverage by short chains.
+%tha se rotisei gia auto eimai sigouros, one is full long vs full short, the other is predecessor vs successor j to j+1
+Experimental data has shown that configurational entropy differences drive the preferential adsorption of longs on the surface, this implies that the occurrence of an arrangement with complete coverage of a colloid surface by long-chains has a greater probability of occurring than that of complete short-chain coverage. The model demonstrates this by showing that as one incrementally increases the number of bonded long chains inputted in the model, the output of the model gives a probability of that arrangement (of number of long chains bound to the surface of the colloid) occurring that is greater than the probability that was based on the preceding increment of bonded long chains. Therefore, iterating this method from a scenario of complete coverage of short-chains to that of long-chains we can conclude that complete coverage by adsorbed long-chains has a greater probability of occurring.
 
-(end of Spyros)
+%this is done both by testing where 1 resides and if it is unique (symbolically), and (numerically) by testing the raw values and seeing what the outputs truly are.
+
+%the one means that the values will never get any higher than that and thus it is a maximum (probability of occuring in relation to the rest), the location (on the j line , ie; number of longs on surface) of this maximum is key to seeing if our hypothesis is correct, that the maximum is complete coverge by longs 
 
 
 \section{Conclusions}
