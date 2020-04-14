@@ -46,7 +46,7 @@
 \affiliation{Department of Physics and Astronomy, York University, Toronto, ON, Canada. M3J 1P3}
 \email{omermut@yorku.ca}
 
-
+%Consider adding combinatorial to the title. You are a mathematician. It doesn't really matter, but it is nice if you can illustrate on your cv that you have done a mathematical thingy. Maybe something like "A combinatorial perspective upon the effects of chain length in the layered adsorption of polyelectrolytes to surfaces: Theory and Experiment"
 \title[An \textsf{achemso} demo]
   {Effect of Chain Length on the Layered Adsorption of Polyelectrolytes to Surfaces: Theory and Experiment}
 
@@ -56,11 +56,37 @@
 \begin{document}
 
 \begin{abstract}
+Understanding the adsorption behaviour of charged self-assembling macromolecules onto surfaces is important in various applications governed by biointerfacial phenomena, soft matter films fabrication, and biomedical engineering of tissue scaffolds.  We study here the role of polyelectrolyte chain length in the competitive adsorption of a simple model polyanion, poly(acrylic acid), onto silica particles capped with a model polycation, poly(allylamine hydrochloride).  Theoretical calculations for neutral polymers show that there is preferential adsorption that is dependant on the chain length, number of mers, of the polymer.  We have performed fluorescence experiments to observe chain-length dependence of polyelectrolyte adsorption onto an oppositely charged polyelectrolyte covering a spherical silica nanoparticle surface in dilute aqueous solution conditions.  Preferential adsorption was measured by comparing the fluorescence intensities  of the  two  fluorophore-labeled  (NMA-PAA$_{450K}$,  and Dan-PAA$_{2K}$) polyacrylic acid samples specific for 450K and 2K-mers, respectively.  To validate experimental results, a computational model was developed that examined the entropy probability between the different arrangements of two polymer length chains of polyacrylic  acid  on  the  surface  of  the  silica  nanoparticles.   This  was  done  by  comparing every scenario of surface coverage, using the associated likelihood of its occurrence.  Both spectroscopic experiment results and the combinatorial model demonstrated that there is an entropic preference for complete adsorption of the longer 450K-mers polyacrylic acid chain  vs  2K-mers. This study provides insights on entropy driven chain-length  dependence  in  layer by layer assembly, enabling optimization of industrial processes and developments of polyelectolyte membranes and coatings.  
 
+% We study the role of polyelectrolyte chain length in the adsorption of a simple model polyanion, poly(acrylic acid) onto silica particles capped with a model polycation, poly(allylamine hydrochloride). 
+% %%moved it up here (1)
+% Studying the adsorption behaviour of charged macromolecules is important in order to understand various relevant biological surface and biointerface phenomena, also due to the ever increasing utility of self-assembled films in industrial applications, such as, for example, in the biomedical industry.As observed previously from theoretical calculations for neutral polymers, preferential adsorption is dependant on the chain length. 
+% %Maybe get rid of the word experiment
+% The experiment was done using a technique for preparing polymer thin films which uses electrostatic interactions between oppositely charged polyelectrolytes to assemble a multilayer organic film. The preferential adsorption was measured using the fluorescence intensity of the two fluorophore-labeled polyacrylic acid samples being compared. To validate the experimental results, a combinatorial model was developed that examined the preferential behaviour of the system by computing the likelihood of different arrangements of two different polymer lengths of polyacrylic acid on the surface of the silica particles.
+% %%moved it here (2)
+% The experimental results and the combinatorial model demonstrated that there is a preference for the complete adsorption of the longer of the two polyacrylic acid chains on the silica particle surface. 
+
+% \noindent \textbf{my editing commentary:} 
+
+
+
+% \noindent\textit{
+% \begin{enumerate}
+%     \item I would put a little bit more about the model, but I don't want to confuse the reader both on the grounds that this is an experimental paper, and because the model is confusing AF,lol
+%     \item Also I need a strong close becasue this ends off weak
+% \end{enumerate}
+% }
+
+
+% %maybe a few more words on the model itself (I fear saying too much or not getting in to it and confusing people 
+% %moved it up before this sentence
+% %%moved this off to the intro...
+% %(1)% Studying the adsorption behaviour of charged macromolecules is important in order to understand various relevant biological surface and biointerface phenomena, also due to the ever increasing utility of self-assembled films in industrial applications, such as, for example, in the biomedical industry.
+% %(2)%Moved this up
+% % The experimental results and the combinatorial model demonstrated that there is a preference for the complete adsorption of the longer of the two polyacrylic acid chains on the silica particle surface.
 \end{abstract}
-
-%Professor Madras informed me that section number isn't a standard for macromolecule
-\section{2.Introduction}
+\newpage
+\section{2. Introduction}
 
 In the interest of developing new molecular architectures that cover a wide range of length scales, various methods to self-assemble and organize polymers on surfaces continue to be explored, from covalent attachment techniques\cite{doi:10.1002/ijch.199600050,B210143M,doi:10.1002/masy.200450305} to physisorption approaches.\cite{Chen1992,Serizawa2002}  Recently, a new technique for preparing polymer thin films which uses electrostatic interactions between oppositely charged polyelectrolytes to assemble a multilayer organic film, has attracted attention from broad areas of materials science.\cite{Decher1997}  Polyelectrolyte multilayer films (PEMs) are built-up layer-by-layer (LBL) by alternating adsorption of polycations and polyanions from aqueous solution onto a surface.\cite{Decher2006}  Growing interest in these self-assembled films can in part be attributed to the fact that their fabrication is experimentally simple, and versatile with respect to the surfaces and materials that can be utilized.  Furthermore, industrial applications of functional polyelectrolyte multilayer films (PEMs), for example as biomedical materials, have given impetus to explore in detail the driving forces in LBL formation, interactions between adsorbed polyelectrolyte layers, and the limitations for LBL self-assembly of polyelectrolytes.
 
@@ -112,7 +138,7 @@ We used poly(allylamine hydrochloride) (PAH) as received from Polysciences, Inc.
     \label{figure 1}
 \end{figure}
 
-and the two labeled poly(acrylic acids) are presented in Figure 4.1.  We prepared aqueous polyelectrolyte solutions of concentration 10–2 M (based on the molecular weight of repeat units) using 18.2 M$\Omega\cdot$cm resistivity Millipore Milli-Q water and the adsorption experiments were done in the presence of 1 M NaCl.  
+and the two labeled poly(acrylic acids) are presented in Figure 4.1.  We prepared aqueous polyelectrolyte solutions of concentration $10^{–2} M$ (based on the molecular weight of repeat units) using 18.2 M$\Omega\cdot$cm resistivity Millipore Milli-Q water and the adsorption experiments were done in the presence of 1 M NaCl.  
 
 Two naphthalene-based fluorophores with amine functional groups, 5-dimethylaminonaphthalene-1-(N-(2-aminoethyl))sulfonamide (also known as dansyl ethylenediamine), and 1-naphthalmethylamine were purchased from Molecular Probes, and Sigma-Aldrich respectively.  Our adsorbing surface was colloidal silica of 70-100 nm in diameter, received from Nissan Chemical Industries. The pH of the solutions was adjusted to a value of 9.0 using NaOH.  At pH = 9.0, we can observe the adsorption of strongly charged PAA onto a mostly weakly charged PAH surface (since PAH was first adsorbed onto the colloidal particles).
 
@@ -135,7 +161,8 @@ The competitive adsorption of long (450 K) versus short (2 K) chains of PAA was 
 \subsubsection{3.2.1 Development of Mean-Field lattice model}
 
 %Refer to 1st page of parkbarret
-Here we develop a combinatorial approximation method that outputs the likelihood of each possible configuration, with which we model the preferential behaviour of the system.
+Here we develop a combinatorial approximation method %that outputs a value that corresponds to the likelihood of each possible configuration, with which we 
+to model the preferential behaviour of our system.
 %my intro above hopefully it flows...
 It has been recognized that long polymers are
 preferentially adsorbed compared to shorter polymers,
@@ -143,27 +170,49 @@ due to the short polymer's greater gain of
 translational entropy per monomer in three dimensions
 as compared to two 
 %(see for example Sections 4.4.2.1 and 5.4.1 of G.J. Fleer et al)
-\cite{Fleer1993}.In light of the small number of polymers on each
+\cite{Fleer1993}.  
+In light of the small number of polymers on each
 spherical surface, we adapt existing methods to a
-fully discrete model to analyze this phenomenon.  We will also maintain the assumption from the experiment, that the enthalpic energy is identical in both the scenarios of either complete short or long-chain adsorption to the colloid surface. 
+fully discrete setting to analyze this phenomenon in our
+situation.  The consideration that the enthalpic energy is identical in both the scenarios of complete short or long-chain adsorption to the colloid surface is %also
+maintained for the model, thereby reducing our problem
+to one of pure combinatorial entropy. 
 
-We shall use a lattice model to describe our experimental situation.  
+The conclusion of our lattice model will essentially
+be the following. 
+Assume that both short and long polymers 
+are dilute in the solvent, and that the 
+surface of each colloidal sphere is completely covered 
+by polymer chains.  Then with high probability, 
+the fraction of the sphere's surface that is 
+covered by short chains is small; more precisely, it 
+is approximately proportional
+to the fraction of the solution's volume that is
+occupied by the short polymers (which is a small
+number).  See  Equation (\ref{eq.jstar}) and discussion thereof for a more precise statement.
+
+
+We shall use the following lattice model to describe our experimental situation.  
 Lattices will appear in two ways:  (1) covering the surface of a sphere by a two-dimensional lattice, and
 (2) filling space with a regular three-dimensional cubic lattice.  
-The geometry of the lattices will not be important.  
+The geometry of the lattices will not play a significant role.  
 %We shall use the simple cubic lattice for our three-dimensional lattice.
-We shall assume that the two-dimensional lattice has coordination number $q$ 
+We let $q$ be the coordination number of the two-dimensional lattice 
 (that is, each site on the surface has exactly $q$ neighbouring sites).  We assume that 
-the distance between lattice sites corresponds to the distance between adjacent monomers within a 
-polymer.  We assume that in equilibrium, every lattice site in the surface is covered by an adsorbed 
-monomer.
-%Changed all V1 to V, in order to avoid confusion of it being some sort of index, as used in epsilon_i later on 
-Our experiment has a large number $n_{sphere}$ of spheres in a solution of volume $V_{sol}$.  To simplify 
-our model and keep the concentrations the same, we shall consider only a single sphere in a solution
+the distance between lattice sites corresponds to the distance between adjacent monomers within a polymer.  
+We assume that in equilibrium, every lattice site in the surface is covered by an adsorbed monomer.
+%Changed all V1 to V, in order to avoid confusion of it being some sort of index, as used in epsilon_i later on
+We also assume that each polymer either has every monomer adsorbed onto the surface, or else has no adsorbed monomers (in the terminology of Fleer \textit{et al.}\cite{Fleer1993}, the adsorbed chains
+have no ``loops'' or ``tails'').
+
+Our experiment has a large number $n_{sphere}$ of spheres in a solution of volume $V_{sol}$.  
+To simplify 
+our model and without changing the concentrations, we shall consider only a single sphere in a solution
 of volume $V:=V_{sol}/n_{sphere}$.  We shall refer to this as our model system.
 We shall view this small three-dimensional region of the solution in our model system as being filled by a 
 cubic lattice.
-Let $V_{latt}$ be the number of lattice sites in our solution region of volume $V$.
+Let $V_{latt}$ be the number of sites of the cubic 
+lattice in our solution region of volume $V$.
 
 
 
@@ -171,36 +220,17 @@ Let $V_{latt}$ be the number of lattice sites in our solution region of volume $
 % We shall consider polymers of two different lengths, which we shall call ``short'' and ``long.''  Their lengths
 % will be described by two positive integer parameters $W$ and $n$.
 
-% \begin{verse}
-% A \textbf{short polymer} will consist of $W$ monomers.  
-% Let $n_S$ be the number of short polymers in the model system. 
-% \\
-% A \textbf{long polymer} will consist of $nW$ monomers.  
-% Let $n_L$ be the number of long polymers in the model system. 
-% \end{verse}
-
-
-
-We shall often refer to our short and long-chain polymers as $W$-mers and $nW$-mers respectively.
+***EDIT***  We shall often refer to our short and long-chain polymers as $W$-mers and $nW$-mers respectively.
 %check for repetition
 Of these, some are adsorbed onto the surface of the sphere, and the others float freely in the 
 solution of volume $V$. 
 Additionally, we let the total mass of the two kinds of monomers in our system be the same, so we assume that $n_S \,=\, n\cdot n_L$.
 
-% this used to be in list form (latex verse format) but I linearized it as per Ozzy's request
-% not sure if I should be using commas and if I should boldface the Values, Expressions
-%also the parenthesis "(because..."  clashes with "n(a-j)"
 
-%insert definition of j here!!!
-We let the number of $nW$-mers (long-chains) in solution to be $n_L-j$, the number of $W$-mers (short-chains) adsorbed on the surface to be $n(a-j)$, because there are $anW$ sites on the surface, all occupied, of which $jnW$ are occupied by $nW$-mers (long-chains), leaving $anW-jnW$ to be  occupied by $W$-mers (short-chains), and the number of $W$-mers (short-chains) in solution to be  $n_S-n(a-j)$.
-
-
-% %commented this out and shifted up as well
-% We shall often refer to our short and long polymers as $W$-mers (short-chains) and $nW$-mers (long-chains) respectively.
-% We shall want the total mass of the two kinds of monomers in our system to be the same, so we 
-% shall assume that $n_S \,=\, n\cdot n_L$.
+***MOVE THIS LATER**** We let the number of $nW$-mers (long-chains) in solution to be $n_L-j$, the number of $W$-mers (short-chains) adsorbed on the surface to be $n(a-j)$, because there are $anW$ sites on the surface, all occupied, of which $jnW$ are occupied by $nW$-mers (long-chains), leaving $anW-jnW$ to be  occupied by $W$-mers (short-chains), and the number of $W$-mers (short-chains) in solution to be  $n_S-n(a-j)$.
 
 %reversed the sequence, by starting with definition and then introducing term as per Ozzy
+***MOVE THIS LATER***
 The number of lattice sites on the surface of one sphere is $A_{latt}$, and the number of long polymers that would 
 % removed exactly
 %removed a from linear font, as it is introduced as an expression
@@ -210,7 +240,7 @@ fully cover all the sites of the surface is:
     \label{eq.Number of Long Polymers that Fully Cover All Sites}
        a  \;:=\;  \frac{A_{latt}}{nW}
 \end{equation}
-
+%
 Then $na$ is the number of short polymers that can completely cover the surface.
 For simplicity, we assume that $a$ is an integer.
 
@@ -220,189 +250,132 @@ For simplicity, we assume that $a$ is an integer.
 % the three-dimensional solution than on the two-dimensional surface.
 
 
-We shall model our polymer configurations in the solution in a slightly different way from those on the surface.
-The difference in approach is due to the fact that the polymers are dense on the surface but 
-dilute in the solution.  We shall model the polymer configurations in the solution as a collection of 
+We shall model our polymer configurations as walks in lattice, but we shall use a slightly different approaches for the solution and for the surface.
+The difference is due to the fact that the polymers are dense on the surface but 
+dilute in the solution.  We shall model the configurations of polymers in the solution as a collection of 
 self-avoiding walks in the cubic lattice, with no interaction between walks (because of the dilute solution).
-For the polymers adsorbed densely on the surface lattice, we shall use mean-field calculations 
-of the Flory-Huggins type \cite{Flory1953}.
+We shall view the polymers adsorbed densely on the surface lattice as non-reversed walks constrained to
+be mutually and self-avoiding.  Since enumeration of
+dense walks is difficult, we shall use mean-field 
+approximations of the Flory-Huggins type \cite{Flory1953}.
 % (similar to the lattice approach in Park et al., Macromolecules 2001;
 %(see also Section XII.1 of \cite{Flory1953}).
 
-%Recall that our ensemble consists of $n_S$ (short) $W$-mers (short-chains) and $n_L$ (long) $nW$-mers (long-chains).
-%Of these, some are adsorbed onto the surface of the sphere, and the others float freely in the 
-%solution of volume $V$.  We write $j$ for the number of (long) $nW$-mers (long-chains) that are adsorbed 
-%onto the surface in a particular configuration of the system.
+In our model system, we assume that the number of chains of each length is fixed.  
+Let $n_S$ be the number of short chains
+and let $n_L$ be the number long chains.
+We also assume that each
+short chain has the same number of monomers, 
+which we shall denote $Len_S$.  This ``length'' 
+will equal the number of lattice sites (and be one
+more than the number of steps) in each
+walk that corresponds to a short chain.
+Similarly, we shall assume that each long 
+chain has $Len_L$ monomers.
+In the rest of this section, a ``configuration''
+of our model system refers to a collection of $n_S$
+walks of length $Len_S$ and $n_L$ walks of length
+$Len_L$ (all disjoint), 
+where each walk is either entirely in the 
+surface lattice or else does not touch the surface
+lattice, and the surface lattice is completely 
+covered by walks.  
+We shall write $\mathcal{E}$ for the 
+set of all configurations of our model system.
 
-%%removed this and moved it to page 8 this may create issues in fluidity, will investigate further
-%This implies that
-
-
-% \begin{verse}
-%  ($i$) the number of $nW$-mers (long-chains) in solution is $n_L-j$;
-%  \\
-%  ($ii$) the number of $W$-mers (short-chains) adsorbed on the surface is $n(a-j)$ (because there are $anW$ sites on the
-%  surface, all occupied, of which $jnW$ are occupied by $nW$-mers (long-chains), leaving $anW-jnW$ to be 
-%  occupied by $W$-mers (short-chains)); and
-%  \\
-%  ($iii$) the number of $W$-mers (short-chains) in solution is $n_S-n(a-j)$.
-%  \end{verse}  
-We shall write $\mathcal{E}_j$ for the set of all configurations that have exactly $j$ $nW$-mers (long-chains) adsorbed 
-onto the surface.  Observe that the possible values of $j$ are the integers from 0 to $a$.
-The full space of configurations in our model is $\cup_{j=0}^a {\mathcal{E}_j}$, 
-which we shall call $\mathcal{E}$.
+Let $a$ be the maximum number of long chains that
+can be fully adsorbed onto the surface lattice.
+For each integer $j$ with $0\leq j\leq a$, let
+$\mathcal{E}_j$ be the set of all configurations that have exactly $j$ long chains adsorbed 
+onto the surface.  
+% Observe that the possible values of $j$ are the integers from 0 to $a$.
+Then full space of configurations in our model,
+$\mathcal{E}$, is equal to 
+$\cup_{j=0}^a {\mathcal{E}_j}$. 
+% which we shall call $\mathcal{E}$.
 
 Since the only energy in this model comes from the adsorption contacts between monomer and surface,
-and since the number of such contacts is the same (namely $A_{latt}$) in every configuration
+and since the number of such contacts is the same 
+(namely, the number of sites in the surface lattice)
+%(namely $A_{latt}$) 
+in every configuration
 in $\mathcal{E}$, we see that the energy of every configuration of $\mathcal{E}$ is exactly the same.
 Therefore, according to the Boltzmann distribution, every configuration in $\mathcal{E}$ is equally
-% changed this sentence partially
-likely. Thus to calculate the probabilities of events we count the configurations.
-Specifically, $|\mathcal{A}|$ is the number of configurations in a set $\mathcal{A}$, and the probability that $j$ long polymers are adsorbed is $\frac{|\mathcal{E}_j|}{|\mathcal{E}|}$   where $(j=0,1,\ldots,a)$.
+likely. Thus to calculate the probabilities of events we can simply count the configurations.
+Specifically, denote the number of configurations in a set $\mathcal{A}$ by $|\mathcal{A}|$.  
+Then the probability that $j$ long polymers are adsorbed is $\frac{|\mathcal{E}_j|}{|\mathcal{E}|}$   for $j=0,1,\ldots,a$.
 
-%% replace this with a linear text above
-% we have
-% \[
-%     \hbox{Probability that $j$ long polymers are adsorbed}  \;=\; 
-%     \frac{|\mathcal{E}_j|}{|\mathcal{E}|}\,,   \hspace{5mm}(j=0,1,\ldots,a).
-% \]
-Thus, to find the most likely number of $nW$-mers (long-chains) %(and $W$-mers (short-chains))
-to be adsorbed onto the sphere,
-we need to find which of the sets $\mathcal{E}_j$ is largest.
+Thus, to find the most likely number of long chains %(and $W$-mers (short-chains))
+that will be adsorbed onto the sphere, we need to 
+find which of the sets $\mathcal{E}_j$ is largest.
+We shall show that there is a value $j^*$
+such that 
+\begin{equation}
+    \label{eq.EEcomp}
+  |\mathcal{E}_0| \;<\; |\mathcal{E}_1|\; < \; 
+ \cdots\; < \; 
+  |\mathcal{E}_{j^*-1}|\; < \;|\mathcal{E}_{j^*}|\; >
+    \; |\mathcal{E}_{j^*+1}| \;>\; \cdots \; > \; |\mathcal{E}_a|\,,
+\end{equation}
+and that $j^*$ is approximated by Equation (\ref{eq.jstar}).  Thus $j^*$ is the most likely
+number of long chains to be adsorbed.
+****MOVE THIS LATER:****
+Observe that we can characterize $j^*$ via Equation (\ref{eq.EEcomp}) by saying that $j^*$ is the smallest
+value of $j$ for which $|\mathcal{E}_{j+1}|/|\mathcal{E}_j|$ is less than 1.
+Thus our strategy for finding the most probably value
+$j^*$ will be to obtain an approximation for the ratio
+$|\mathcal{E}_{j+1}|/|\mathcal{E}_j|$ and to identify
+the value of $j$ for which it equals 1 --- i.e., where
+the ratio changes from being greater than 1 to being less than 1.
 
-
-
-
-\subsubsection{3.2.2 Ratio Approximation Formula}
+\subsubsection{3.2.2 Calculating the Maximum}
 %inserted a motivation that will explain why on page six we want to maximize epsilon j, also tried to flow into the first step of this modelling process being modelling the config of a single polymer
-We now wish to estimate the size of each $\mathcal{E}_j$, in order to  determine the maximum $\mathcal{E}_j$,which is the preferential configuration of the experimental system. We begin by modelling the configuration of a single  polymer in a dilute solution by a self-avoiding walk (SAW) in a lattice, where a path in the lattice does not visit any site more than once.
+We now wish to estimate the size of each set $\mathcal{E}_j$ ($j=0,1,\ldots,a$), in order to  determine which set is the largest.  
+As explained above, this corresponds to finding the preferred number of 
+long polymers of the experimental system. 
+
+Recall that our model system has $n_S$ short 
+polymers of length $Len_S$ and $n_L$ long polymers
+of length $Len_L$.  
+
+Let $S_{latt}$ be the number of lattice sites on 
+the surface of one sphere.  Then $a$, which we
+defined to be the maximum
+number of long polymers that can be (fully)
+adsorbed onto the surface of a sphere, is 
+\[
+     a  \;=\;  \frac{S_{latt}}{Len_L} \,.
+\]
+(We shall assume that the right-hand side of this equation is an integer.)  
+
+As mentioned in Section 3.2.1, we model the configuration of a single  polymer in a dilute solution by a self-avoiding walk (SAW) in a lattice, which is a path in the lattice that does not visit any site more than once.
 %reordered this 
 %put it back as it was as per Madras
-Let the number of SAWs that start from a specified lattice site (``the origin'') and visit a total of $\ell$ sites be represented as $c_{\ell}$. 
-
-%%KILLED THIS AND PUT ORIGINAL BACK
-%Additionally, let $\mu_3$ and $A_3$ be constants that depend on the choice of lattice, and $\gamma_3$ be a universal critical exponent that is the same for all three-dimensional lattices, their values are known to be approximately, \cite{Chen2002,Madras2013} 
-
+For each positive integer $\ell$, let $c_{\ell}$ be
+the number of SAWs that start from a specified site of the simple cubic lattice and visit a total of $\ell$ sites (including the starting site).
 %%KEPT MY SEQ VERSION OF THIS PART
 %The configuration of a single  polymer in a dilute solution is often modeled by a self-avoiding walk (SAW) in a lattice, i.e.\  a path in the lattice that does not visit any site more than once.
-A fundamental property of SAWs is the following.  
-Let $c_{\ell}$ be
-the number of SAWs that start from a specified lattice site (``the origin'') and visit a total of $\ell$ sites
-(including the starting site).   Then the 
-asymptotic behaviour of $c_{\ell}$ on the three-dimensional cubic lattice is 
+%A fundamental property of SAWs is the following.  
+Then the asymptotic behaviour of $c_{\ell}$ 
+%on the three-dimensional cubic lattice 
+is 
 \begin{equation}
     \label{eq.sawscale}
        c_{\ell}  \;\sim  \;  A_3 \, {\ell}^{\gamma_3-1}  \mu_3^{\ell}    \hspace{5mm}\hbox{as $\ell\rightarrow\infty$}.
 \end{equation}
-% (This has not been proven rigorously, but even mathematicians do not doubt its truth.) 
 Here $\mu_3$ and $A_3$ depend on the choice of lattice, but $\gamma_3$ is a universal critical exponent
 that is the same for all three-dimensional lattices.  
-Their values are known to be approximately \cite{Chen2002,Madras2013}
-
-%%not sure if I should incorporate this in the linear text too
-%Their values are known to be approximately \cite{Chen2002,Madras2013}
+For the simple cubic lattice, 
+their values are known to be approximately \cite{Chen2002,Madras2013}
 \begin{equation}
    \label{eq.gammas}   \mu_3 \;=\;  4.684, \hspace{5mm}
-        \gamma_3 \;=\;  1.162,    \hspace{5mm}\hbox{and}\hspace{5mm}
-    A_3  \;=\;    0.2573  \,.  %1.205/4.683 \;=\;  \,.
+        A_3 \;=\;  0.2573,    \hspace{5mm}\hbox{and}\hspace{5mm}
+   \gamma_3 \;=\;  1.162 \,.  %1.205/4.683 \;=\;  \,.
 \end{equation}
+(Chen and Lin\cite{Chen2002} used the 
+number of SAWs with $\ell$ \textit{steps} (i.e.\ $\ell+1$ \textit{sites}), which we write  $c_{\ell+1}=(A_3\mu_3)\ell^{\gamma_3-1}\mu_3^{\ell}$; %reference \cite{Chen2002} 
+they obtained $A_3\mu_3=1.205$.)
 
-%Am I permitted to say parameters and given????
-%\noindent Given the above parameters, a fundamental property of SAWs is that the asymptotic behaviour of $c_{\ell}$ on the three-dimensional cubic lattice is 
-%\begin{equation}
-%    \label{eq.sawscale}
-%       c_{\ell}  \;\sim  \;  A_3 \, {\ell}^{\gamma_3-1}  \mu_3^{\ell}    \hspace{5mm}\hbox{as $\ell\rightarrow\infty$}.
-%\end{equation}
-
-% (This has not been proven rigorously, but even mathematicians do not doubt its truth.) 
-% Here $\mu_3$ and $A_3$ depend on the choice of lattice, but $\gamma_3$ is a universal critical exponent
-% that is the same for all three-dimensional lattices.  
-% Their values are known to be approximately \cite{Chen2002,Madras2013}
-% \begin{equation}
-%   \label{eq.gammas}   \mu_3 \;=\;  4.684, \hspace{5mm}
-%         \gamma_3 \;=\;  1.162,    \hspace{5mm}\hbox{and}\hspace{5mm}
-%     A_3  \;=\;    0.2573  \,.  %1.205/4.683 \;=\;  \,.
-% \end{equation}
-%(Estimation in \cite{Chen2002} is for the number of SAWs with $\ell$ \textit{steps} (i.e.\ $\ell+1$ \textit{sites}), which we write  $c_{\ell+1}=(A_3\mu_3)\ell^{\gamma_3-1}\mu_3^{\ell}$; reference \cite{Chen2002} obtains $A_3\mu_3=1.205$.)
-
-%%Commented this out as it doesn't flow anymore given all derivations will be in the supplement.
-%Since the number of sites in the lattice corresponding to the region of solution is $V_{latt}$, 
-%we have $V_{latt}c_{\ell}$ ways to place a polymer of size ${\ell}$.  
-%As we are neglecting the possibility of overlapping polymers in the dilute solution, it follows that the number of ways to 
-%place $N$ identical $\ell$-mers is 
-%\begin{equation}
-%  \label{eq.Npoly}
-%   \frac{(V_{latt}c_{\ell})^N}{N!}  \,.   
-%\end{equation}
-
-\smallskip
-
-% For a particular choice of $j$, we want to know the number of ways to place $j$ $nW$-mers (long-chains) 
-% and $a(n-j)$ $W$-mers (short-chains) on the surface, without overlapping, to fill all $anW$ lattice sites on the surface.
-% This is a hard combinatorial problem, so we shall use the following mean-field (Flory-Huggins) approach.
-% We shall place one polymer at a time, starting with the long ones.
-% Let $\tilde{w}_k$ be the number of ways to place the $k^{th}$ $nW$-mer on the surface, given that
-% $(k-1)$ $nW$-mers (long-chains) have already been placed.  
-% To begin with, there are $anW-(k-1)nW$ available sites for the first monomer.  Recall that  $q$ is the number of
-% neighbours of each site in the surface lattice.
-% In the absence of other polymers, there would be $q$ choices for the second monomer in the chain,
-% and $q-1$ choices for each monomer after that (here we are using the non-reversed walk model of a polymer
-% instead of the fully self-avoiding model).  But the number of choices should on average be reduced 
-% by the fraction of the surface that has already been covered.  
-% Thus, when we are trying to place the second monomer of our chain, there are
-% $anW-(k-1)nW-1$ unoccupied sites, so each site has 
-% probability $[anW-(k-1)nW-1]/[anW]$ of being available.  
-% Thus there are $q[anW-(k-1)nW-1]/[anW]$ choices for the second monomer.  
-% Similarly, after $i$ monomers of the current chain have been placed ($i\geq 2$), the fraction of the
-% surface that has been covered is $[anW-(k-1)nW-i]/[anW]$, so there are 
-% $(q-1)[anW-(k-1)nW-i]/[anW]$ choices for the $(i+1)^{th}$ monomer in this chain.  
-% We conclude that 
-% \begin{eqnarray}
-%   \tilde{w}_k  & = &   [anW-(k-1)nW]\,\times \,q\left(\frac{ anW-(k-1)nW-1}{anW}\right)    \,\times
-%   \nonumber    \\
-%   & &    \hspace{22mm}
-%      \prod_{i=2}^{nW-1}(q-1)\left(\frac{ anW-(k-1)nW-i}{anW}\right)  
-%       \nonumber \\
-%  & = &    \frac{[anW-(k-1)nW]!}{[anW-knW]!} \,q\,  \frac{(q-1)^{nW-2}}{(anW)^{nW-1}}  
-%      \nonumber    \\
-%      & = &    \frac{[anW-(k-1)nW]!}{[anW-knW]!}   anW \frac{q}{(q-1)^2}\left(  \frac{q-1}{anW}\right)^{nW}.
-%      \label{eq.wk2}
-% \end{eqnarray}
-% Similarly, let $\tilde{u}_{\ell}$ be the number of ways to place the $\ell^{th}$ $W$-mer on the surface, given that
-% ${\ell}-1$ $W$-mers (short-chains) (or a total of $(\ell-1)W$ monomers) have already been placed.   The same 
-% argument as for $\tilde{w}_k$ gives
-% \begin{eqnarray}
-%   \tilde{u}_{\ell}  
-%  & = &    \frac{[anW-(\ell-1)W]!}{[anW-\ell W]!} \,q\,  \frac{(q-1)^{W-2}}{(anW)^{W-1}}  
-%      \nonumber    \\
-%      & = &    \frac{[anW-(\ell-1)W]!}{[anW-\ell W]!}   anW \frac{q}{(q-1)^2}\left(  \frac{q-1}{anW}\right)^{W}.
-%      \label{eq.uell2}
-% \end{eqnarray}
-
-% To evaluate $|\mathcal{E}_j|$, we assume that the unadsorbed solution
-% is dilute enough that we don't need to worry about mutual exclusion between the free floating
-% polymers.   
-% For $\mathcal{E}_j$, we have $j$ adsorbed $nW$-mers (long-chains), $na-nj$ adsorbed $W$-mers (short-chains), 
-% $n_L-j$ desorbed $nW$-mers (long-chains), and $n_S-n(a-j)$ desorbed $W$-mers (short-chains).   Thus, recalling 
-% Equations (\ref{eq.sawscale}) and  (\ref{eq.Npoly}), we have
-% \begin{equation}
-%     |\mathcal{E}_j|  
-%       \; = \; \frac{ \Psi_L^{n_L-j} }{(n_L-j)!} \,
-%           \frac{ \Psi_S^{n_S-n(a-j)} }{(n_S-n(a-j))!} \,
-%           \frac{\tilde{w}_1\tilde{w}_2\cdots \tilde{w}_j}{j!}
-%                      \,   \frac{\tilde{u}_{nj+1}\tilde{u}_{nj+2}\cdots \tilde{u}_{an}}{(n(a-j))!}
-%                                  \nonumber   \\
-%            & & \hspace{7mm}  \times \, \frac{\tilde{w}_1\tilde{w}_2\cdots \tilde{w}_j}{j!}
-%                     \,   \frac{\tilde{u}_{nj+1}\tilde{u}_{nj+2}\cdots \tilde{u}_{an}}{(n(a-j))!}  % \,e^{-nW\epsilon/kT}
-        \label{eq.Yj}
-% \end{equation}
-% where 
-% \begin{equation}
-%     \label{eq.psidef}   
-%   \Psi_L\;=\;V_{latt} A_3 (nW)^{\gamma_3-1} \mu_{3}^{nW}   
-%     \hspace{5mm}\hbox{and} \hspace{5mm}
-%      \Psi_S \;=\; V_{latt}A_3W^{\gamma_3-1}\mu_3^W \,.
-% \end{equation}
 
 
 
@@ -417,6 +390,7 @@ through the following approximation, of which a full derivation can be found in 
           \frac{(a-j-\frac{1}{2})}{n_S-n(a-j-\frac{1}{2})} \right)^{n+o(n)}   \,.
 \end{equation}
 We observe that the quantity on the right of Equation (\ref{eq.Yratio2}) decreases in $j$.
+
 
 %only concern is that min will throw people off, given that we are searching for a max....
 Let $j^*$ be the smallest value of $j$ for which the right-hand side of Equation (\ref{eq.Yratio2}) is still less than 1. We shall show show that $j^*$ is the most probable value of $j$ 
@@ -438,7 +412,7 @@ K \;=\;   \frac{ V_{latt} }{aW}\, \frac{   A_3W^{\gamma_3-1}(q-1)^2}{q} \,,
 \end{equation}
 
 
-%changed the text here slightly for flow
+
 %added noindents to fix the format, not sure if that's allowed, either by journal or by best practices
 \noindent Therefore $j^*$ satisfies,
 \begin{equation}
@@ -560,7 +534,7 @@ In determining the effect of entropy on the preferential adsorption of short ver
 
 \subsubsection{4.2.1 Validation of Model to Experimental Data}
 
-To verify the mean field lattice model, we test it with the data from the experiment. This is shown in Figure 7, which demonstrates the decreasing behaviour of the ratio of probabilities $\left(\frac{\mathcal{E}_{j+1}}{\mathcal{E}_j}\right)$ as a function of quantity of $nW$-mers (long-chains) adsorbed to the colloid surface. We observe the ratio of probabilities approaching one, from functional values greater than one, corresponding to $\mathcal{E}_j$ approaching a maximum value. This implies, that the system has a preference for full coverage of colloid surface by $nW$-mers (long-chains). 
+To verify the mean field lattice model, we test it with the data from the experiment. This is shown in Figure 7, which demonstrates the decreasing behaviour of the ratio of probabilities $\left(\frac{\mathcal{E}_{j+1}}{\mathcal{E}_j}\right)$ as a function of quantity of $nW$-mers (long-chains) adsorbed to the colloid surface. We observe the ratio of probabilities approaching one, from functional values greater than one, corresponding to $\mathcal{E}_j$ approaching a unique maximum value. This implies, that the system has a preference for full coverage of colloid surface by $nW$-mers (long-chains), because the probability of it occurring is greatest.
 
 
 \begin{figure}[H]
@@ -589,6 +563,11 @@ Experimental data has shown that configurational entropy differences drive the p
 
 
 \section{Conclusions}
+
+We have studied competitive adsorption of short- (2K) vs.\ long- (450 K) chain PAA polyelectrolyte macromolecules onto PAH coated silica spheres in aqueous solution. Observed both experimentally with optical fluorescence spectroscopy, and theoretically by a mean field lattice model, long-chains where preferentially adsorbed onto the surface when presented with an equal number of mers, while short chains preferred to reside in solution. This is rationalized and theoretically verified as due to a favorable gain in configurational entropy of long-chains at the surface in equilibrium. This study provides insights on entropy driven chain-length dependence in layer-by-layer assembly of polyelectrolyte multilayer surfaces and defines an important advancement in the development of a mathematical framework for directing adsorption behaviour and surface properties. Such insights on polyelectrolyte adsorption behavior and modeling will enable optimization of future industrial processes for developments of polyelectrolyte membranes, biomedical coatings, and applications in surface modification.
+
+
+
 
 \bibliography{LongShort}
 

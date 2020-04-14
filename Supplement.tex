@@ -63,26 +63,30 @@
 We shall use a lattice model to describe our experimental situation.  
 Lattices will appear in two ways:  (1) covering the surface of a sphere by a two-dimensional lattice, and
 (2) filling space with a regular three-dimensional lattice.  
-The geometry of the lattices will not be important.  We shall use the simple cubic lattice for our
-three-dimensional lattice.  
+The geometry of the lattices will not play a significant role.
+We shall use the simple cubic lattice for our three-dimensional lattice.  
 We shall assume that the two-dimensional lattice has coordination number $q$ 
 (that is, each site on the surface has exactly $q$ neighbouring sites).  We assume that 
 the distance between lattice sites corresponds to the distance between adjacent monomers within a 
-polymer.  We assume that in equilibrium, \textit{every lattice site in the surface is covered by an adsorbed 
-monomer}.
+polymer.  We assume that in equilibrium, every lattice site in the surface is covered by an adsorbed 
+monomer.  We also assume that in each polymer, either every 
+monomer is adsorbed or else no monomer is adsorbed.
 
 Our experiment has a large number $n_{sphere}$ of spheres in a solution of volume $V_{sol}$.  To simplify 
 our model and keep the concentrations the same, we shall consider only a single sphere in a solution
-of volume $V_1:=V_{sol}/n_{sphere}$.  We shall refer to this as our model system.
+of volume $V:=V_{sol}/n_{sphere}$.  We shall refer to this as our model system.
 We shall view this small three-dimensional region of the solution in our model system as being filled by a 
 cubic lattice.
-Let $V_{latt}$ be the number of lattice sites in our solution region of volume $V_1$. This is illustrated in the simple graphic in Figure 1.
+Let $V_{latt}$ be the number of lattice sites in our solution region of volume $V$. This is illustrated in the simple graphic in Figure 1.
 
 
 
 \begin{figure}[H] 
 \includegraphics[scale=0.5]{fig7.jpg}
-\caption{Volume of Model}
+\caption{Schematic of the model system (small box)
+inside the full solution (large box). The full system
+has volume $V_{sol}$ and contains many spheres.  The model
+system has volume $V$ and contains one sphere.}
 \label{figure 1}
 \end{figure}
 
@@ -152,7 +156,7 @@ In particular, writing $|\mathcal{A}|$ for the number of configurations in a set
 \]
 Thus, to find the most likely number of $nW$-mers (and $W$-mers) to be adsorbed onto the sphere,
 we need to find which of the sets $\mathcal{E}_j$ is largest.
-(Spyros Start)
+
 
 In order to better comprehend the model we provide an illustration Figure 2 with much simpler values than what would be considered the standard chain lengths in polymer science. We let each lattice point of area of one mer of PAA, be a square on the grid. Additionally, each long chain mer contact is represented by an L and a short chain mer by an S on the grid.  Suppose a short chain is 30-mers and long chain is 90-mers and the colloid surface has 3000 available single mer sites. The model is initialized with the colloid surface sites absolutely covered in exclusively short chains  which in this concrete example is 100 short chains. We then remove enough short chains in order to be able to replace them with our first long which in this example is occupies the sites of 3  short chains. We will continue to do this successive combination sampling process of adding more and more long chains in place of the equivalent number of mers in short chains until we get a maximal value for $\mathcal{E}_{j}$.
 
@@ -191,7 +195,7 @@ In order to better comprehend the model we provide an illustration Figure 2 with
     \label{figure 2}
 \end{figure}
 
-(End of Spyros)
+
 
 \noindent We now proceed to estimate the size of each $\mathcal{E}_j$.
 
@@ -393,7 +397,7 @@ raised to the power 1.]
 
 \subsection{Interpretations about $\mathcal{E}_{j}$ from ratio $\frac{\mathcal{E}_{j+1}}{\mathcal{E}_{j}}$}
 
-(Spyros Start)
+
 
 What is graphically portrayed in Figure 3 is that as one increases the number of long chains in a scenario of full surface coverage of the colloid, the ratio of probabilities crosses the threshold of the functional value being equal to one ($\frac{\mathcal{E}_{j+1}}{\mathcal{E}_{j}}=1$), this threshhold is representative of two consecutive configurations being equal in value and thus the the divided differences of $\mathcal{E}_{j+1}$ and $\mathcal{E}_{j}$ being equal to zero for interval,  $j\in[j^*, j^*+1]$. This preceeding statement is suggestive of the existence of a maximal critical point. 
 
@@ -414,7 +418,7 @@ $$= \left(k_B\cdot log\left(\mathcal{E}_{j+1}\right)\right)-\left(k_B\cdot log\l
 
 $$=S_{j+1}-S_{j}=\Delta S_{j\to j+1}$$
 
-(End of Spyros)
+
 
 \section{One-dimensional model}
 
