@@ -16,6 +16,7 @@
 
 
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% If issues arise when submitting your manuscript, you may want to
 %% un-comment the next line.  This provides information on the
@@ -174,8 +175,7 @@ as compared to two
 In light of the small number of polymers on each
 spherical surface, we adapt existing methods to a
 fully discrete setting to analyze this phenomenon in our
-situation.  The consideration that the enthalpic energy is identical in both the scenarios of complete short or long-chain adsorption to the colloid surface is %also
-maintained for the model, thereby reducing our problem
+situation.  Our model maintains the property that the enthalpic energy is identical in both the scenarios of complete short or long-chain adsorption to the colloid surface, thereby reducing our problem
 to one of pure combinatorial entropy. 
 
 The conclusion of our lattice model will essentially
@@ -185,7 +185,7 @@ are dilute in the solvent, and that the
 surface of each colloidal sphere is completely covered 
 by polymer chains.  Then with high probability, 
 the fraction of the sphere's surface that is 
-covered by short chains is small; more precisely, it 
+covered by short chains is small---more precisely, it 
 is approximately proportional
 to the fraction of the solution's volume that is
 occupied by the short polymers (which is a small
@@ -194,7 +194,7 @@ number).  See  Equation (\ref{eq.jstar}) and discussion thereof for a more preci
 
 We shall use the following lattice model to describe our experimental situation.  
 Lattices will appear in two ways:  (1) covering the surface of a sphere by a two-dimensional lattice, and
-(2) filling space with a regular three-dimensional cubic lattice.  
+(2) filling space (the solvent) with a regular three-dimensional cubic lattice.  
 The geometry of the lattices will not play a significant role.  
 %We shall use the simple cubic lattice for our three-dimensional lattice.
 We let $q$ be the coordination number of the two-dimensional lattice 
@@ -220,11 +220,11 @@ lattice in our solution region of volume $V$.
 % We shall consider polymers of two different lengths, which we shall call ``short'' and ``long.''  Their lengths
 % will be described by two positive integer parameters $W$ and $n$.
 
-***EDIT***  We shall often refer to our short and long-chain polymers as $W$-mers and $nW$-mers respectively.
-%check for repetition
-Of these, some are adsorbed onto the surface of the sphere, and the others float freely in the 
-solution of volume $V$. 
-Additionally, we let the total mass of the two kinds of monomers in our system be the same, so we assume that $n_S \,=\, n\cdot n_L$.
+%***EDIT***  We shall often refer to our short and long-chain polymers as $W$-mers and $nW$-mers respectively.
+%%check for repetition
+%Of these, some are adsorbed onto the surface of the sphere, and the others float freely in the 
+%solution of volume $V$. 
+%Additionally, we let the total mass of the two kinds of monomers in our system be the same, so we assume that $n_S \,=\, n\cdot n_L$.
 
 
 %***MOVE THIS LATER**** We let the number of $nW$-mers (long-chains) in solution to be $n_L-j$, the number of $W$-mers (short-chains) adsorbed on the surface to be $n(a-j)$, because there are $anW$ sites on the surface, all occupied, of which $jnW$ are occupied by $nW$-mers (long-chains), leaving $anW-jnW$ to be  occupied by $W$-mers (short-chains), and the number of $W$-mers (short-chains) in solution to be  $n_S-n(a-j)$.
@@ -250,14 +250,14 @@ Additionally, we let the total mass of the two kinds of monomers in our system b
 % the three-dimensional solution than on the two-dimensional surface.
 
 
-We shall model our polymer configurations as walks in lattice, but we shall use a slightly different approaches for the solution and for the surface.
+We shall model our polymer configurations as walks in lattice, but we shall use slightly different approaches for the solution and for the surface.
 The difference is due to the fact that the polymers are dense on the surface but 
 dilute in the solution.  We shall model the configurations of polymers in the solution as a collection of 
 self-avoiding walks in the cubic lattice, with no interaction between walks (because of the dilute solution).
 We shall view the polymers adsorbed densely on the surface lattice as non-reversed walks constrained to
 be mutually and self-avoiding.  Since enumeration of
-dense walks is difficult, we shall use mean-field 
-approximations of the Flory-Huggins type \cite{Flory1953}.
+dense walks is difficult, we shall use a mean-field 
+approximation of the Flory-Huggins type \cite{Flory1953}.
 % (similar to the lattice approach in Park et al., Macromolecules 2001;
 %(see also Section XII.1 of \cite{Flory1953}).
 
@@ -268,7 +268,7 @@ We also assume that each
 short chain has the same number of monomers, 
 which we shall denote $\leng_S$.  This ``length'' 
 will equal the number of lattice sites (and be one
-more than the number of steps) in each
+more than the number of bonds or steps) in each
 walk that corresponds to a short chain.
 Similarly, we shall assume that each long 
 chain has $\leng_L$ monomers.
@@ -282,6 +282,7 @@ lattice, and the surface lattice is completely
 covered by walks.  
 We shall write $\mathcal{E}$ for the 
 set of all configurations of our model system.
+This is a large but finite set.
 
 Let $a$ be the maximum number of long chains that
 can be fully adsorbed onto the surface lattice.
@@ -295,15 +296,14 @@ $\cup_{j=0}^a {\mathcal{E}_j}$.
 % which we shall call $\mathcal{E}$.
 
 Since the only energy in this model comes from the adsorption contacts between monomer and surface,
-and since the number of such contacts is the same 
-(namely, the number of sites in the surface lattice)
-%(namely $A_{latt}$) 
-in every configuration
-in $\mathcal{E}$, we see that the energy of every configuration of $\mathcal{E}$ is exactly the same.
+and since every configuration in $\mathcal{E}$ has the number of such contacts
+(namely, the number of sites in the surface lattice),
+we see that every configuration of $\mathcal{E}$ has exactly the same energy.
 Therefore, according to the Boltzmann distribution, every configuration in $\mathcal{E}$ is equally
 likely. Thus to calculate the probabilities of events we can simply count the configurations.
-Specifically, denote the number of configurations in a set $\mathcal{A}$ by $|\mathcal{A}|$.  
-Then the probability that $j$ long polymers are adsorbed is $\frac{|\mathcal{E}_j|}{|\mathcal{E}|}$   for $j=0,1,\ldots,a$.
+Specifically, denoting the number of configurations in a set $\mathcal{A}$ by $|\mathcal{A}|$, we have that
+the probability that $j$ long polymers are adsorbed is $\frac{|\mathcal{E}_j|}{|\mathcal{E}|}$
+for each $j=0,1,\ldots,a$.
 
 Thus, to find the most likely number of long chains %(and $W$-mers (short-chains))
 that will be adsorbed onto the sphere, we need to 
@@ -317,7 +317,8 @@ such that
   |\mathcal{E}_{j^*-1}|\; < \;|\mathcal{E}_{j^*}|\; >
     \; |\mathcal{E}_{j^*+1}| \;>\; \cdots \; > \; |\mathcal{E}_a|\,,
 \end{equation}
-and that $j^*$ is approximated by Equation (\ref{eq.jstar}).  Thus $j^*$ is the most likely
+and that $j^*$ is approximated by Equation (\ref{eq.jstar}) below.  
+This value $j^*$ is the most likely
 number of long chains to be adsorbed.
 %****MOVE THIS LATER:****
 %Observe that we can characterize $j^*$ via Equation (\ref{eq.EEcomp}) by saying that $j^*$ is the smallest
@@ -332,7 +333,7 @@ number of long chains to be adsorbed.
 %inserted a motivation that will explain why on page six we want to maximize epsilon j, also tried to flow into the first step of this modelling process being modelling the config of a single polymer
 We now wish to estimate the size of each set $\mathcal{E}_j$ ($j=0,1,\ldots,a$), in order to  determine which set is the largest.  
 As explained above, this corresponds to finding the preferred number of 
-long polymers of the experimental system. 
+long polymers that are adsorbed in the experimental system. 
 
 Recall that our model system has $n_S$ short 
 polymers of length $\leng_S$ and $n_L$ long polymers
@@ -349,11 +350,19 @@ adsorbed onto the surface of a sphere, is
 \end{equation}
 We shall assume that the right-hand side of this equation is an integer.  
 
-It will be convenient to let $n=\leng_L/\leng_S$, 
+It will be convenient to define the quantity $n$ by \begin{equation}
+   \label{eq.ndefn}
+    n\;=\;\leng_L/\leng_S  \,,  \hspace{6mm}\hbox{i.e.}
+     \hspace{5mm}  \leng_L  \;=\;  n\leng_S \,,
+\end{equation}
 so that
 long polymers are $n$ times the size of the short ones.
 It follows that the maximum number of short polymers
 that can be adsorbed onto a sphere's surface is $na$.
+To make the total mass of the two kinds of polymers in our system be the same, we can assume that $n_S \,=\, n\cdot n_L$.  However, we do not really use this relation; it is enough that $n_s$ and $n\cdot n_L$
+are of similar orders of magnitude.
+
+
 
 As mentioned in Section 3.2.1, we model the configuration of a single  polymer in a dilute solution by a self-avoiding walk (SAW) in a lattice, which is a path in the lattice that does not visit any site more than once.
 %reordered this 
@@ -395,7 +404,7 @@ place $N$ indistinguishable $\ell$-mers is
  denote the number of long chains that are adsorbed
  onto the sphere's surface ($0\leq j\leq a$).
  Given $j$, the number of $\leng_L$-mers (long-chains) in solution must be $n_L-j$; 
- the number of $\leng_S$-mers (short-chains) adsorbed on the surface must be $n(a-j)$ [because there are $S_{latt}=an\leng_S$ sites on the surface, all occupied, of which $j\leng_L$ are occupied by $\leng_L$-mers (long-chains), leaving $S_{latt}-j\leng_L\,=\, an\leng_S-jn\leng_S$ to be  occupied by $\leng_S$-mers (short-chains)]; 
+ the number of $\leng_S$-mers (short-chains) adsorbed on the surface must be $n(a-j)$ [because there are $S_{latt}=an\leng_S$ sites on the surface, all occupied, of which $j\leng_L$ are occupied by $\leng_L$-mers, leaving $S_{latt}-j\leng_L\,=\, an\leng_S-jn\leng_S$ to be  occupied by $\leng_S$-mers]; 
  and hence the number of $\leng_S$-mers (short-chains) in solution must be  $n_S-n(a-j)$.
 
 Recalling Equations (\ref{eq.sawscale}) and 
@@ -422,73 +431,75 @@ approximate it using a mean field (Flory-Huggins) approach.  Details are given i
 Materials.
 [*** HOW DO WE REFER TO IT?****]
 
-Now we turn to the problem of finding $j^*$, the
-value of $j$ that maximizes $|\mathcal{E}_j|$.
-Observe that by Equation (\ref{eq.EEcomp}), we can characterize $j^*$ by saying that $j^*$ is the smallest
-value of $j$ for which $|\mathcal{E}_{j+1}|/|\mathcal{E}_j|$ is less than 1.
-Thus our strategy will be to approximate the ratio
-$|\mathcal{E}_{j+1}|/|\mathcal{E}_j|$ and to identify
-the value of $j$ for which it equals 1 --- i.e., where
-the ratio changes from being greater than 1 to being less than 1.
+%Now we turn to the problem of finding $j^*$, the
+%value of $j$ that maximizes $|\mathcal{E}_j|$.
+%Observe that by Equation (\ref{eq.EEcomp}), we can characterize $j^*$ by saying that $j^*$ is the smallest
+%value of $j$ for which $|\mathcal{E}_{j+1}|/|\mathcal{E}_j|$ is less than 1.
+%Thus our strategy will be to approximate the ratio
+%$|\mathcal{E}_{j+1}|/|\mathcal{E}_j|$ and to identify
+%the value of $j$ for which it equals 1 --- i.e., where
+%the ratio changes from being greater than 1 to being less than 1.
 In the Supplementary Materials, we show that
 % To determine which value of $j$ maximizes $|\mathcal{E}_j|$, we look at ratios of consecutive terms
 %% took a risk at not putting a period there
 %through the following approximation, of which a full derivation can be found in the the supplementary materials :
 \begin{equation}
     \label{eq.Yratio2}
-       \frac{|\mathcal{E}_{j+1}|}{|\mathcal{E}_j|} \; \approx \; 
-       \left(  \frac{ V_{latt}A_3W^{\gamma_3-1}(q-1)^2}{aWq} \,
-          \frac{(a-j-\frac{1}{2})}{n_S-n(a-j-\frac{1}{2})} \right)^{n+o(n)}   \,.
+       \frac{|\mathcal{E}_{j+1}|}{|\mathcal{E}_j|} \; \approx \; \left( h(j)\right)^{n+o(n)}
+       \hspace{5mm}\hbox{where}\hspace{5mm}
+      h(j) \;=\;  \frac{ V_{latt}A_3\leng_S^{\gamma_3-1}(q-1)^2}{aq\leng_S} \,
+          \frac{(a-j-\frac{1}{2})}{n_S-n(a-j-\frac{1}{2})}   \,.
 \end{equation}
-We observe that the quantity on the right of Equation (\ref{eq.Yratio2}) decreases in $j$.
-
-
+Observe that $h(j)$ is a  decreasing function of $j$.
 %only concern is that min will throw people off, given that we are searching for a max....
-***EDIT*** 
-Let $j^*$ be the smallest value of $j$ for which the right-hand side of Equation (\ref{eq.Yratio2}) is 
+Let $j^*$ be the smallest value of $j$ for which 
+%the right-hand side of Equation (\ref{eq.Yratio2}) 
+$h(j)$ is 
 less than 1. We shall show show that $j^*$ is the most probable value of $j$ 
 %added this parenthesis as Ozzy notated the significance of j*. May be repetitive
-(the number of $nW$-mers adsorbed on the surface).
+(the number of long chains adsorbed onto the surface).
 We see that $|\mathcal{E}_{j+1}|/|\mathcal{E}_j|<1$ whenever $j\geq j^*$, and 
 $|\mathcal{E}_{j+1}|/|\mathcal{E}_j|\geq 1$ whenever $j< j^*$.
 That is, $|\mathcal{E}_j|$ is decreasing in $j$ when $j\geq j^*$, and 
 increasing when $j< j^*$.
 It follows that $|\mathcal{E}_j|$ is maximized at $j=j^*$, and that we can find $j^*$ by seeing 
-where the right-hand side of Equation (\ref{eq.Yratio2}) is close to 1.   
+where $h(j)$
+%the right-hand side of Equation (\ref{eq.Yratio2}) 
+is close to 1.   
 
 %equation containers everywhere, unlabeled though, not sure what journal wants.
 %moved the definition of K to prior in sequence, and made it an equation
-\noindent We let 
-\begin{equation}
-    \label{}
-K \;=\;   \frac{ V_{latt} }{aW}\, \frac{   A_3W^{\gamma_3-1}(q-1)^2}{q} \,,
-\end{equation}
-
+%\noindent We let 
+%\begin{equation}
+%    \label{}
+%K \;=\;   \frac{ V_{latt} }{aW}\, \frac{   A_3W^{\gamma_3-1}(q-1)^2}{q} \,,
+%\end{equation}
 
 
 %added noindents to fix the format, not sure if that's allowed, either by journal or by best practices
-\noindent Therefore $j^*$ satisfies,
-\begin{equation}
-    \label{}
-    1  \;\approx \; 
-     K  \,
-     %\frac{ V_{latt}A_3W^{\gamma_3-1}(q-1)^2}{aWq} \,
-          \frac{a-j^*-\frac{1}{2}}{n_S-n(a-j^*-\frac{1}{2})}    \,,  
-             %\hspace{5mm}\hbox{where}\hspace{5mm}
-             %K \;=\;   \frac{ V_{latt} }{aW}\, \frac{   A_3W^{\gamma_3-1}(q-1)^2}{q} \,,
-\end{equation}
-As explained in the Supplement, this leads to the approximation
+%\noindent Therefore $j^*$ satisfies,
+%\begin{equation}
+%    \label{}
+%    1  \;\approx \; 
+%     K  \,
+%     %\frac{ V_{latt}A_3W^{\gamma_3-1}(q-1)^2}{aWq} \,
+%          \frac{a-j^*-\frac{1}{2}}{n_S-n(a-j^*-\frac{1}{2})}    \,,  
+%             %\hspace{5mm}\hbox{where}\hspace{5mm}
+%             %K \;=\;   \frac{ V_{latt} }{aW}\, \frac{   A_3W^{\gamma_3-1}(q-1)^2}{q} \,,
+%\end{equation}
+As explained in the Supplement, the equation
+$h(j^*)\approx 1$ leads to the approximation
 \begin{equation}
     \label{eq.jstar}
      1-\frac{j^*}{a}     \; \approx   \; 
-        \left(  \frac{n_S\,W}{V_{latt} }\right) \,\left(   \frac{q}{A_3W^{\gamma_3-1}(q-1)^2}\right)  \,.
+        \left(  \frac{n_S\,\leng_S}{V_{latt} }\right) \,\left(   \frac{q}{A_3\leng_S^{\gamma_3-1}(q-1)^2}\right)  \,.
 \end{equation}
-The above equation can be interpreted as follows.  The left hand side, $1-\frac{j^*}{a}$, is the fraction of the colloid sphere's surface that is covered by short monomers.  The ratio $n_SW/V_{latt}$ gives
+The above equation can be interpreted as follows.  The left hand side, $1-\frac{j^*}{a}$, is the fraction of the colloid sphere's surface that is covered by short monomers.  The ratio $n_S\leng_S/V_{latt}$ gives
 the concentration of monomers corresponding to those appearing on the short chains only.
 %%commented it out as Ozzy asks if this is necessary
 %The quantity in the second set of parentheses in Equation (\ref{eq.jstar}) cannot be large, since $q<(q-1)^2$ and $\gamma_3>1$.
-If the solution is fairly dilute, then we see that the left side of (\ref{eq.jstar}) is small,
-and hence only a small fraction of the surface is covered by short polymers.
+If the solution is fairly dilute, then we see that the right side (and hence the left side) of (\ref{eq.jstar}) is small,
+which tells us that only a small fraction of the surface is covered by short polymers.
 
 
 %[\textit{Remark:}  Observe that $n_L$ does not appear in Equation (\ref{eq.jstar}).  

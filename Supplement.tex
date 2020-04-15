@@ -13,6 +13,8 @@
 \usepackage{subcaption}
 \usepackage{cancel}
 
+
+
 \newcommand{\leng}{\mathcal{L}}
 
 
@@ -90,71 +92,97 @@ system has volume $V$ and contains one sphere.}
 \label{figure 1}
 \end{figure}
 
-\subsection{Explaining the "Step by Step" Model}
+\subsection{Estimating the Number of Configurations}
 
-We shall consider polymers of two different lengths, which we shall call ``short'' and ``long.''  Their lengths
-will be described by two positive integer parameters $W$ and $n$.
+Here is a summary of the notation for the model system 
+from Section 3 of the Main Paper [**** HOW DO WE 
+REFER TO THE PAPER HERE?****]
 
-\begin{verse}
-A \textbf{short polymer} will consist of $W$ monomers.  
-Let $n_S$ be the number of short polymers in the model system. 
-\\
-A \textbf{long polymer} will consist of $nW$ monomers.  
-Let $n_L$ be the number of long polymers in the model system. 
-\end{verse}
-We shall often refer to our short and long polymers as $W$-mers and $nW$-mers respectively.
-We shall want the total mass of the two kinds of monomers in our system to be the same, so we 
-shall assume that $n_S \,=\, n\cdot n_L$.
+We assume that there are $n_L$ ``long'' chains, each
+with $\leng_L$ monomers, as well as $n_S$ ``short''
+chains, each with $\leng_S$ monomers.
 
-Let $A_{latt}$ be the number of lattice sites on the surface of one sphere, and let $a$
-be the number of long polymers that would exactly cover all the sites of the surface:
-\[    a  \;=\;  \frac{A_{latt}}{nW}   \,  .  \]
-Then $na$ is the number of short polymers that can completely cover the surface.
-For simplicity, we assume that $a$ is an integer.
+We define $n=\leng_L/\leng_S$, so that $\leng_L=n\leng_S$.   To make the total mass
+of the two sizes of polymers the same, we can
+declare $n_S=n \cdot n_L$, but we will not use
+this relation.  It will suffice that $n_S$ and 
+$n\cdot n_L$ have similar orders of magnitude.
 
-We shall see that the underlying entropic reason that
-mostly long chains get adsorbed is that $V_{latt}\gg A_{latt}$, i.e.\ there are many more possible locations in 
-the three-dimensional solution than on the two-dimensional surface.
+We let $S_{latt}$ be the number of lattice sites on 
+the surface of one sphere.  Then the maximum number of 
+long chains that can adsorb onto the surface is 
+$S_{latt}/\leng_S$, which we also call $a$. For 
+simplicity, we assume that $a$ is an integer.
+
+%We shall consider polymers of two different lengths, which we shall call ``short'' and ``long.''  Their lengths
+%will be described by two positive integer parameters $W$ and $n$.
+
+%\begin{verse}
+%A \textbf{short polymer} will consist of $W$ monomers.  
+%Let $n_S$ be the number of short polymers in the model system. 
+%\\
+%A \textbf{long polymer} will consist of $nW$ monomers.  
+%Let $n_L$ be the number of long polymers in the model system. 
+%\end{verse}
+%We shall often refer to our short and long polymers as $W$-mers and $nW$-mers respectively.
+%We shall want the total mass of the two kinds of monomers in our system to be the same, so we 
+%shall assume that $n_S \,=\, n\cdot n_L$.
+
+%Let $A_{latt}$ be the number of lattice sites on the surface of one sphere, and let $a$
+%be the number of long polymers that would exactly cover all the sites of the surface:
+%\[    a  \;=\;  \frac{A_{latt}}{nW}   \,  .  \]
+%Then $na$ is the number of short polymers that can completely cover the surface.
+%For simplicity, we assume that $a$ is an integer.
+
+%We shall see that the underlying entropic reason that
+%mostly long chains get adsorbed is that $V_{latt}\gg A_{latt}$, i.e.\ there are many more possible locations in 
+%the three-dimensional solution than on the two-dimensional surface.
 
 
-We shall model our polymer configurations in the solution in a slightly different way from those on the surface.
-The difference in approach is due to the fact that the polymers are dense on the surface but 
-dilute in the solution.  We shall model the polymer configurations in the solution as a collection of 
-self-avoiding walks in the cubic lattice, with no interaction between walks (because of the dilute solution).
-For the polymers adsorbed densely on the surface lattice, we shall use mean-field calculations 
-of the Flory-Huggins type 
+%We shall model our polymer configurations in the solution in a slightly different way from those on the surface.
+%The difference in approach is due to the fact that the polymers are dense on the surface but 
+%dilute in the solution.  We shall model the polymer configurations in the solution as a collection of 
+%self-avoiding walks in the cubic lattice, with no interaction between walks (because of the dilute solution).
+%For the polymers adsorbed densely on the surface lattice, we shall use mean-field calculations 
+%of the Flory-Huggins type 
 % (similar to the lattice approach in Park et al., Macromolecules 2001;
-(see also Section XII.1 of \cite{Flory1953}).
+%(see also Section XII.1 of Flory\cite{Flory1953}).
 
-Recall that our ensemble consists of $n_S$ (short) $W$-mers and $n_L$ (long) $nW$-mers.
-Of these, some are adsorbed onto the surface of the sphere, and the others float freely in the 
-solution of volume $V_1$.  We write $j$ for the number of (long) $nW$-mers that are adsorbed 
-onto the surface in a particular configuration of the system.  This implies that
-\begin{verse}
- ($i$) the number of $nW$-mers in solution is $n_L-j$;
+% Recall that our ensemble consists of $n_S$ (short) $W$-mers and $n_L$ (long) $nW$-mers.
+%Of these, some are adsorbed onto the surface of the sphere, and the others float freely in the 
+%solution of volume $V_1$.  
+We let $j$ denote the number of (long) $\leng_L$-mers that are adsorbed 
+onto the surface in a particular configuration of the model system.  This implies that
+%\begin{verse}
+\\
+ ($i$) the number of $\leng_L$-mers in solution is $n_L-j$;
  \\
- ($ii$) the number of $W$-mers adsorbed on the surface is $n(a-j)$ (because there are $anW$ sites on the
- surface, all occupied, of which $jnW$ are occupied by $nW$-mers, leaving $anW-jnW$ to be 
- occupied by $W$-mers); and
+ ($ii$) the number of $\leng_S$-mers adsorbed on the surface is $n(a-j)$; and 
+%(because there are $anW$ sites on the
+% surface, all occupied, of which $jnW$ are occupied by $nW$-mers, leaving $anW-jnW$ to be 
+% occupied by $W$-mers); and
  \\
- ($iii$) the number of $W$-mers in solution is $n_S-n(a-j)$.
- \end{verse}  
-We shall write $\mathcal{E}_j$ for the set of all configurations that have exactly $j$ $nW$-mers adsorbed 
+ ($iii$) the number of $\leng_L$-mers in solution is $n_S-n(a-j)$.
+% \end{verse}  
+\\
+We write $\mathcal{E}_j$ for the set of all configurations that have exactly $j$ 
+$\leng_L$-mers adsorbed 
 onto the surface.  Observe that the possible values of $j$ are the integers from 0 to $a$.
 The full space of configurations in our model is $\cup_{j=0}^a {\mathcal{E}_j}$, 
-which we shall call $\mathcal{E}$.
+which we call $\mathcal{E}$.
 
-Since the only energy in this model comes from the adsorption contacts between monomer and surface,
-and since the number of such contacts is the same (namely $A_{latt}$) in every configuration
-in $\mathcal{E}$, we see that the energy of every configuration of $\mathcal{E}$ is exactly the same.
-Therefore, according to the Boltzmann distribution, \textit{every configuration in $\mathcal{E}$ is equally
-likely}.  Thus the calculation of probabilities of events is equivalent to counting the configurations.
+%Since the only energy in this model comes from the adsorption contacts between monomer and surface,
+%and since the number of such contacts is the same (namely $S_{latt}$) in every configuration
+%in $\mathcal{E}$, we see that 
+Since the energy of every configuration of $\mathcal{E}$ is exactly the same,
+%Therefore, according to the Boltzmann distribution, \textit{every configuration in $\mathcal{E}$ is equally likely}.  Thus
+the calculation of probabilities of events is equivalent to counting the configurations.
 In particular, writing $|\mathcal{A}|$ for the number of configurations in a set $\mathcal{A}$, we have
 \[
     \hbox{Probability that $j$ long polymers are adsorbed}  \;=\; 
     \frac{|\mathcal{E}_j|}{|\mathcal{E}|}\,,   \hspace{5mm}(j=0,1,\ldots,a).
 \]
-Thus, to find the most likely number of $nW$-mers (and $W$-mers) to be adsorbed onto the sphere,
+Thus, to find the most likely number of $\leng_L$-mers (and $\leng_S$-mers) to be adsorbed onto the sphere,
 we need to find which of the sets $\mathcal{E}_j$ is largest.
 
 
@@ -197,116 +225,137 @@ In order to better comprehend the model we provide an illustration Figure 2 with
 
 
 
-\noindent We now proceed to estimate the size of each $\mathcal{E}_j$.
+% \noindent We now proceed to estimate the size of each $\mathcal{E}_j$.
 
 \smallskip
 
-The configuration of a single  polymer in a dilute solution is often modeled by
-a self-avoiding walk (SAW) in a lattice, i.e.\  a path in the lattice that does not visit any site more than once.
-A fundamental property of SAWs is the following.  
-Let $c_{\ell}$ be
-the number of SAWs that start from a specified lattice site (``the origin'') and visit a total of $\ell$ sites
-(including the starting site).   Then the 
-asymptotic behaviour of $c_{\ell}$ on the three-dimensional cubic lattice is 
+%The configuration of a single  polymer in a dilute solution is often modeled by
+%a self-avoiding walk (SAW) in a lattice, i.e.\  a path in the lattice that does not visit any site more than once.
+%A fundamental property of SAWs is the following.  
+%Let $c_{\ell}$ be
+%the number of SAWs that start from a specified lattice site (``the origin'') and visit a total of $\ell$ sites
+%(including the starting site).   Then the 
+%asymptotic behaviour of $c_{\ell}$ on the three-dimensional cubic lattice is 
+%\begin{equation}
+%    \label{eq.sawscale}
+%       c_{\ell}  \;\sim  \;  A_3 \, {\ell}^{\gamma_3-1}  \mu_3^{\ell}    \hspace{5mm}\hbox{as $\ell\rightarrow\infty$}.
+%\end{equation}
+%% (This has not been proven rigorously, but even mathematicians do not doubt its truth.) 
+%Here $\mu_3$ and $A_3$ depend on the choice of lattice, but $\gamma_3$ is a universal critical exponent
+%that is the same for all three-dimensional lattices.  
+%Their values are known to be approximately \cite{Chen2002,Madras2013}
+%\begin{equation}
+%   \label{eq.gammas}   \mu_3 \;=\;  4.684, \hspace{5mm}
+ %       \gamma_3 \;=\;  1.162,    \hspace{5mm}\hbox{and}\hspace{5mm}
+%    A_3  \;=\;    0.2573  \,.  %1.205/4.683 \;=\;  \,.
+%\end{equation}
+%(Estimation in \cite{Chen2002} is for the 
+%number of SAWs with $\ell$ \textit{steps} (i.e.\ $\ell+1$ \textit{sites}), which we write  $c_{\ell+1}=(A_3\mu_3)\ell^{\gamma_3-1}\mu_3^{\ell}$; reference \cite{Chen2002} obtains $A_3\mu_3=1.205$.)
+
+%Since the number of sites in the lattice corresponding to the region of solution is $V_{latt}$, 
+%we have $V_{latt}c_{\ell}$ ways to place a polymer of size ${\ell}$.  As we are neglecting the
+%possibility of overlapping polymers in the dilute solution, it follows that the number of ways to 
+%place $N$ identical $\ell$-mers is 
+%\begin{equation}
+%  \label{eq.Npoly}
+%   \frac{(V_{latt}c_{\ell})^N}{N!}  \,.   
+%\end{equation}
+
+%\smallskip
+
+In the Main Paper, we found that the number of configurations in $\mathcal{E}_j$ is
 \begin{equation}
-    \label{eq.sawscale}
-       c_{\ell}  \;\sim  \;  A_3 \, {\ell}^{\gamma_3-1}  \mu_3^{\ell}    \hspace{5mm}\hbox{as $\ell\rightarrow\infty$}.
+    |\mathcal{E}_j|  
+      \; = \; \frac{ \Psi_L^{n_L-j} }{(n_L-j)!} \,
+          \frac{ \Psi_S^{n_S-n(a-j)} }{(n_S-n(a-j))!} \,  G(j)
+%           \frac{\tilde{w}_1\tilde{w}_2\cdots \tilde{w}_j}{j!}
+ %                    \,   \frac{\tilde{u}_{nj+1}\tilde{u}_{nj+2}\cdots \tilde{u}_{an}}{(n(a-j))!}
+        \label{eq.Yjsupp}
 \end{equation}
-% (This has not been proven rigorously, but even mathematicians do not doubt its truth.) 
-Here $\mu_3$ and $A_3$ depend on the choice of lattice, but $\gamma_3$ is a universal critical exponent
-that is the same for all three-dimensional lattices.  
-Their values are known to be approximately \cite{Chen2002,Madras2013}
+where 
 \begin{equation}
-   \label{eq.gammas}   \mu_3 \;=\;  4.684, \hspace{5mm}
-        \gamma_3 \;=\;  1.162,    \hspace{5mm}\hbox{and}\hspace{5mm}
-    A_3  \;=\;    0.2573  \,.  %1.205/4.683 \;=\;  \,.
+    \label{eq.psidefsupp}   
+   \Psi_L\;=\;V_{latt} A_3 (\leng_L)^{\gamma_3-1} \mu_{3}^{\leng_L} \,,  
+    \hspace{5mm} %\hbox{and} \hspace{5mm}
+     \Psi_S \;=\; V_{latt}A_3{\leng_S}^{\gamma_3-1}\mu_3^{\leng_S} \,,
 \end{equation}
-(Estimation in \cite{Chen2002} is for the 
-number of SAWs with $\ell$ \textit{steps} (i.e.\ $\ell+1$ \textit{sites}), which we write  $c_{\ell+1}=(A_3\mu_3)\ell^{\gamma_3-1}\mu_3^{\ell}$; reference \cite{Chen2002} obtains $A_3\mu_3=1.205$.)
-
-Since the number of sites in the lattice corresponding to the region of solution is $V_{latt}$, 
-we have $V_{latt}c_{\ell}$ ways to place a polymer of size ${\ell}$.  As we are neglecting the
-possibility of overlapping polymers in the dilute solution, it follows that the number of ways to 
-place $N$ identical $\ell$-mers is 
-\begin{equation}
-  \label{eq.Npoly}
-   \frac{(V_{latt}c_{\ell})^N}{N!}  \,.   
-\end{equation}
-
-\smallskip
-
-****  START HERE?? ****
-
-\medskip
-
+and $G(j)$ is the number of ways to cover the surface
+with $j$ $\leng_L$-mers and $n(a-j)$ $\leng_S$-mers.
+(Here $A_3$, $\gamma_3$, and $\mu_3$ are constants 
+related to self-avoiding walks.)  
+Computing $G(j)$ is a hard combinatorial problem,
+so we shall use a mean-field approximation 
+of the Flory-Huggins type 
+% (similar to the lattice approach in Park et al., Macromolecules 2001;
+(see also Section XII.1 of Flory\cite{Flory1953}),
+which we now explain.
 
 For a particular choice of $j$, we want to know the number of ways to place $j$ $\leng_L$-mers 
-and $a(n-j)$ $\leng_S$-mers on the surface, without overlapping, to fill all % $anW$ 
-the lattice sites on the sphere's surface.
-This is a hard combinatorial problem, so we shall use the following mean-field (Flory-Huggins) approach.
+and $a(n-j)$ $\leng_S$-mers on the surface,
+without overlapping.  %, to fill all % $anW$ 
+%the lattice sites on the sphere's surface.
 We shall place one polymer at a time, starting with the long ones.
 Let $\tilde{w}_k$ be the number of ways to place the $k^{th}$ $\leng_L$-mer on the surface, given that
 $(k-1)$ $\leng_L$-mers have already been placed.  
-To begin with, there are $anW-(k-1)nW$ available sites for the first monomer.  Recall that  $q$ is the number of
+To begin with, there are $a\leng_L-(k-1)\leng_L$ available sites for the first monomer.  Recall that  $q$ is the number of
 neighbours of each site in the surface lattice.
 In the absence of other polymers, there would be $q$ choices for the second monomer in the chain,
 and $q-1$ choices for each monomer after that (here we are using the non-reversed walk model of a polymer
 instead of the fully self-avoiding model).  But the number of choices should on average be reduced 
 by the fraction of the surface that has already been covered.  
 Thus, when we are trying to place the second monomer of our chain, there are
-$anW-(k-1)nW-1$ unoccupied sites, so each site has 
-probability $[anW-(k-1)nW-1]/[anW]$ of being available.  
-Thus there are $q[anW-(k-1)nW-1]/[anW]$ choices for the second monomer.  
+$a\leng_L-(k-1)\leng_L-1$ unoccupied sites, so each site has 
+probability $[a\leng_L-(k-1)\leng_L-1]/[a\leng_L]$ of being available.  
+Thus there are $q[a\leng_L-(k-1)\leng_L-1]/[a\leng_L]$ choices for the second monomer.  
 Similarly, after $i$ monomers of the current chain have been placed ($i\geq 2$), the fraction of the
-surface that has been covered is $[anW-(k-1)nW-i]/[anW]$, so there are 
-$(q-1)[anW-(k-1)nW-i]/[anW]$ choices for the $(i+1)^{th}$ monomer in this chain.  
+surface that has not been covered is $[a\leng_L-(k-1)\leng_L-i]/[a\leng_L]$, so there are 
+$(q-1)[a\leng_L-(k-1)\leng_L-i]/[a\leng_L]$ choices for the $(i+1)^{th}$ monomer in this chain.  
 We conclude that 
 \begin{eqnarray}
-   \tilde{w}_k  & = &   [anW-(k-1)nW]\,\times \,q\left(\frac{ anW-(k-1)nW-1}{anW}\right)    \,\times
+   \tilde{w}_k  & = &   [a\leng_L-(k-1)\leng_L]\,\times \,q\left(\frac{ a\leng_L-(k-1)\leng_L-1}{a\leng_L}\right)    \,\times
    \nonumber    \\
    & &    \hspace{22mm}
-     \prod_{i=2}^{nW-1}(q-1)\left(\frac{ anW-(k-1)nW-i}{anW}\right)  
+     \prod_{i=2}^{nW-1}(q-1)\left(\frac{ a\leng_L-(k-1)\leng_L-i}{a\leng_L}\right)  
       \nonumber \\
- & = &    \frac{[anW-(k-1)nW]!}{[anW-knW]!} \,q\,  \frac{(q-1)^{nW-2}}{(anW)^{nW-1}}  
+ & = &    \frac{[a\leng_L-(k-1)\leng_L]!}{[a\leng_L-k\leng_L]!} \,q\,  \frac{(q-1)^{\leng_L-2}}{(a\leng_L)^{\leng_L-1}}  
      \nonumber    \\
-     & = &    \frac{[anW-(k-1)nW]!}{[anW-knW]!}   anW \frac{q}{(q-1)^2}\left(  \frac{q-1}{anW}\right)^{nW}.
+     & = &    \frac{[a\leng_L-(k-1)\leng_L]!}{[a\leng_L-k\leng_L]!}   a\leng_L \frac{q}{(q-1)^2}\left(  \frac{q-1}{a\leng_L}\right)^{\leng_L}.
      \label{eq.wk2}
 \end{eqnarray}
-Similarly, let $\tilde{u}_{\ell}$ be the number of ways to place the $\ell^{th}$ $W$-mer on the surface, given that
-${\ell}-1$ $W$-mers (or a total of $(\ell-1)W$ monomers) have already been placed.   The same 
+Similarly, let $\tilde{u}_{\ell}$ be the number of ways to place the $\ell^{th}$ $\leng_S$-mer on the surface, given that
+${\ell}-1$ $\leng_S$-mers (or a total of $(\ell-1)\leng_S$ monomers) have already been placed.   The same 
 argument as for $\tilde{w}_k$ gives
 \begin{eqnarray}
    \tilde{u}_{\ell}  
- & = &    \frac{[anW-(\ell-1)W]!}{[anW-\ell W]!} \,q\,  \frac{(q-1)^{W-2}}{(anW)^{W-1}}  
+ & = &    \frac{[an\leng_S-(\ell-1)\leng_S]!}{[an\leng_S-\ell \leng_S]!} \,q\,  \frac{(q-1)^{\leng_S-2}}{(an\leng_S)^{\leng_S-1}}  
      \nonumber    \\
-     & = &    \frac{[anW-(\ell-1)W]!}{[anW-\ell W]!}   anW \frac{q}{(q-1)^2}\left(  \frac{q-1}{anW}\right)^{W}.
+     & = &    \frac{[an\leng_S-(\ell-1)\leng_S]!}{[an\leng_S-\ell \leng_S]!}   an\leng_S \frac{q}{(q-1)^2}\left(  \frac{q-1}{an\leng_S}\right)^{\leng_S}.
      \label{eq.uell2}
 \end{eqnarray}
 
-To evaluate $|\mathcal{E}_j|$, we assume that the unadsorbed solution
-is dilute enough that we don't need to worry about mutual exclusion between the free floating
-polymers.   
-For $\mathcal{E}_j$, we have $j$ adsorbed $nW$-mers, $na-nj$ adsorbed $W$-mers, 
-$n_L-j$ desorbed $nW$-mers, and $n_S-n(a-j)$ desorbed $W$-mers.   Thus, recalling 
-Equations (\ref{eq.sawscale}) and  (\ref{eq.Npoly}), we have
-\begin{equation}
-    |\mathcal{E}_j|  
-      \; = \; \frac{ \Psi_L^{n_L-j} }{(n_L-j)!} \,
-          \frac{ \Psi_S^{n_S-n(a-j)} }{(n_S-n(a-j))!} \,
-           \frac{\tilde{w}_1\tilde{w}_2\cdots \tilde{w}_j}{j!}
-                     \,   \frac{\tilde{u}_{nj+1}\tilde{u}_{nj+2}\cdots \tilde{u}_{an}}{(n(a-j))!}
+%To evaluate $|\mathcal{E}_j|$, we assume that the solution of unadsorbed polymers 
+%is dilute enough that we don't need to worry about mutual exclusion between the free floating polymers.   
+%For $\mathcal{E}_j$, we have $j$ adsorbed $nW$-mers, $na-nj$ adsorbed $W$-mers, 
+%$n_L-j$ desorbed $nW$-mers, and $n_S-n(a-j)$ desorbed $W$-mers.   Thus, recalling 
+%Equations (\ref{eq.sawscale}) and  (\ref{eq.Npoly}), we have
+%\begin{equation}
+%    |\mathcal{E}_j|  
+%      \; = \; \frac{ \Psi_L^{n_L-j} }{(n_L-j)!} \,
+%          \frac{ \Psi_S^{n_S-n(a-j)} }{(n_S-n(a-j))!} \,
+%           \frac{\tilde{w}_1\tilde{w}_2\cdots \tilde{w}_j}{j!}
+%                     \,   \frac{\tilde{u}_{nj+1}\tilde{u}_{nj+2}\cdots \tilde{u}_{an}}{(n(a-j))!}
 %                                  \nonumber   \\
 %            & & \hspace{7mm}  \times \, \frac{\tilde{w}_1\tilde{w}_2\cdots \tilde{w}_j}{j!}
 %                     \,   \frac{\tilde{u}_{nj+1}\tilde{u}_{nj+2}\cdots \tilde{u}_{an}}{(n(a-j))!}  % \,e^{-nW\epsilon/kT}
-        \label{eq.Yj}
-\end{equation}
-where 
-\begin{equation}
-    \label{eq.psidef}   
-   \Psi_L\;=\;V_{latt} A_3 (nW)^{\gamma_3-1} \mu_{3}^{nW}   
-    \hspace{5mm}\hbox{and} \hspace{5mm}
-     \Psi_S \;=\; V_{latt}A_3W^{\gamma_3-1}\mu_3^W \,.
-\end{equation}
+%        \label{eq.Yj}
+%\end{equation}
+%where 
+%\begin{equation}
+%    \label{eq.psidef}   
+%   \Psi_L\;=\;V_{latt} A_3 (nW)^{\gamma_3-1} \mu_{3}^{nW}   
+%    \hspace{5mm}\hbox{and} \hspace{5mm}
+%     \Psi_S \;=\; V_{latt}A_3W^{\gamma_3-1}\mu_3^W \,.
+%\end{equation}
 
 
 
@@ -331,22 +380,23 @@ To determine which value of $j$ maximizes $|\mathcal{E}_j|$, we look at ratios o
     & &   \hspace{8mm}  \times \;  \frac{(na-nj)\cdots (na-nj-n+1)}{(n_S-na+nj+1)\cdots(n_S-na+nj+n)} \,.
         \label{eq.Yratio1}
 \end{eqnarray}
-By Equation (\ref{eq.psidef}), we have
+From now on, we replace $\leng_L$ by $n\leng_S$.
+By Equation (\ref{eq.psidefsupp}), we have
 \begin{equation}
    \label{eq.psiratio} 
-      \frac{\Psi_S^n}{\Psi_L}   \;=\;   \frac{ (V_{latt}\, A_3 \,W^{\gamma_3-1})^{n-1}}{n^{\gamma_3-1}}\,.
+      \frac{\Psi_S^n}{\Psi_L}   \;=\;   \frac{ (V_{latt}\, A_3 \,\leng_S^{\gamma_3-1})^{n-1}}{n^{\gamma_3-1}}\,.
 \end{equation}
 From Equations (\ref{eq.wk2}) and (\ref{eq.uell2}), we find
 \begin{eqnarray}
      \frac{\tilde{w}_{j+1} }{  \tilde{u}_{nj+1}\cdots \tilde{u}_{n(j+1)} }  & = & 
-        \left( \frac{(q-1)^2}{qanW}\right)^{n-1}   \times \,
-    \frac{   \frac{(anW-jnW)!}{(anW-(j+1)nW)!}  }{
-        \prod_{\ell=0}^{n-1} \frac{ (anW-(nj+\ell)W)!}{(anW-(nj+\ell+1)W)!}   }
+        \left( \frac{(q-1)^2}{qan\leng_S}\right)^{n-1}   \times \,
+    \frac{   \frac{(an\leng_S-jn\leng_S)!}{(an\leng_S-(j+1)n\leng_S)!}  }{
+        \prod_{\ell=0}^{n-1} \frac{ (an\leng_S-(nj+\ell)\leng_S)!}{(an\leng_S-(nj+\ell+1)\leng_S)!}   }
      \nonumber  \\
-     & = & \left( \frac{(q-1)^2}{qanW}\right)^{n-1}  \,\times\, 1.
+     & = & \left( \frac{(q-1)^2}{qan\leng_S}\right)^{n-1}  \,\times\, 1.
      \label{eq.Yratioa}     
 \end{eqnarray}
-Next we use the approximation   $(a+1)(a+2)\cdots (a+m-1) \,\approx \,(a+\frac{m}{2})^m$
+Next we use the approximation   $(c+1)(c+2)\cdots (c+m) \,\approx \,(c+\frac{m}{2})^m$
 (essentially, replacing the geometric mean by the arithmetic mean) to obtain
 \begin{equation}
        \frac{(na-nj)\cdots (na-nj-n+1)}{(n_S-na+nj+1)\cdots(n_S-na+nj+n)} 
@@ -359,8 +409,9 @@ Now, putting Equations (\ref{eq.psiratio}--\ref{eq.Yratiob}) back into (\ref{eq.
 \begin{equation}
     \label{eq.Yratio2}
        \frac{|\mathcal{E}_{j+1}|}{|\mathcal{E}_j|} \; \approx \; 
-       \left(  \frac{ V_{latt}A_3W^{\gamma_3-1}(q-1)^2}{aWq} \,
-          \frac{(a-j-\frac{1}{2})}{n_S-n(a-j-\frac{1}{2})} \right)^{n+o(n)}   \,.
+       \left(  \frac{V_{latt}A_3\leng_S^{\gamma_3-1}(q-1)^2}{aq\leng_S} \,
+          \frac{(a-j-\frac{1}{2})}{n_S-n(a-j-\frac{1}{2})} \right)^{n+o(n)}  
+          \;=\;   \left(h(j)\right)^{n+o(n)}\,.
 \end{equation}
 The quantity on the right of Equation (\ref{eq.Yratio2}) decreases in $j$.  Let $j^*$ be the 
 smallest value of $j$ for which the right-hand side of Equation (\ref{eq.Yratio2}) is less than 1.
@@ -374,29 +425,30 @@ where the right-hand side of Equation (\ref{eq.Yratio2}) is close to 1.   Thus $
      K  \,%\frac{ V_{latt}A_3W^{\gamma_3-1}(q-1)^2}{aWq} \,
           \frac{a-j^*-\frac{1}{2}}{n_S-n(a-j^*-\frac{1}{2})}    \,,  
              \hspace{5mm}\hbox{where}\hspace{5mm}
-             K \;=\;   \frac{ V_{latt} }{aW}\, \frac{   A_3W^{\gamma_3-1}(q-1)^2}{q} \,,
+             K \;=\;   \frac{ V_{latt} }{a\leng_S}\, \frac{   A_3\leng_S^{\gamma_3-1}(q-1)^2}{q} \,,
 \]
 which can be rewritten as 
 \[       a-j^*-\frac{1}{2} \; \approx\;    \frac{n_S}{K+n}   \,.
 \]
-We observe that $K\gg n$; indeed,  $V_{latt}/aWn \,=\,V_{latt}/A_{latt}\gg 1$.  
-Thus we can replace $K+n$ by $K$ in the above, and omit the term $\frac{1}{2}$, resulting in the   
+We observe that $K\gg n$; indeed,  $V_{latt}/a\leng_S n \,=\,V_{latt}/A_{latt}\gg 1$.  
+Thus we can replace $K+n$ by $K$ in the above, and omit the small term $\frac{1}{2}$, resulting in the   
 approximation 
 \begin{equation}
     \label{eq.jstar}
      1-\frac{j^*}{a}     \; \approx   \; 
-        \left(  \frac{n_S\,W}{V_{latt} }\right) \,\left(   \frac{q}{A_3W^{\gamma_3-1}(q-1)^2}\right)  \,.
+        \left(  \frac{n_S\,\leng_S}{V_{latt} }\right) \,\left(   \frac{q}{A_3\leng_S^{\gamma_3-1}(q-1)^2}\right)  \,.
 \end{equation}
 The above equation can be interpreted as follows.  The left hand side, $1-j^*/a$, is the fraction of the
-sphere's surface that is covered by short monomers.  The ratio $n_SW/V_{latt}$ gives
-the concentration of monomers corresponding to those appearing on the short chains only.
+sphere's surface that is covered by short monomers.  
 The quantity in the second set of 
 parentheses in Equation (\ref{eq.jstar}) cannot be large, since $q<(q-1)^2$ and $\gamma_3>1$.
-If the solution is fairly dilute, then we see that the left side of (\ref{eq.jstar}) is small,
-and hence only a small fraction of the surface is covered by short polymers.
+The ratio $n_S\leng_S/V_{latt}$ gives
+the concentration of monomers corresponding to those appearing on the short chains only.
+If the solution is fairly dilute, then we see that the right (and hence the left) side of (\ref{eq.jstar}) is small,
+and therefore only a small fraction of the surface is covered by short polymers.
 
 
-[\textit{Remark:}  Observe that $n_L$ does not appear in Equation (\ref{eq.jstar}).  
+[\textit{Remark:}  It is interesting to observe that $n_L$ does not appear in Equation (\ref{eq.jstar}).  
 In the expression for $|\mathcal{E}_{j+1}|/|\mathcal{E}_j|$,   only $n_S$ appears inside the 
 expression that is raised to the power $n$, while $n_L$ appears outside this expression and is
 raised to the power 1.]  
@@ -405,7 +457,7 @@ raised to the power 1.]
 
 
 
-What is graphically portrayed in Figure 3 is that as one increases the number of long chains in a scenario of full surface coverage of the colloid, the ratio of probabilities crosses the threshold of the functional value being equal to one ($\frac{\mathcal{E}_{j+1}}{\mathcal{E}_{j}}=1$), this threshhold is representative of two consecutive configurations being equal in value and thus the the divided differences of $\mathcal{E}_{j+1}$ and $\mathcal{E}_{j}$ being equal to zero for interval,  $j\in[j^*, j^*+1]$. This preceeding statement is suggestive of the existence of a maximal critical point. 
+What is graphically portrayed in Figure 3 is that as one increases the number of long chains in a scenario of full surface coverage of the colloid, the ratio of probabilities crosses the threshold of the functional value being equal to one ($\frac{\mathcal{E}_{j+1}}{\mathcal{E}_{j}}=1$), this threshhold is representative of two consecutive configurations being equal in value and thus the the divided differences of $\mathcal{E}_{j+1}$ and $\mathcal{E}_{j}$ being equal to zero for interval,  $j\in[j^*, j^*+1]$. This preceding statement is suggestive of the existence of a maximal critical point. 
 
 \begin{figure}[H]
 \includegraphics[scale=0.50]{fig9ab.jpg}
@@ -413,9 +465,9 @@ What is graphically portrayed in Figure 3 is that as one increases the number of
 \label{figure 9}
 \end{figure}
 
-\subsection{Derivation of Boltzmann Entropy from Ratio Approximation}
+\subsection{Derivation of Boltzmann Entropy from Ratio Approximation  (***OMIT?***)}
 
-Intially, we shall take the natural logarithm of our ratio $\frac{\mathcal{E}_{j+1}}{\mathcal{E}_{j}}$. Then we proceed to expand the expression using known logarithmic properties and multiply the whole expression by the Boltzmann Constant.
+Initially, we shall take the natural logarithm of our ratio $\frac{\mathcal{E}_{j+1}}{\mathcal{E}_{j}}$. Then we proceed to expand the expression using known logarithmic properties and multiply the whole expression by the Boltzmann Constant.
 $$log\left(\frac{\mathcal{E}_{j+1}}{\mathcal{E}_{j}}\right)$$
 $$=k_B\cdot\left(log\left(\mathcal{E}_{j+1}\right)\right)-\left(log\left(\mathcal{E}_{j}\right)\right)$$
 $$= \left(k_B\cdot log\left(\mathcal{E}_{j+1}\right)\right)-\left(k_B\cdot log\left(\mathcal{E}_{j}\right)\right)$$
@@ -426,7 +478,8 @@ $$=S_{j+1}-S_{j}=\Delta S_{j\to j+1}$$
 
 
 
-\section{One-dimensional model}
+\section{One-dimensional model  (***OMIT?***)}
+
 
 We now present a more tractable ``toy'' version of the lattice model.  We shall assume that 
 the surface is one-dimensional, which eliminates the need for the Flory-Huggins-type approximations.
@@ -451,7 +504,7 @@ in the three dimensional lattice.  Then we have
     (n_S-n(a-j))!}\right) \cdot\binom{an-jn+j}{j}   \,,
 \end{equation}
 where 
-$\Psi_L$ and $\Psi_S$ are as defined in Equation (\ref{eq.psidef}).
+$\Psi_L$ and $\Psi_S$ are as defined in Equation (\ref{eq.psidefsupp}).
 %\[       \Psi_L\;=\;V_{latt} A_3 (nW)^{\gamma_3-1} \mu_{3}^{nW}   
 %    \hspace{5mm}\hbox{and} \hspace{5mm}
 %     \Psi_S \;=\; V_{latt}A_3W^{\gamma_3-1}\mu_3^W \,.    \]
@@ -496,5 +549,7 @@ And the second quotient inside the parentheses is close to 1 for large $n$.   Th
 Equation (\ref{eq.1dEEb}) tells us that $|\mathcal{E}_{j+1}|/|\mathcal{E}_j| \,\gg\,1$
 for every $j$.  It follows that configurations are highly likely to be in $\mathcal{E}_a$, i.e.\
 to have $\mathcal{S}$ covered entirely by long polymers.
+
+
 \bibliography{LongShort}
 \end{document}
