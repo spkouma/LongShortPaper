@@ -13,7 +13,7 @@
 \usepackage{subcaption}
 \usepackage{cancel}
 
-
+\newcommand{\leng}{\mathcal{L}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -235,12 +235,18 @@ place $N$ identical $\ell$-mers is
 
 \smallskip
 
-For a particular choice of $j$, we want to know the number of ways to place $j$ $nW$-mers 
-and $a(n-j)$ $W$-mers on the surface, without overlapping, to fill all $anW$ lattice sites on the surface.
+****  START HERE?? ****
+
+\medskip
+
+
+For a particular choice of $j$, we want to know the number of ways to place $j$ $\leng_L$-mers 
+and $a(n-j)$ $\leng_S$-mers on the surface, without overlapping, to fill all % $anW$ 
+the lattice sites on the sphere's surface.
 This is a hard combinatorial problem, so we shall use the following mean-field (Flory-Huggins) approach.
 We shall place one polymer at a time, starting with the long ones.
-Let $\tilde{w}_k$ be the number of ways to place the $k^{th}$ $nW$-mer on the surface, given that
-$(k-1)$ $nW$-mers have already been placed.  
+Let $\tilde{w}_k$ be the number of ways to place the $k^{th}$ $\leng_L$-mer on the surface, given that
+$(k-1)$ $\leng_L$-mers have already been placed.  
 To begin with, there are $anW-(k-1)nW$ available sites for the first monomer.  Recall that  $q$ is the number of
 neighbours of each site in the surface lattice.
 In the absence of other polymers, there would be $q$ choices for the second monomer in the chain,

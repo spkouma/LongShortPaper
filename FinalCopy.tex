@@ -26,7 +26,7 @@
 
 
 \newcommand*\mycommand[1]{\texttt{\emph{#1}}}
-
+\newcommand{\leng}{\mathcal{L}}
 
 \author{Sperydon Koumarianos}
 \affiliation{Department of Physics and Astronomy, York University, Toronto, ON, Canada. M3J 1P3} 
@@ -227,22 +227,22 @@ solution of volume $V$.
 Additionally, we let the total mass of the two kinds of monomers in our system be the same, so we assume that $n_S \,=\, n\cdot n_L$.
 
 
-***MOVE THIS LATER**** We let the number of $nW$-mers (long-chains) in solution to be $n_L-j$, the number of $W$-mers (short-chains) adsorbed on the surface to be $n(a-j)$, because there are $anW$ sites on the surface, all occupied, of which $jnW$ are occupied by $nW$-mers (long-chains), leaving $anW-jnW$ to be  occupied by $W$-mers (short-chains), and the number of $W$-mers (short-chains) in solution to be  $n_S-n(a-j)$.
+%***MOVE THIS LATER**** We let the number of $nW$-mers (long-chains) in solution to be $n_L-j$, the number of $W$-mers (short-chains) adsorbed on the surface to be $n(a-j)$, because there are $anW$ sites on the surface, all occupied, of which $jnW$ are occupied by $nW$-mers (long-chains), leaving $anW-jnW$ to be  occupied by $W$-mers (short-chains), and the number of $W$-mers (short-chains) in solution to be  $n_S-n(a-j)$.
 
 %reversed the sequence, by starting with definition and then introducing term as per Ozzy
-***MOVE THIS LATER***
-The number of lattice sites on the surface of one sphere is $A_{latt}$, and the number of long polymers that would 
+%***MOVE THIS LATER***
+%The number of lattice sites on the surface of one sphere is $A_{latt}$, and the number of long polymers that would 
 % removed exactly
 %removed a from linear font, as it is introduced as an expression
-fully cover all the sites of the surface is:
+%fully cover all the sites of the surface is:
 % we are labelling all equations as per Ozzy's request
-\begin{equation}
-    \label{eq.Number of Long Polymers that Fully Cover All Sites}
-       a  \;:=\;  \frac{A_{latt}}{nW}
-\end{equation}
+%\begin{equation}
+%    \label{eq.Number of Long Polymers that Fully Cover All Sites}
+%       a  \;:=\;  \frac{A_{latt}}{nW}
+%\end{equation}
 %
-Then $na$ is the number of short polymers that can completely cover the surface.
-For simplicity, we assume that $a$ is an integer.
+%Then $na$ is the number of short polymers that can completely cover the surface.
+%For simplicity, we assume that $a$ is an integer.
 
 %%removed as this is something that shall be discussed in results
 % We shall see that the underlying entropic reason that
@@ -266,16 +266,16 @@ Let $n_S$ be the number of short chains
 and let $n_L$ be the number long chains.
 We also assume that each
 short chain has the same number of monomers, 
-which we shall denote $Len_S$.  This ``length'' 
+which we shall denote $\leng_S$.  This ``length'' 
 will equal the number of lattice sites (and be one
 more than the number of steps) in each
 walk that corresponds to a short chain.
 Similarly, we shall assume that each long 
-chain has $Len_L$ monomers.
+chain has $\leng_L$ monomers.
 In the rest of this section, a ``configuration''
 of our model system refers to a collection of $n_S$
-walks of length $Len_S$ and $n_L$ walks of length
-$Len_L$ (all disjoint), 
+walks of length $\leng_S$ and $n_L$ walks of length
+$\leng_L$ (all disjoint), 
 where each walk is either entirely in the 
 surface lattice or else does not touch the surface
 lattice, and the surface lattice is completely 
@@ -319,14 +319,14 @@ such that
 \end{equation}
 and that $j^*$ is approximated by Equation (\ref{eq.jstar}).  Thus $j^*$ is the most likely
 number of long chains to be adsorbed.
-****MOVE THIS LATER:****
-Observe that we can characterize $j^*$ via Equation (\ref{eq.EEcomp}) by saying that $j^*$ is the smallest
-value of $j$ for which $|\mathcal{E}_{j+1}|/|\mathcal{E}_j|$ is less than 1.
-Thus our strategy for finding the most probably value
-$j^*$ will be to obtain an approximation for the ratio
-$|\mathcal{E}_{j+1}|/|\mathcal{E}_j|$ and to identify
-the value of $j$ for which it equals 1 --- i.e., where
-the ratio changes from being greater than 1 to being less than 1.
+%****MOVE THIS LATER:****
+%Observe that we can characterize $j^*$ via Equation (\ref{eq.EEcomp}) by saying that $j^*$ is the smallest
+%value of $j$ for which $|\mathcal{E}_{j+1}|/|\mathcal{E}_j|$ is less than 1.
+%Thus our strategy for finding the most probably value
+%$j^*$ will be to obtain an approximation for the ratio
+%$|\mathcal{E}_{j+1}|/|\mathcal{E}_j|$ and to identify
+%the value of $j$ for which it equals 1 --- i.e., where
+%the ratio changes from being greater than 1 to being less than 1.
 
 \subsubsection{3.2.2 Calculating the Maximum}
 %inserted a motivation that will explain why on page six we want to maximize epsilon j, also tried to flow into the first step of this modelling process being modelling the config of a single polymer
@@ -335,18 +335,25 @@ As explained above, this corresponds to finding the preferred number of
 long polymers of the experimental system. 
 
 Recall that our model system has $n_S$ short 
-polymers of length $Len_S$ and $n_L$ long polymers
-of length $Len_L$.  
+polymers of length $\leng_S$ and $n_L$ long polymers
+of length $\leng_L$.  
 
 Let $S_{latt}$ be the number of lattice sites on 
 the surface of one sphere.  Then $a$, which we
 defined to be the maximum
 number of long polymers that can be (fully)
 adsorbed onto the surface of a sphere, is 
-\[
-     a  \;=\;  \frac{S_{latt}}{Len_L} \,.
-\]
-(We shall assume that the right-hand side of this equation is an integer.)  
+\begin{equation}
+  \label{eq.aequal}
+     a  \;=\;  \frac{S_{latt}}{\leng_L} \,.
+\end{equation}
+We shall assume that the right-hand side of this equation is an integer.  
+
+It will be convenient to let $n=\leng_L/\leng_S$, 
+so that
+long polymers are $n$ times the size of the short ones.
+It follows that the maximum number of short polymers
+that can be adsorbed onto a sphere's surface is $na$.
 
 As mentioned in Section 3.2.1, we model the configuration of a single  polymer in a dilute solution by a self-avoiding walk (SAW) in a lattice, which is a path in the lattice that does not visit any site more than once.
 %reordered this 
@@ -375,14 +382,58 @@ their values are known to be approximately \cite{Chen2002,Madras2013}
 (Chen and Lin\cite{Chen2002} used the 
 number of SAWs with $\ell$ \textit{steps} (i.e.\ $\ell+1$ \textit{sites}), which we write  $c_{\ell+1}=(A_3\mu_3)\ell^{\gamma_3-1}\mu_3^{\ell}$; %reference \cite{Chen2002} 
 they obtained $A_3\mu_3=1.205$.)
+Since the number of sites in the lattice corresponding to the region of solution is $V_{latt}$, 
+we have $V_{latt}c_{\ell}$ ways to place a polymer of size ${\ell}$.  As we are neglecting the
+possibility of overlapping polymers in the dilute solution, it follows that the number of ways to 
+place $N$ indistinguishable $\ell$-mers is 
+\begin{equation}
+  \label{eq.Npoly}
+   \frac{(V_{latt}c_{\ell})^N}{N!}  \,.   
+\end{equation}
 
+ As described above, we use the variable $j$ to 
+ denote the number of long chains that are adsorbed
+ onto the sphere's surface ($0\leq j\leq a$).
+ Given $j$, the number of $\leng_L$-mers (long-chains) in solution must be $n_L-j$; 
+ the number of $\leng_S$-mers (short-chains) adsorbed on the surface must be $n(a-j)$ [because there are $S_{latt}=an\leng_S$ sites on the surface, all occupied, of which $j\leng_L$ are occupied by $\leng_L$-mers (long-chains), leaving $S_{latt}-j\leng_L\,=\, an\leng_S-jn\leng_S$ to be  occupied by $\leng_S$-mers (short-chains)]; 
+ and hence the number of $\leng_S$-mers (short-chains) in solution must be  $n_S-n(a-j)$.
 
+Recalling Equations (\ref{eq.sawscale}) and 
+(\ref{eq.Npoly}), we find that the number of configurations in $\mathcal{E}_j$ is
+\begin{equation}
+    |\mathcal{E}_j|  
+      \; = \; \frac{ \Psi_L^{n_L-j} }{(n_L-j)!} \,
+          \frac{ \Psi_S^{n_S-n(a-j)} }{(n_S-n(a-j))!} \,  G(j)
+%           \frac{\tilde{w}_1\tilde{w}_2\cdots \tilde{w}_j}{j!}
+ %                    \,   \frac{\tilde{u}_{nj+1}\tilde{u}_{nj+2}\cdots \tilde{u}_{an}}{(n(a-j))!}
+        \label{eq.Yj}
+\end{equation}
+where 
+\begin{equation}
+    \label{eq.psidef}   
+   \Psi_L\;=\;V_{latt} A_3 (\leng_L)^{\gamma_3-1} \mu_{3}^{\leng_L} \,,  
+    \hspace{5mm} %\hbox{and} \hspace{5mm}
+     \Psi_S \;=\; V_{latt}A_3{\leng_S}^{\gamma_3-1}\mu_3^{\leng_S} \,,
+\end{equation}
+and $G(j)$ is the number of ways to cover the surface
+with $j$ $\leng_L$-mers and $n(a-j)$ $\leng_S$-mers.
+The quantity $G(j)$ is difficult to compute, so we
+approximate it using a mean field (Flory-Huggins) approach.  Details are given in the Supplementary 
+Materials.
+[*** HOW DO WE REFER TO IT?****]
 
-
-
-To determine which value of $j$ maximizes $|\mathcal{E}_j|$, we look at ratios of consecutive terms
-%took a risk at not putting a period there
-through the following approximation, of which a full derivation can be found in the the supplementary materials :
+Now we turn to the problem of finding $j^*$, the
+value of $j$ that maximizes $|\mathcal{E}_j|$.
+Observe that by Equation (\ref{eq.EEcomp}), we can characterize $j^*$ by saying that $j^*$ is the smallest
+value of $j$ for which $|\mathcal{E}_{j+1}|/|\mathcal{E}_j|$ is less than 1.
+Thus our strategy will be to approximate the ratio
+$|\mathcal{E}_{j+1}|/|\mathcal{E}_j|$ and to identify
+the value of $j$ for which it equals 1 --- i.e., where
+the ratio changes from being greater than 1 to being less than 1.
+In the Supplementary Materials, we show that
+% To determine which value of $j$ maximizes $|\mathcal{E}_j|$, we look at ratios of consecutive terms
+%% took a risk at not putting a period there
+%through the following approximation, of which a full derivation can be found in the the supplementary materials :
 \begin{equation}
     \label{eq.Yratio2}
        \frac{|\mathcal{E}_{j+1}|}{|\mathcal{E}_j|} \; \approx \; 
@@ -393,7 +444,9 @@ We observe that the quantity on the right of Equation (\ref{eq.Yratio2}) decreas
 
 
 %only concern is that min will throw people off, given that we are searching for a max....
-Let $j^*$ be the smallest value of $j$ for which the right-hand side of Equation (\ref{eq.Yratio2}) is still less than 1. We shall show show that $j^*$ is the most probable value of $j$ 
+***EDIT*** 
+Let $j^*$ be the smallest value of $j$ for which the right-hand side of Equation (\ref{eq.Yratio2}) is 
+less than 1. We shall show show that $j^*$ is the most probable value of $j$ 
 %added this parenthesis as Ozzy notated the significance of j*. May be repetitive
 (the number of $nW$-mers adsorbed on the surface).
 We see that $|\mathcal{E}_{j+1}|/|\mathcal{E}_j|<1$ whenever $j\geq j^*$, and 
@@ -405,7 +458,7 @@ where the right-hand side of Equation (\ref{eq.Yratio2}) is close to 1.
 
 %equation containers everywhere, unlabeled though, not sure what journal wants.
 %moved the definition of K to prior in sequence, and made it an equation
-\noindent We let, 
+\noindent We let 
 \begin{equation}
     \label{}
 K \;=\;   \frac{ V_{latt} }{aW}\, \frac{   A_3W^{\gamma_3-1}(q-1)^2}{q} \,,
@@ -424,9 +477,7 @@ K \;=\;   \frac{ V_{latt} }{aW}\, \frac{   A_3W^{\gamma_3-1}(q-1)^2}{q} \,,
              %\hspace{5mm}\hbox{where}\hspace{5mm}
              %K \;=\;   \frac{ V_{latt} }{aW}\, \frac{   A_3W^{\gamma_3-1}(q-1)^2}{q} \,,
 \end{equation}
-
-\noindent As explained in the supplement, this leads to the approximation,
-
+As explained in the Supplement, this leads to the approximation
 \begin{equation}
     \label{eq.jstar}
      1-\frac{j^*}{a}     \; \approx   \; 
