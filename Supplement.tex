@@ -58,39 +58,39 @@
 \keywords{American Chemical Society, \LaTeX}
 
 \begin{document}
-\section{Derivation of Mean-field lattice model}
+\section{Calculations for the Mean-field lattice model}
 
-\subsection{Setup of Mean-field lattice model}
+%\subsection{Setup of Mean-field lattice model}
 
-We shall use a lattice model to describe our experimental situation.  
-Lattices will appear in two ways:  (1) covering the surface of a sphere by a two-dimensional lattice, and
-(2) filling space with a regular three-dimensional lattice.  
-The geometry of the lattices will not play a significant role.
-We shall use the simple cubic lattice for our three-dimensional lattice.  
-We shall assume that the two-dimensional lattice has coordination number $q$ 
-(that is, each site on the surface has exactly $q$ neighbouring sites).  We assume that 
-the distance between lattice sites corresponds to the distance between adjacent monomers within a 
-polymer.  We assume that in equilibrium, every lattice site in the surface is covered by an adsorbed 
-monomer.  We also assume that in each polymer, either every 
-monomer is adsorbed or else no monomer is adsorbed.
+%We shall use a lattice model to describe our experimental situation.  
+%Lattices will appear in two ways:  (1) covering the surface of a sphere by a two-dimensional lattice, and
+%(2) filling space with a regular three-dimensional lattice.  
+%The geometry of the lattices will not play a significant role.
+%We shall use the simple cubic lattice for our three-dimensional lattice.  
+%We shall assume that the two-dimensional lattice has coordination number $q$ 
+%(that is, each site on the surface has exactly $q$ neighbouring sites).  We assume that 
+%the distance between lattice sites corresponds to the distance between adjacent monomers within a 
+%polymer.  We assume that in equilibrium, every lattice site in the surface is covered by an adsorbed 
+%monomer.  We also assume that in each polymer, either every 
+%monomer is adsorbed or else no monomer is adsorbed.
 
-Our experiment has a large number $n_{sphere}$ of spheres in a solution of volume $V_{sol}$.  To simplify 
-our model and keep the concentrations the same, we shall consider only a single sphere in a solution
-of volume $V:=V_{sol}/n_{sphere}$.  We shall refer to this as our model system.
-We shall view this small three-dimensional region of the solution in our model system as being filled by a 
-cubic lattice.
-Let $V_{latt}$ be the number of lattice sites in our solution region of volume $V$. This is illustrated in the simple graphic in Figure 1.
+%Our experiment has a large number $n_{sphere}$ of spheres in a solution of volume $V_{sol}$.  To simplify 
+%our model and keep the concentrations the same, we shall consider only a single sphere in a solution
+%of volume $V:=V_{sol}/n_{sphere}$.  We shall refer to this as our model system.
+%We shall view this small three-dimensional region of the solution in our model system as being filled by a 
+%cubic lattice.
+%Let $V_{latt}$ be the number of lattice sites in our solution region of volume $V$. This is illustrated in the simple graphic in Figure 1.
 
 
 
-\begin{figure}[H] 
-\includegraphics[scale=0.5]{fig7.jpg}
-\caption{Schematic of the model system (small box)
-inside the full solution (large box). The full system
-has volume $V_{sol}$ and contains many spheres.  The model
-system has volume $V$ and contains one sphere.}
-\label{figure 1}
-\end{figure}
+%  \begin{figure}[H] 
+%  \includegraphics[scale=0.5]{fig7.jpg}
+%\caption{Schematic of the model system (small box)
+%inside the full solution (large box). The full system
+%has volume $V_{sol}$ and contains many spheres.  The model
+%system has volume $V$ and contains one sphere.}
+%\label{figure 1}
+%\end{figure}
 
 \subsection{Estimating the Number of Configurations}
 
@@ -98,7 +98,20 @@ Here is a summary of the notation for the model system
 from Section 3 of the Main Paper [**** HOW DO WE 
 REFER TO THE PAPER HERE?****]
 
-We assume that there are $n_L$ ``long'' chains, each
+Our model system has a single sphere in a solution of
+volume $V$.  The model solution volume is filled by a 
+simple cubic lattice, with the number of lattice sites in this volume denoted by $V_{latt}$.
+The surface of the sphere is covered by a  two-dimensional lattice with coordination number $q$ 
+(that is, each site on the surface has exactly $q$ neighbouring sites).  We assume that 
+the distance between lattice sites corresponds to the distance between adjacent monomers within a 
+polymer.  We assume that in equilibrium, every lattice site in the surface is covered by an adsorbed 
+monomer.  We also assume that in each polymer, either every 
+monomer is adsorbed or else no monomer is adsorbed.
+ 
+
+
+
+We assume that our model system has $n_L$ ``long'' chains, each
 with $\leng_L$ monomers, as well as $n_S$ ``short''
 chains, each with $\leng_S$ monomers.
 
@@ -111,7 +124,7 @@ $n\cdot n_L$ have similar orders of magnitude.
 We let $S_{latt}$ be the number of lattice sites on 
 the surface of one sphere.  Then the maximum number of 
 long chains that can adsorb onto the surface is 
-$S_{latt}/\leng_S$, which we also call $a$. For 
+$S_{latt}/\leng_S$, which we call $a$. For 
 simplicity, we assume that $a$ is an integer.
 
 %We shall consider polymers of two different lengths, which we shall call ``short'' and ``long.''  Their lengths
@@ -151,13 +164,18 @@ simplicity, we assume that $a$ is an integer.
 % Recall that our ensemble consists of $n_S$ (short) $W$-mers and $n_L$ (long) $nW$-mers.
 %Of these, some are adsorbed onto the surface of the sphere, and the others float freely in the 
 %solution of volume $V_1$.  
-We let $j$ denote the number of (long) $\leng_L$-mers that are adsorbed 
-onto the surface in a particular configuration of the model system.  This implies that
+
+We write $\mathcal{E}_j$ for the set of all configurations (of $n_L$ long chains and $n_S$ short chains) that have exactly $j$ 
+$\leng_L$-mers adsorbed onto the surface.  
+The possible values of $j$ are the integers from 0 to $a$.
+For each configuration in $\mathcal{E}_j$, it must be true that:
+%We let $j$ denote the number of (long) $\leng_L$-mers that are adsorbed 
+%onto the surface in a particular configuration of the model system.  This implies that
 %\begin{verse}
 \\
  ($i$) the number of $\leng_L$-mers in solution is $n_L-j$;
  \\
- ($ii$) the number of $\leng_S$-mers adsorbed on the surface is $n(a-j)$; and 
+ ($ii$) the number of $\leng_S$-mers adsorbed onto the surface is $n(a-j)$; and 
 %(because there are $anW$ sites on the
 % surface, all occupied, of which $jnW$ are occupied by $nW$-mers, leaving $anW-jnW$ to be 
 % occupied by $W$-mers); and
@@ -165,9 +183,6 @@ onto the surface in a particular configuration of the model system.  This implie
  ($iii$) the number of $\leng_L$-mers in solution is $n_S-n(a-j)$.
 % \end{verse}  
 \\
-We write $\mathcal{E}_j$ for the set of all configurations that have exactly $j$ 
-$\leng_L$-mers adsorbed 
-onto the surface.  Observe that the possible values of $j$ are the integers from 0 to $a$.
 The full space of configurations in our model is $\cup_{j=0}^a {\mathcal{E}_j}$, 
 which we call $\mathcal{E}$.
 
@@ -186,40 +201,57 @@ Thus, to find the most likely number of $\leng_L$-mers (and $\leng_S$-mers) to b
 we need to find which of the sets $\mathcal{E}_j$ is largest.
 
 
-In order to better comprehend the model we provide an illustration Figure 2 with much simpler values than what would be considered the standard chain lengths in polymer science. We let each lattice point of area of one mer of PAA, be a square on the grid. Additionally, each long chain mer contact is represented by an L and a short chain mer by an S on the grid.  Suppose a short chain is 30-mers and long chain is 90-mers and the colloid surface has 3000 available single mer sites. The model is initialized with the colloid surface sites absolutely covered in exclusively short chains  which in this concrete example is 100 short chains. We then remove enough short chains in order to be able to replace them with our first long which in this example is occupies the sites of 3  short chains. We will continue to do this successive combination sampling process of adding more and more long chains in place of the equivalent number of mers in short chains until we get a maximal value for $\mathcal{E}_{j}$.
+In order to better comprehend the model we provide an illustration Figure 2 with much simpler values than what would be considered the standard chain lengths in polymer science. We let each lattice point of area of one mer of PAA, be a square on the grid. 
+%Additionally, each long chain mer contact is represented by an L and a short chain mer by an S on the grid.  
+Suppose a short chain is %30-mers and long chain is 90-mers and the colloid surface has 3000 available single mer sites.
+25-mers and long chain is 75-mers and the colloid surface has 2025 available single mer sites.
+In the parameters of this model, we have 
+$S_{latt}=2025$, $\leng_S=25$,
+$\leng_L=75$,$n=3$, and $a=2025/75=27$.
+For simplicity, the figure shows each short chain
+fills a $5\times 5$ square of lattice points, and each
+long chain fills three adjacent $5\times 5$ squares.
+We can think of the model initially with the colloid surface sites fully covered exclusively by short chains, which in this concrete example requires 81 short chains (a). We then remove 3 short chains and replace them with our first long chain (b). 
+We can think of continuing this process of adding more and more long chains in place of the equivalent number of mers in short chains (c,d,e) until we reach the maximum number of long chains (f).
+%value for $\mathcal{E}_{j}$.
 
 \begin{figure}[H]
     \begin{subfigure}[b]{0.4\textwidth}
         \includegraphics[scale=0.15]{fig8a.png}
-        \caption{0 long \& 81 short chains\\ on Colloid Surface}
+        \caption{ $\mathcal{E}_0$:  0 long \& 81 short \\chains on Colloid Surface}
         \label{fig:A}
     \end{subfigure}
     \begin{subfigure}[b]{0.4\textwidth}
         \includegraphics[scale=0.15]{fig8b.png}
-        \caption{1 long \& 78 short chains\\ on Colloid Surface}
+        \caption{$\mathcal{E}_1$: 1 long \& 78 short \\chains on Colloid Surface}
         \label{fig:B}
     \end{subfigure}
     \begin{subfigure}[b]{0.4\textwidth}
         \includegraphics[scale=0.15]{fig8c.png}
-        \caption{2 long \& 75 short chains\\ on Colloid Surface}
+        \caption{$\mathcal{E}_2$: 2 long \& 75 short \\chains on Colloid Surface}
         \label{fig:C}
     \end{subfigure}
     \begin{subfigure}[b]{0.4\textwidth}
         \includegraphics[scale=0.15]{fig8d.png}
-        \caption{3 long \& 72 short chains\\ on Colloid Surface}
+        \caption{$\mathcal{E}_3$:  3 long \& 72 short \\chains on Colloid Surface}
         \label{fig:D}
     \end{subfigure}
     \begin{subfigure}[b]{0.4\textwidth}
         \includegraphics[scale=0.15]{fig8e.png}
-        \caption{4 long \& 69 short chains\\ on Colloid Surface}
+        \caption{$\mathcal{E}_4$:  4 long \& 69 short \\chains on Colloid Surface}
         \label{fig:E}
     \end{subfigure}
     \begin{subfigure}[b]{0.4\textwidth}
         \includegraphics[scale=0.15]{fig8f.png}
-        \caption{27 long \& 0 short chains\\ on Colloid Surface}
+        \caption{$\mathcal{E}_{27}$:  27 long \& 0 short \\ chains on Colloid Surface}
         \label{fig:F}
     \end{subfigure}
-    \caption{Process of Sampling Full Surface Coverage Combinations of ever increasing long chains that are substituting multiple short chains  on Colloid}
+    \caption{Schematic of configurations in 
+    $\mathcal{E}_j$ for $j=0,1,2,3,4,27$, with
+    $j$ long chains and $81-3j$ short chains adsorbed
+    onto the colloid surface.  Each S represents a $5\times 5$ square of lattice points covered by one short chain; similarly, three contiguous L's are covered by one long chain. 
+    }
+    %Process of Sampling Full Surface Coverage Combinations of ever increasing long chains that are substituting multiple short chains  on Colloid}
     \label{figure 2}
 \end{figure}
 
@@ -315,7 +347,7 @@ We conclude that
    \tilde{w}_k  & = &   [a\leng_L-(k-1)\leng_L]\,\times \,q\left(\frac{ a\leng_L-(k-1)\leng_L-1}{a\leng_L}\right)    \,\times
    \nonumber    \\
    & &    \hspace{22mm}
-     \prod_{i=2}^{nW-1}(q-1)\left(\frac{ a\leng_L-(k-1)\leng_L-i}{a\leng_L}\right)  
+     \prod_{i=2}^{\leng_L-1}(q-1)\left(\frac{ a\leng_L-(k-1)\leng_L-i}{a\leng_L}\right)  
       \nonumber \\
  & = &    \frac{[a\leng_L-(k-1)\leng_L]!}{[a\leng_L-k\leng_L]!} \,q\,  \frac{(q-1)^{\leng_L-2}}{(a\leng_L)^{\leng_L-1}}  
      \nonumber    \\
@@ -332,6 +364,15 @@ argument as for $\tilde{w}_k$ gives
      & = &    \frac{[an\leng_S-(\ell-1)\leng_S]!}{[an\leng_S-\ell \leng_S]!}   an\leng_S \frac{q}{(q-1)^2}\left(  \frac{q-1}{an\leng_S}\right)^{\leng_S}.
      \label{eq.uell2}
 \end{eqnarray}
+We can now express the combinatorial quantity $G(j)$ 
+in Equation (\ref{eq.Yjsupp}) as
+\begin{equation}
+    \label{eq.Gformula}
+      G(j) \;=\;      \frac{\tilde{w}_1\tilde{w}_2\cdots \tilde{w}_j}{j!}
+                    \,   \frac{\tilde{u}_{nj+1}\tilde{u}_{nj+2}\cdots \tilde{u}_{an}}{(n(a-j))!}  \,.
+\end{equation}
+
+
 
 %To evaluate $|\mathcal{E}_j|$, we assume that the solution of unadsorbed polymers 
 %is dilute enough that we don't need to worry about mutual exclusion between the free floating polymers.   
@@ -360,7 +401,7 @@ argument as for $\tilde{w}_k$ gives
 
 
 
-To determine which value of $j$ maximizes $|\mathcal{E}_j|$, we look at ratios of consecutive terms:
+To determine which value of $j$ maximizes $|\mathcal{E}_j|$, we look at ratios of consecutive terms, using Equations (\ref{eq.Yjsupp}--\ref{eq.Gformula}):
 \begin{eqnarray}
     \frac{|\mathcal{E}_{j+1}|}{|\mathcal{E}_j|}   & = & 
  \frac{
@@ -409,28 +450,34 @@ Now, putting Equations (\ref{eq.psiratio}--\ref{eq.Yratiob}) back into (\ref{eq.
 \begin{equation}
     \label{eq.Yratio2}
        \frac{|\mathcal{E}_{j+1}|}{|\mathcal{E}_j|} \; \approx \; 
-       \left(  \frac{V_{latt}A_3\leng_S^{\gamma_3-1}(q-1)^2}{aq\leng_S} \,
-          \frac{(a-j-\frac{1}{2})}{n_S-n(a-j-\frac{1}{2})} \right)^{n+o(n)}  
-          \;=\;   \left(h(j)\right)^{n+o(n)}\,.
+       \left( h(j)\right)^{n+o(n)},
+       \hspace{5mm}\hbox{where}\hspace{5mm}
+       h(j)  \;=\;
+       \frac{V_{latt}A_3\leng_S^{\gamma_3-1}(q-1)^2}{aq\leng_S} \,
+          \frac{(a-j-\frac{1}{2})}{n_S-n(a-j-\frac{1}{2})}  \,.
 \end{equation}
-The quantity on the right of Equation (\ref{eq.Yratio2}) decreases in $j$.  Let $j^*$ be the 
-smallest value of $j$ for which the right-hand side of Equation (\ref{eq.Yratio2}) is less than 1.
-Then we see that $|\mathcal{E}_{j+1}|/|\mathcal{E}_j|<1$ whenever $j\geq j^*$, and 
-$|\mathcal{E}_{j+1}|/|\mathcal{E}_j|\geq 1$ whenever $j< j^*$.
-That is, $|\mathcal{E}_j|$ is decreasing in $j$ when $j\geq j^*$, and 
-increasing when $j< j^*$.
-It follows that $|\mathcal{E}_j|$ is maximized at $j=j^*$, and that we can find $j^*$ by seeing 
-where the right-hand side of Equation (\ref{eq.Yratio2}) is close to 1.   Thus $j^*$ satisfies
+%The quantity on the right of Equation (\ref{eq.Yratio2}) decreases in $j$.  
+Let $j^*$ be the 
+smallest value of $j$ for which $h(j)$ is less than 1.
+%Then we see that $|\mathcal{E}_{j+1}|/|\mathcal{E}_j|<1$ whenever $j\geq j^*$, and 
+%$|\mathcal{E}_{j+1}|/|\mathcal{E}_j|\geq 1$ whenever $j< j^*$.
+%That is, $|\mathcal{E}_j|$ is decreasing in $j$ when $j\geq j^*$, and 
+%increasing when $j< j^*$.
+%It follows that $|\mathcal{E}_j|$ is maximized at $j=j^*$, and that we can find $j^*$ by seeing 
+%where the right-hand side of Equation (\ref{eq.Yratio2}) is close to 1.   Thus $j^*$ satisfies
+As explained in the main paper, the quantity $|\mathcal{E}_j|$
+is maximized at $j=j^*$, and $j^*$ satisfies 
+$h(j^*)\approx 1$, which is equivalent to
 \[     1  \;\approx \; 
      K  \,%\frac{ V_{latt}A_3W^{\gamma_3-1}(q-1)^2}{aWq} \,
           \frac{a-j^*-\frac{1}{2}}{n_S-n(a-j^*-\frac{1}{2})}    \,,  
              \hspace{5mm}\hbox{where}\hspace{5mm}
-             K \;=\;   \frac{ V_{latt} }{a\leng_S}\, \frac{   A_3\leng_S^{\gamma_3-1}(q-1)^2}{q} \,,
+             K \;=\;   \frac{ V_{latt} }{a\leng_S}\, \frac{   A_3\leng_S^{\gamma_3-1}(q-1)^2}{q} \,.
 \]
-which can be rewritten as 
+The above approximation can be rewritten as 
 \[       a-j^*-\frac{1}{2} \; \approx\;    \frac{n_S}{K+n}   \,.
 \]
-We observe that $K\gg n$; indeed,  $V_{latt}/a\leng_S n \,=\,V_{latt}/A_{latt}\gg 1$.  
+We observe that $K\gg n$; indeed,  $V_{latt}/a\leng_S n \,=\,V_{latt}/S_{latt}\gg 1$.  
 Thus we can replace $K+n$ by $K$ in the above, and omit the small term $\frac{1}{2}$, resulting in the   
 approximation 
 \begin{equation}
@@ -438,15 +485,15 @@ approximation
      1-\frac{j^*}{a}     \; \approx   \; 
         \left(  \frac{n_S\,\leng_S}{V_{latt} }\right) \,\left(   \frac{q}{A_3\leng_S^{\gamma_3-1}(q-1)^2}\right)  \,.
 \end{equation}
-The above equation can be interpreted as follows.  The left hand side, $1-j^*/a$, is the fraction of the
-sphere's surface that is covered by short monomers.  
-The quantity in the second set of 
-parentheses in Equation (\ref{eq.jstar}) cannot be large, since $q<(q-1)^2$ and $\gamma_3>1$.
-The ratio $n_S\leng_S/V_{latt}$ gives
-the concentration of monomers corresponding to those appearing on the short chains only.
-If the solution is fairly dilute, then we see that the right (and hence the left) side of (\ref{eq.jstar}) is small,
-and therefore only a small fraction of the surface is covered by short polymers.
-
+%The above equation can be interpreted as follows.  The left hand side, $1-j^*/a$, is the fraction of the
+%sphere's surface that is covered by short monomers.  
+%The quantity in the second set of 
+%parentheses in Equation (\ref{eq.jstar}) cannot be large, since $q<(q-1)^2$ and $\gamma_3>1$.
+%The ratio $n_S\leng_S/V_{latt}$ gives
+%the concentration of monomers corresponding to those appearing on the short chains only.
+%If the solution is fairly dilute, then we see that the right (and hence the left) side of (\ref{eq.jstar}) is small,
+%and therefore only a small fraction of the surface is covered by short polymers.
+See the Main Paper for the discussion and interpretation of Equation (\ref{eq.jstar}.
 
 [\textit{Remark:}  It is interesting to observe that $n_L$ does not appear in Equation (\ref{eq.jstar}).  
 In the expression for $|\mathcal{E}_{j+1}|/|\mathcal{E}_j|$,   only $n_S$ appears inside the 

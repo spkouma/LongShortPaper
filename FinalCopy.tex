@@ -183,7 +183,7 @@ be the following.
 Assume that both short and long polymers 
 are dilute in the solvent, and that the 
 surface of each colloidal sphere is completely covered 
-by polymer chains.  Then with high probability, 
+by fully adsorbed polymer chains.  Then with high probability, 
 the fraction of the sphere's surface that is 
 covered by short chains is small---more precisely, it 
 is approximately proportional
@@ -208,13 +208,23 @@ have no ``loops'' or ``tails'').
 Our experiment has a large number $n_{sphere}$ of spheres in a solution of volume $V_{sol}$.  
 To simplify 
 our model and without changing the concentrations, we shall consider only a single sphere in a solution
-of volume $V:=V_{sol}/n_{sphere}$.  We shall refer to this as our model system.
+of volume $V:=V_{sol}/n_{sphere}$.  We shall refer to this as our model system (see Figure \ref{figure1volume}).
 We shall view this small three-dimensional region of the solution in our model system as being filled by a 
 cubic lattice.
 Let $V_{latt}$ be the number of sites of the cubic 
 lattice in our solution region of volume $V$.
 
 
+
+
+ \begin{figure}[H] 
+  \includegraphics[scale=0.5]{fig7.jpg}
+\caption{Schematic of the model system (small box)
+inside the full solution (large box). The full system
+has volume $V_{sol}$ and contains many spheres.  The model
+system has volume $V$ and contains one sphere.}
+\label{figure1volume}
+\end{figure}
 
 %%Proceeded to sub in subsequent duplicate definition here below this section 
 % We shall consider polymers of two different lengths, which we shall call ``short'' and ``long.''  Their lengths
@@ -290,19 +300,19 @@ For each integer $j$ with $0\leq j\leq a$, let
 $\mathcal{E}_j$ be the set of all configurations that have exactly $j$ long chains adsorbed 
 onto the surface.  
 % Observe that the possible values of $j$ are the integers from 0 to $a$.
-Then full space of configurations in our model,
+Then the full space of configurations in our model,
 $\mathcal{E}$, is equal to 
 $\cup_{j=0}^a {\mathcal{E}_j}$. 
 % which we shall call $\mathcal{E}$.
 
 Since the only energy in this model comes from the adsorption contacts between monomer and surface,
-and since every configuration in $\mathcal{E}$ has the number of such contacts
+and since every configuration in $\mathcal{E}$ has the same number of such contacts
 (namely, the number of sites in the surface lattice),
 we see that every configuration of $\mathcal{E}$ has exactly the same energy.
 Therefore, according to the Boltzmann distribution, every configuration in $\mathcal{E}$ is equally
-likely. Thus to calculate the probabilities of events we can simply count the configurations.
-Specifically, denoting the number of configurations in a set $\mathcal{A}$ by $|\mathcal{A}|$, we have that
-the probability that $j$ long polymers are adsorbed is $\frac{|\mathcal{E}_j|}{|\mathcal{E}|}$
+likely. Thus to calculate the probability of an event, we can simply count the configurations associated with the event and divide by the total number of configurations.
+Specifically, denoting the number of configurations in a set $\mathcal{A}$ by $|\mathcal{A}|$, we see that
+the probability that exactly $j$ long polymers are adsorbed is $\frac{|\mathcal{E}_j|}{|\mathcal{E}|}$,
 for each $j=0,1,\ldots,a$.
 
 Thus, to find the most likely number of long chains %(and $W$-mers (short-chains))
@@ -329,16 +339,15 @@ number of long chains to be adsorbed.
 %the value of $j$ for which it equals 1 --- i.e., where
 %the ratio changes from being greater than 1 to being less than 1.
 
-\subsubsection{3.2.2 Calculating the Maximum}
+\subsubsection{3.2.2 Calculating the Most Probable Outcome}
 %inserted a motivation that will explain why on page six we want to maximize epsilon j, also tried to flow into the first step of this modelling process being modelling the config of a single polymer
 We now wish to estimate the size of each set $\mathcal{E}_j$ ($j=0,1,\ldots,a$), in order to  determine which set is the largest.  
-As explained above, this corresponds to finding the preferred number of 
+As explained above, this corresponds to finding the most probable number of 
 long polymers that are adsorbed in the experimental system. 
 
 Recall that our model system has $n_S$ short 
 polymers of length $\leng_S$ and $n_L$ long polymers
 of length $\leng_L$.  
-
 Let $S_{latt}$ be the number of lattice sites on 
 the surface of one sphere.  Then $a$, which we
 defined to be the maximum
@@ -359,7 +368,7 @@ so that
 long polymers are $n$ times the size of the short ones.
 It follows that the maximum number of short polymers
 that can be adsorbed onto a sphere's surface is $na$.
-To make the total mass of the two kinds of polymers in our system be the same, we can assume that $n_S \,=\, n\cdot n_L$.  However, we do not really use this relation; it is enough that $n_s$ and $n\cdot n_L$
+To make the total mass of the two sizes of polymers in our system be the same, we can assume that $n_S \,=\, n\cdot n_L$.  However, we do not really use this relation; it is enough that $n_S$ and $n\cdot n_L$
 are of similar orders of magnitude.
 
 
@@ -374,7 +383,7 @@ the number of SAWs that start from a specified site of the simple cubic lattice 
 %A fundamental property of SAWs is the following.  
 Then the asymptotic behaviour of $c_{\ell}$ 
 %on the three-dimensional cubic lattice 
-is 
+is\cite{Madras2013} 
 \begin{equation}
     \label{eq.sawscale}
        c_{\ell}  \;\sim  \;  A_3 \, {\ell}^{\gamma_3-1}  \mu_3^{\ell}    \hspace{5mm}\hbox{as $\ell\rightarrow\infty$}.
@@ -454,18 +463,29 @@ Observe that $h(j)$ is a  decreasing function of $j$.
 %only concern is that min will throw people off, given that we are searching for a max....
 Let $j^*$ be the smallest value of $j$ for which 
 %the right-hand side of Equation (\ref{eq.Yratio2}) 
-$h(j)$ is 
-less than 1. We shall show show that $j^*$ is the most probable value of $j$ 
+$h(j)$ is less than 1. 
+We shall now explain why Equation (\ref{eq.EEcomp}) holds 
+for this choice of $j^*$, which in turn tells us that
+$j^*$ is the most probable 
 %added this parenthesis as Ozzy notated the significance of j*. May be repetitive
-(the number of long chains adsorbed onto the surface).
-We see that $|\mathcal{E}_{j+1}|/|\mathcal{E}_j|<1$ whenever $j\geq j^*$, and 
-$|\mathcal{E}_{j+1}|/|\mathcal{E}_j|\geq 1$ whenever $j< j^*$.
-That is, $|\mathcal{E}_j|$ is decreasing in $j$ when $j\geq j^*$, and 
-increasing when $j< j^*$.
+number of adsorbed long chains.
+Firstly, for every $j\geq j^*$, we have $h(j)<1$, 
+and thus Equation (\ref{eq.Yratio2}) shows that 
+$|\mathcal{E}_{j+1}|/|\mathcal{E}_j|<1$, i.e.\ that 
+$|\mathcal{E}_j|>|\mathcal{E}_{j+1}|$.  That is, $|\mathcal{E}_j|$ is decreasing in $j$ when $j\geq j^*$.  
+Similarly, for $j<j^*$ we have $h(j)>1$, and thus
+$|\mathcal{E}_{j+1}|/|\mathcal{E}_j|> 1$, i.e.\ that
+$|\mathcal{E}_j|<|\mathcal{E}_{j+1}|$.  That is, $|\mathcal{E}_j|$ is increasing in $j$ when $j< j^*$.
+We conclude that Equation (\ref{eq.EEcomp}) holds.
 It follows that $|\mathcal{E}_j|$ is maximized at $j=j^*$, and that we can find $j^*$ by seeing 
 where $h(j)$
 %the right-hand side of Equation (\ref{eq.Yratio2}) 
 is close to 1.   
+Moreover, the exponent $n$ in Equation (\ref{eq.Yratio2})
+shows that the size of $|\mathcal{E}_j|$  (and hence the 
+corresponding probability) decays rapidly from the maximum 
+value as $j$ gets farther away from $j^*$.  Therefore the probability distribution for $j$ should be concentrated close to the most likely value $j^*$.
+
 
 %equation containers everywhere, unlabeled though, not sure what journal wants.
 %moved the definition of K to prior in sequence, and made it an equation
@@ -494,10 +514,11 @@ $h(j^*)\approx 1$ leads to the approximation
      1-\frac{j^*}{a}     \; \approx   \; 
         \left(  \frac{n_S\,\leng_S}{V_{latt} }\right) \,\left(   \frac{q}{A_3\leng_S^{\gamma_3-1}(q-1)^2}\right)  \,.
 \end{equation}
-The above equation can be interpreted as follows.  The left hand side, $1-\frac{j^*}{a}$, is the fraction of the colloid sphere's surface that is covered by short monomers.  The ratio $n_S\leng_S/V_{latt}$ gives
+The above equation can be interpreted as follows.  The left hand side, $1-\frac{j^*}{a}$, is the (most likely) fraction of the colloid sphere's surface that is covered by short monomers.  The ratio $n_S\leng_S/V_{latt}$ gives
 the concentration of monomers corresponding to those appearing on the short chains only.
 %%commented it out as Ozzy asks if this is necessary
 %The quantity in the second set of parentheses in Equation (\ref{eq.jstar}) cannot be large, since $q<(q-1)^2$ and $\gamma_3>1$.
+And the proportionality constant $q/A_3\leng_S^{\gamma_3-1}(q-1)^2$ is not large (less than 3, in fact).
 If the solution is fairly dilute, then we see that the right side (and hence the left side) of (\ref{eq.jstar}) is small,
 which tells us that only a small fraction of the surface is covered by short polymers.
 
@@ -596,7 +617,15 @@ In determining the effect of entropy on the preferential adsorption of short ver
 
 \subsubsection{4.2.1 Validation of Model to Experimental Data}
 
-To verify the mean field lattice model, we test it with the data from the experiment. This is shown in Figure 7, which demonstrates the decreasing behaviour of the ratio of probabilities $\left(\frac{\mathcal{E}_{j+1}}{\mathcal{E}_j}\right)$ as a function of quantity of $nW$-mers (long-chains) adsorbed to the colloid surface. We observe the ratio of probabilities approaching one, from functional values greater than one, corresponding to $\mathcal{E}_j$ approaching a unique maximum value. This implies, that the system has a preference for full coverage of colloid surface by $nW$-mers (long-chains), because the probability of it occurring is greatest.
+To verify the mean field lattice model, we test it with the data from the experiment. [***WHAT PARAMETER VALUES ARE WE USING
+IN THE MODEL?  IN PARTICULAR, WHAT IS $a$ ? ****]
+This is shown in Figure 7, which demonstrates the decreasing behaviour of the ratio of probabilities 
+$\left(\frac{|\mathcal{E}_{j+1}|}{|\mathcal{E}_j|}\right)$ as a function of quantity of $\leng_L$-mers (long-chains) adsorbed to the colloid surface. We observe that the ratio of probabilities %approaching one, from functional values 
+are all much
+greater than one, corresponding to $|\mathcal{E}_j|$ 
+inreasing rapidly as $j$ increases.
+%approaching a unique maximum value. 
+This implies that the system has a preference for full coverage of colloid surface by $\leng_L$-mers (long-chains), because the probability of $\mathcal{E}_a$ is greatest.
 
 
 \begin{figure}[H]
@@ -618,6 +647,8 @@ To verify the mean field lattice model, we test it with the data from the experi
 
 %tha se rotisei gia auto eimai sigouros, one is full long vs full short, the other is predecessor vs successor j to j+1
 Experimental data has shown that configurational entropy differences drive the preferential adsorption of longs on the surface, this implies that the occurrence of an arrangement with complete coverage of a colloid surface by long-chains has a greater probability of occurring than that of complete short-chain coverage. The model demonstrates this by showing that as one incrementally increases the number of bonded long chains inputted in the model, the output of the model gives a probability of that arrangement (of number of long chains bound to the surface of the colloid) occurring that is greater than the probability that was based on the preceding increment of bonded long chains. Therefore, iterating this method from a scenario of complete coverage of short-chains to that of long-chains we can conclude that complete coverage by adsorbed long-chains has a greater probability of occurring.
+[*** NM:  WHAT POINT IS THIS FINAL PARAGRAPH TRYING TO MAKE?  IT DOESN'T SEEM TO BE SAYING ANYTHING NEW.  DO WE NEED IT? 
+OR CAN IT BE MADE MORE CONCISE?  ****]
 
 %this is done both by testing where 1 resides and if it is unique (symbolically), and (numerically) by testing the raw values and seeing what the outputs truly are.
 
