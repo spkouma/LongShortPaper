@@ -33,7 +33,7 @@
 
 \author{Sperydon Koumarianos}
 \affiliation{Department of Physics and Astronomy, York University, Toronto, ON, Canada. M3J 1P3} 
-\alsoaffiliation{Department of Mathematics, York University, Toronto, ON, Canada.  M3J 1P3}
+\alsoaffiliation{Department of Mathematics and Statistics, York University, Toronto, ON, Canada.  M3J 1P3}
 
  
 \author{Rohith Kaiyum}
@@ -43,7 +43,7 @@
 \affiliation{Department of Chemistry, McGill University, Montreal, QC, Canada.  H3A 2K6}
 
 \author{Neal Madras}
-\affiliation{Department of Mathematics, York University, Toronto, ON, Canada.  M3J 1P3}
+\affiliation{Department of Mathematics and Statistics, York University, Toronto, ON, Canada.  M3J 1P3}
 
 \author{Ozzy Mermut}
 \affiliation{Department of Physics and Astronomy, York University, Toronto, ON, Canada. M3J 1P3}
@@ -58,7 +58,7 @@
 \keywords{American Chemical Society, \LaTeX}
 
 \begin{document}
-\section{Calculations for the Mean-field lattice model}
+\section{Calculations for the Mean-field Lattice Model}
 
 %\subsection{Setup of Mean-field lattice model}
 
@@ -201,7 +201,7 @@ Thus, to find the most likely number of $\leng_L$-mers (and $\leng_S$-mers) to b
 we need to find which of the sets $\mathcal{E}_j$ is largest.
 
 
-In order to better comprehend the model we provide an illustration Figure 2 with much simpler values than what would be considered the standard chain lengths in polymer science. We let each lattice point of area of one mer of PAA, be a square on the grid. 
+In order to better comprehend the model we provide an illustration Figure \ref{figure 2supp} with much simpler values than what would be considered standard chain lengths in polymer science. We let each lattice point of area of one mer of PAA, be a square on the grid. 
 %Additionally, each long chain mer contact is represented by an L and a short chain mer by an S on the grid.  
 Suppose a short chain is %30-mers and long chain is 90-mers and the colloid surface has 3000 available single mer sites.
 25-mers and long chain is 75-mers and the colloid surface has 2025 available single mer sites.
@@ -252,7 +252,7 @@ We can think of continuing this process of adding more and more long chains in p
     onto the colloid surface.  Each S represents a $5\times 5$ square of lattice points covered by one short chain; similarly, three contiguous L's are covered by one long chain. 
     }
     %Process of Sampling Full Surface Coverage Combinations of ever increasing long chains that are substituting multiple short chains  on Colloid}
-    \label{figure 2}
+    \label{figure 2supp}
 \end{figure}
 
 
@@ -352,7 +352,7 @@ We conclude that
  & = &    \frac{[a\leng_L-(k-1)\leng_L]!}{[a\leng_L-k\leng_L]!} \,q\,  \frac{(q-1)^{\leng_L-2}}{(a\leng_L)^{\leng_L-1}}  
      \nonumber    \\
      & = &    \frac{[a\leng_L-(k-1)\leng_L]!}{[a\leng_L-k\leng_L]!}   a\leng_L \frac{q}{(q-1)^2}\left(  \frac{q-1}{a\leng_L}\right)^{\leng_L}.
-     \label{eq.wk2}
+     \label{eq.wk2supp}
 \end{eqnarray}
 Similarly, let $\tilde{u}_{\ell}$ be the number of ways to place the $\ell^{th}$ $\leng_S$-mer on the surface, given that
 ${\ell}-1$ $\leng_S$-mers (or a total of $(\ell-1)\leng_S$ monomers) have already been placed.   The same 
@@ -362,12 +362,12 @@ argument as for $\tilde{w}_k$ gives
  & = &    \frac{[an\leng_S-(\ell-1)\leng_S]!}{[an\leng_S-\ell \leng_S]!} \,q\,  \frac{(q-1)^{\leng_S-2}}{(an\leng_S)^{\leng_S-1}}  
      \nonumber    \\
      & = &    \frac{[an\leng_S-(\ell-1)\leng_S]!}{[an\leng_S-\ell \leng_S]!}   an\leng_S \frac{q}{(q-1)^2}\left(  \frac{q-1}{an\leng_S}\right)^{\leng_S}.
-     \label{eq.uell2}
+     \label{eq.uell2supp}
 \end{eqnarray}
 We can now express the combinatorial quantity $G(j)$ 
 in Equation (\ref{eq.Yjsupp}) as
 \begin{equation}
-    \label{eq.Gformula}
+    \label{eq.Gformulasupp}
       G(j) \;=\;      \frac{\tilde{w}_1\tilde{w}_2\cdots \tilde{w}_j}{j!}
                     \,   \frac{\tilde{u}_{nj+1}\tilde{u}_{nj+2}\cdots \tilde{u}_{an}}{(n(a-j))!}  \,.
 \end{equation}
@@ -401,7 +401,7 @@ in Equation (\ref{eq.Yjsupp}) as
 
 
 
-To determine which value of $j$ maximizes $|\mathcal{E}_j|$, we look at ratios of consecutive terms, using Equations (\ref{eq.Yjsupp}--\ref{eq.Gformula}):
+To determine which value of $j$ maximizes $|\mathcal{E}_j|$, we look at ratios of consecutive terms, using Equations (\ref{eq.Yjsupp}--\ref{eq.Gformulasupp}):
 \begin{eqnarray}
     \frac{|\mathcal{E}_{j+1}|}{|\mathcal{E}_j|}   & = & 
  \frac{
@@ -419,15 +419,15 @@ To determine which value of $j$ maximizes $|\mathcal{E}_j|$, we look at ratios o
     \,   \frac{\tilde{w}_{j+1} }{  \tilde{u}_{nj+1}\cdots \tilde{u}_{n(j+1)} }   \,\left(  \frac{n_L-j}{j+1}\right)
     \nonumber \\
     & &   \hspace{8mm}  \times \;  \frac{(na-nj)\cdots (na-nj-n+1)}{(n_S-na+nj+1)\cdots(n_S-na+nj+n)} \,.
-        \label{eq.Yratio1}
+        \label{eq.Yratio1supp}
 \end{eqnarray}
 From now on, we replace $\leng_L$ by $n\leng_S$.
 By Equation (\ref{eq.psidefsupp}), we have
 \begin{equation}
-   \label{eq.psiratio} 
+   \label{eq.psiratiosupp} 
       \frac{\Psi_S^n}{\Psi_L}   \;=\;   \frac{ (V_{latt}\, A_3 \,\leng_S^{\gamma_3-1})^{n-1}}{n^{\gamma_3-1}}\,.
 \end{equation}
-From Equations (\ref{eq.wk2}) and (\ref{eq.uell2}), we find
+From Equations (\ref{eq.wk2supp}) and (\ref{eq.uell2supp}), we find
 \begin{eqnarray}
      \frac{\tilde{w}_{j+1} }{  \tilde{u}_{nj+1}\cdots \tilde{u}_{n(j+1)} }  & = & 
         \left( \frac{(q-1)^2}{qan\leng_S}\right)^{n-1}   \times \,
@@ -435,7 +435,7 @@ From Equations (\ref{eq.wk2}) and (\ref{eq.uell2}), we find
         \prod_{\ell=0}^{n-1} \frac{ (an\leng_S-(nj+\ell)\leng_S)!}{(an\leng_S-(nj+\ell+1)\leng_S)!}   }
      \nonumber  \\
      & = & \left( \frac{(q-1)^2}{qan\leng_S}\right)^{n-1}  \,\times\, 1.
-     \label{eq.Yratioa}     
+     \label{eq.Yratioasupp}     
 \end{eqnarray}
 Next we use the approximation   $(c+1)(c+2)\cdots (c+m) \,\approx \,(c+\frac{m}{2})^m$
 (essentially, replacing the geometric mean by the arithmetic mean) to obtain
@@ -444,11 +444,11 @@ Next we use the approximation   $(c+1)(c+2)\cdots (c+m) \,\approx \,(c+\frac{m}{
        \; \approx \;    \frac{ [na-(j+\frac{1}{2})n]^n }{ [n_S-na+nj+\frac{n}{2}]^n} \,.\hspace{3mm}
   %     \nonumber  \\
   %     & \approx & \left(  \frac{n(a-j-\frac{1}{2})}{n_S-(a-j-\frac{1}{2})}\right)^n  .
-      \label{eq.Yratiob}
+      \label{eq.Yratiobsupp}
 \end{equation} 
-Now, putting Equations (\ref{eq.psiratio}--\ref{eq.Yratiob}) back into (\ref{eq.Yratio1}), we obtain
+Now, putting Equations (\ref{eq.psiratiosupp}--\ref{eq.Yratiobsupp}) back into (\ref{eq.Yratio1supp}), we obtain
 \begin{equation}
-    \label{eq.Yratio2}
+    \label{eq.Yratio2supp}
        \frac{|\mathcal{E}_{j+1}|}{|\mathcal{E}_j|} \; \approx \; 
        \left( h(j)\right)^{n+o(n)},
        \hspace{5mm}\hbox{where}\hspace{5mm}
@@ -481,7 +481,7 @@ We observe that $K\gg n$; indeed,  $V_{latt}/a\leng_S n \,=\,V_{latt}/S_{latt}\g
 Thus we can replace $K+n$ by $K$ in the above, and omit the small term $\frac{1}{2}$, resulting in the   
 approximation 
 \begin{equation}
-    \label{eq.jstar}
+    \label{eq.jstarsupp}
      1-\frac{j^*}{a}     \; \approx   \; 
         \left(  \frac{n_S\,\leng_S}{V_{latt} }\right) \,\left(   \frac{q}{A_3\leng_S^{\gamma_3-1}(q-1)^2}\right)  \,.
 \end{equation}
@@ -493,18 +493,28 @@ approximation
 %the concentration of monomers corresponding to those appearing on the short chains only.
 %If the solution is fairly dilute, then we see that the right (and hence the left) side of (\ref{eq.jstar}) is small,
 %and therefore only a small fraction of the surface is covered by short polymers.
-See the Main Paper for the discussion and interpretation of Equation (\ref{eq.jstar}.
+See the Main Paper for the discussion and interpretation of Equation (\ref{eq.jstarsupp}).
 
-[\textit{Remark:}  It is interesting to observe that $n_L$ does not appear in Equation (\ref{eq.jstar}).  
+[\textit{Remark:}  It is interesting to observe that $n_L$ does not appear in Equation (\ref{eq.jstarsupp}).  
 In the expression for $|\mathcal{E}_{j+1}|/|\mathcal{E}_j|$,   only $n_S$ appears inside the 
 expression that is raised to the power $n$, while $n_L$ appears outside this expression and is
 raised to the power 1.]  
 
-\subsection{Interpretations about $\mathcal{E}_{j}$ from ratio $\frac{\mathcal{E}_{j+1}}{\mathcal{E}_{j}}$}
+\subsection{Interpretations about $|\mathcal{E}_{j}|$ from ratio $\frac{|\mathcal{E}_{j+1}|}{|\mathcal{E}_{j}}|$}
 
 
 
-What is graphically portrayed in Figure 3 is that as one increases the number of long chains in a scenario of full surface coverage of the colloid, the ratio of probabilities crosses the threshold of the functional value being equal to one ($\frac{\mathcal{E}_{j+1}}{\mathcal{E}_{j}}=1$), this threshhold is representative of two consecutive configurations being equal in value and thus the the divided differences of $\mathcal{E}_{j+1}$ and $\mathcal{E}_{j}$ being equal to zero for interval,  $j\in[j^*, j^*+1]$. This preceding statement is suggestive of the existence of a maximal critical point. 
+Figure \ref{figure 9} graphically portrays 
+that as one increases the number of long chains in a scenario of full surface coverage of the colloid, the ratio of probabilities decreases and 
+eventually crosses the threshold of 
+%the functional value 
+being equal to one ($\frac{|\mathcal{E}_{j+1}|}{|\mathcal{E}_{j}|}=1$). 
+This threshold is representative of two consecutive configurations being equal in value and thus the the divided differences of $|\mathcal{E}_{j+1}|$ and $|\mathcal{E}_{j}|$ being equal to zero for $j=j^*$.  
+% for interval $j\in[j^*, j^*+1]$. 
+The fact that ratio is decreasing tells us that 
+the differences $|\mathcal{E}_{j+1}|-|\mathcal{E}_{j}|$
+are positive when $j<j^*$ and are negative when $j>j^*$.
+These statements indicate the existence of a maximal critical point at $j^*$.
 
 \begin{figure}[H]
 \includegraphics[scale=0.50]{fig9ab.jpg}
@@ -512,91 +522,22 @@ What is graphically portrayed in Figure 3 is that as one increases the number of
 \label{figure 9}
 \end{figure}
 
-\subsection{Derivation of Boltzmann Entropy from Ratio Approximation  (***OMIT?***)}
+\subsection{Derivation of Boltzmann Entropy from Ratio Approximation}
 
-Initially, we shall take the natural logarithm of our ratio $\frac{\mathcal{E}_{j+1}}{\mathcal{E}_{j}}$. Then we proceed to expand the expression using known logarithmic properties and multiply the whole expression by the Boltzmann Constant.
-$$log\left(\frac{\mathcal{E}_{j+1}}{\mathcal{E}_{j}}\right)$$
-$$=k_B\cdot\left(log\left(\mathcal{E}_{j+1}\right)\right)-\left(log\left(\mathcal{E}_{j}\right)\right)$$
-$$= \left(k_B\cdot log\left(\mathcal{E}_{j+1}\right)\right)-\left(k_B\cdot log\left(\mathcal{E}_{j}\right)\right)$$
+Initially, we shall take the natural logarithm of our ratio $\frac{|\mathcal{E}_{j+1}|}{|\mathcal{E}_{j}|}$. Then we proceed to expand the expression using known logarithmic properties and multiply the whole expression by the Boltzmann Constant.
+\begin{eqnarray*}
+k_B\cdot \log\left(\frac{|\mathcal{E}_{j+1}|}{|\mathcal{E}_{j}|}\right)  & = & 
+k_B\cdot\left(\log\left|\mathcal{E}_{j+1}\right|-\log\left|\mathcal{E}_{j}\right|\right)  \\
+&= & \left(k_B\cdot \log\left|\mathcal{E}_{j+1}\right|\right)-\left(k_B\cdot \log\left|\mathcal{E}_{j}\right|\right)
+\end{eqnarray*}
 
-\noindent this is evidently, just the difference of Boltzman entropies of j and j+1,
+\noindent This is evidently just the difference of Boltzman entropies of $j$ and $j+1$,
 
-$$=S_{j+1}-S_{j}=\Delta S_{j\to j+1}$$
-
-
-
-\section{One-dimensional model  (***OMIT?***)}
+$$ =\; S_{j+1}-S_{j}\;=\; \Delta S_{j\to j+1} \,.$$
 
 
-We now present a more tractable ``toy'' version of the lattice model.  We shall assume that 
-the surface is one-dimensional, which eliminates the need for the Flory-Huggins-type approximations.
-
-As before, we have $n_S$ short $W$-mers and $n_L$ long $nW$-mers, some of which are adsorbed 
-onto a surface with $anW$ lattice sites, and the rest float as free self-avoiding walks 
-in a three-dimensional cubic lattice with  $V_{latt}$ sites.  
-The difference now is that we shall replace the spherical surface with a line segment
-$\mathcal{S}$ containing $anW$ sites.  When a short (respectively, long) polymer is adsorbed, it covers a 
-sub-segment of $\mathcal{S}$ containing $W$ (respectively, $nW$) sites.
-If exactly $j$ long polymers are adsorbed onto $\mathcal{S}$, then $n(a-j)$ short polymers are
-also adsorbed.  The number of ways that this can be done depends only on the order in which 
-longs and shorts appear when traversing $\mathcal{S}$ from one end to the other.  Since the total 
-number of adsorbed polymers in this case is $n(a-j)+j$, the number of ways is 
-\[      \binom{n(a-j)+j}{j}   \,.  \]
-As before, let $\mathcal{E}_j$ be the number of ways to place $j$ $nW$-mers and $a(n-j)$ $W$-mers on 
-$\mathcal{S}$, as well as $n_L-j$ $nW$-mers and $n_S-a(n-j)$ $W$-mers as self-avoiding walks 
-in the three dimensional lattice.  Then we have 
-\begin{equation}
-   \label{eq.1dE}
-    |\mathcal{E}_j| \;=\;  \left(\frac{\Psi_L^{n_{L}-j}}{(n_L-j)!}\right)\cdot\left(\frac{\Psi_S^{n_S-n(a-j)}}{
-    (n_S-n(a-j))!}\right) \cdot\binom{an-jn+j}{j}   \,,
-\end{equation}
-where 
-$\Psi_L$ and $\Psi_S$ are as defined in Equation (\ref{eq.psidefsupp}).
-%\[       \Psi_L\;=\;V_{latt} A_3 (nW)^{\gamma_3-1} \mu_{3}^{nW}   
-%    \hspace{5mm}\hbox{and} \hspace{5mm}
-%     \Psi_S \;=\; V_{latt}A_3W^{\gamma_3-1}\mu_3^W \,.    \]
-
-We shall show that for the one-dimensional model, $|\mathcal{E}_j|$ increases rapidly as $j$ increases,
-and hence the likeliest situation is complete coverage by long polymers.  To do this, we shall show that
-$|\mathcal{E}_{j+1}|/|\mathcal{E}_j| \,\gg\,1$ for every $j=0,\ldots,a-1$.
-
-From Equation (\ref{eq.1dE}), we have
-\begin{align}
-   \nonumber
-    \frac{|\mathcal{E}_{j+1}|}{|\mathcal{E}_j|} \; & =\;   
-    \frac{
-     \left(\frac{\Psi_L^{n_{L}-j-1}}{(n_L-j-1)!}\right)\cdot\left(\frac{\Psi_S^{n_S-n(a-j-1)}}{
-    (n_S-n(a-j-1))!}\right) \cdot\left( \frac{ (an-jn-n+j+1)!}{(j+1)!(an-jn-n)!} \right)
-      }{
- \left(\frac{\Psi_L^{n_{L}-j}}{(n_L-j)!}\right)\cdot\left(\frac{\Psi_S^{n_S-n(a-j)}}{
-    (n_S-n(a-j))!}\right) \cdot   \left( \frac{ (an-jn+j)!}{j!(an-jn)!} \right)    }
-    \\
-    \nonumber
-    & = \;   \left( \frac{\Psi_S^n \,(n_L-j) }{\Psi_L \, \prod_{k=1}^n[n_S-na+nj+k]  }\right)  \,\times 
-     \\
-     \nonumber
-    & \hspace{31mm}  \left(   \frac{  \prod_{k=0}^{n-1}[an-jn-k]    }{(j+1)  \prod_{k=0}^{n-2} [an-jn+j-k]   }\right)
-    \\
-    \label{eq.1dEE}
-      & \approx \;   \frac{ \Psi_S^n \,(n_L-j) [an-jn-\frac{n}{2}]^n
-         }{   \Psi_L (j+1)  [n_S-na+nj+\frac{n}{2}]^n  [an-jn+j-\frac{n}{2}]^{n-1} }   \,.
-\end{align}
-Using Equation (\ref{eq.psiratio}) in 
- Equation (\ref{eq.1dEE}), we obtain 
-\begin{equation}
-   \label{eq.1dEEb}  
-    \frac{|\mathcal{E}_{j+1}|}{|\mathcal{E}_j|} \; \approx  \;   
-      \left(   \frac{ V_{latt}\, A_3 \,W^{\gamma_3-1} }{n_S-na+nj+\frac{n}{2}} \cdot 
-         \frac{ an-nj-\frac{n}{2} }{an-jn-\frac{n}{2}+j}   \right)^{n+o(n)}.
-\end{equation}
-The first quotient inside the parentheses in Equation (\ref{eq.1dEEb}) is large:  indeed,
-$V_{latt}/(n_S-na+nj)$ equals $W$ divided by the fraction of the solvent lattice that is occupied by 
-short polymers.  
-And the second quotient inside the parentheses is close to 1 for large $n$.   Therefore 
-Equation (\ref{eq.1dEEb}) tells us that $|\mathcal{E}_{j+1}|/|\mathcal{E}_j| \,\gg\,1$
-for every $j$.  It follows that configurations are highly likely to be in $\mathcal{E}_a$, i.e.\
-to have $\mathcal{S}$ covered entirely by long polymers.
 
 
 \bibliography{LongShort}
+
 \end{document}
