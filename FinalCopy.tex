@@ -100,7 +100,8 @@ Understanding the adsorption behavior of charged self-assembling macromolecules 
 % % The experimental results and the combinatorial model demonstrated that there is a preference for the complete adsorption of the longer of the two polyacrylic acid chains on the silica particle surface.
 \end{abstract}
 \newpage
-\section{2. Introduction}
+\section{1. Introduction}  %2
+    \label{sec-intro}
 Understanding the adsorption behavior of charged self-assembling macromolecules onto surfaces is important in various applications governed by interfacial phenomena, soft matter film fabrication, and stabilization of colloidal suspensions of inorganic nanoparticles.\cite{Dorris2011}  Most recently, such electrostatic self-assembly absorption onto small-curvature micro- or nano-particles has received much interest for tissue scaffolds and various other biomedical engineering applications, where the soft, loopy hydrophylic polymer layers have been investigated as `bio-camouflage' coatings to improve bio-compatibility at these interfaces.\cite{Landry2019} 
 Towards this interest in developing such new molecular soft coating architectures that cover a wide range of length scales, various methods to self-assemble and organize polymers on surfaces continue to be explored, from covalent attachment techniques\cite{doi:10.1002/ijch.199600050,B210143M,doi:10.1002/masy.200450305} to soft non-covalent physisorption approaches.\cite{Chen1992,Serizawa2002}  
 %Recently, 
@@ -118,11 +119,14 @@ Hampering all of these first theoretical treatments was a lack of direct experim
 
 In this study, we examine the role of polyelectrolyte chain length in the adsorption of a simple model polyanion, poly(acrylic acid) onto silica particles capped with a model polycation, poly(allylamine hydrochloride).  Such studies of the adsorption behavior of charged macromolecules are also important in order to understand more generally various relevant biological surface and biointerface phenomena that cannot easily be probed experimentally by traditional techniques.  For example, the adhesion of bacterial cells to solid surfaces (governed by electrostatic, van der Waals, and Lewis acid-base interactions) is often largely affected by cell-surface polymers, such as lipopolysaccharides,\cite{Jucker1997} where   the affinity and reversibility of this adsorption process have been found to depend significantly on the molar mass of the cell surface polysaccharides involved in the adhesion.\cite{Jucker1997}  Specifically, we study here the role of polyelectrolyte chain length in the competitive adsorption of a simple model polyanion, poly(acrylic acid), onto spherical silica particles capped with a model polycation, poly(allylamine hydrochloride). Theoretical calculations for neutral polymers show that there is preferential adsorption that is dependent on the chain length, i.e.\ the number of mers, of the adsorbing polymer. We have performed experiments to confirm this preferential behavior, observing a chain-length dependence between two widely differing molecular weights of fluorescently-labeled PAA polyelectrolytes allowed to adsorb competitively onto an oppositely charged PAH polyelectrolytes covering a spherical silica nanoparticle surface in dilute aqueous solution. Preferential adsorption was confirmed by comparing the measured fluorescence intensities of the two fluorophore-labeled (NMA-PAA450K, and Dan-PAA2K) polyacrylic acid samples presented to the surfaces, representing long or short MW chains of equal mers total, by measuring signals specific to the 450K and 2K-mer chains, respectively. To validate these experimental results, a computational model was developed that examined the entropy probability between the different arrangements of two polymer length chains of polyacrylic acid on the surface of the silica nanoparticles. This was done by comparing every scenario of surface coverage, using the associated likelihood of its occurrence. Both spectroscopic experiment results and the combinatorial model demonstrated that there is an entropic preference for complete adsorption of the longer 450K-mers polyacrylic acid chain vs 2K-mers. This study provides insights on entropy driven chain-length dependence in layer by layer assembly, enabling optimization of industrial processes and developments of polyelectrolyte membranes and coatings, and rationalizing previous experimental results that suggested an entropic preference for longer chains to adsorb over shorter chains.
 
-\section{3. Methods}
+\section{2. Methods}  %3
+     \label{sec-methods}
+     
+\subsection{2.1 Experimental}  %3.1
+    \label{sec-meth-exp}
 
-\subsection{3.1 Experimental}
-
-\subsubsection{3.1.1 Materials}
+\subsubsection{2.1.1. Materials}   %3.1.1
+       \label{sec-materials}
 
 We used poly(allylamine hydrochloride) (PAH) as received from Polysciences, Inc. Poly(acrylic acid sodium salt) (PAA) of two different molecular weights (M\textsubscript{W} 2K and 450K, corresponding to 28 and 6250 mers respectively) was purchased from Sigma-Aldrich and modified as described in section 5.3.2 
 [****SECTION NUMBER??****].  The two different molecular weights of PAA were chosen based on the large difference in the average chain length (i.e., by greater than 2 orders of magnitude).  Furthermore, dynamic light scattering characterization (Brookhaven BI9000; Thorn EMI Electron B2FBK RFI photomultiplier tube; Coherent Technologies Compass 315M-150 laser) of the low and high molecular weight PAA, showed very little overlap in the histograms of the hydrodynamic radius of the polymers under the solution conditions used for the adsorption experiments.  Chemical structures for the polycation, unmodified polyanion, 
@@ -173,17 +177,21 @@ and the two labeled poly(acrylic acids) are presented in Figure \ref{figure 1}. 
 
 Two naphthalene-based fluorophores with amine functional groups, 5-dimethylaminonaphthalene-1-(N-(2-aminoethyl))sulfonamide (also known as dansyl ethylenediamine), and 1-naphthalmethylamine were purchased from Molecular Probes, and Sigma-Aldrich respectively.  Our adsorbing surface was colloidal silica of 70-100 nm in diameter, received from Nissan Chemical Industries. The pH of the solutions was adjusted to a value of 9.0 using NaOH.  At pH = 9.0, we can observe the adsorption of strongly charged PAA onto a mostly weakly charged PAH surface (since PAH was first adsorbed onto the colloidal particles).
 
-\subsubsection{3.1.2 Derivization of PAA with Fluorophores}
+\subsubsection{2.1.2 Derivization of PAA with Fluorophores}  %3.1.2
+    \label{sec-derivPAA}
 
 Through a method previously described, \cite{weber1954fluorescent,Anghel1998} partial conversion of the carboxylic acid units of the 2K and 450K PAA to amide derivatives (amidization) was achieved in two separate reactions as follows:  Inside a dry three-neck flask attached to a condenser, vacuum dried PAA (2.0 g) was mixed with an anhydrous solvent, 1-methylpyrolidone (approximately 100 ml), in the presence of flowing nitrogen.  The mixture was stirred to allow for dissolution (in the case of 2K PAA) or additionally heated to $60^{\circ}$C for 2 hr (in the case of 450 K) to promote dissolution.  In a dry and nitrogen-rinsed flask, the fluorophore (7.0 $\times$ $10^{-4}$ mol) was dissolved in some 1-methylpyrolidone (approximately 5 ml) and injected into the PAA reaction pot.  Subsequently, dicyclohexylcarbodiimide (DCC, 8.0 $\times$ $10^{-4}$ mol), a coupling agent commonly used to promote amide formation was also injected into the reaction mixture upon dissolving in dry 1-methylphyrolidone (approximately 5 ml).  The use of an aprotic solvent, 1-methylphyrolidone, and DCC promotes the random covalent attachment of the hydrophobic fluorophores onto PAA.\cite{Anghel1998}  The final mixture was stirred in the dark at $60^{\circ}$C for 96 hr.  The reaction flask was then cooled in an ice bath, and concentrated NaOH was added dropwise to neutralize the solution, which resulted in precipitation of the sodium salt of the modified PAA.  The solid product was obtained by vacuum filtration and subsequently purified by twice precipitating an aqueous solution in methanol.  All solvents were removed to yield the final product by drying in a vacuum oven.
 
 Both the unmodified and labeled PAA were characterized by $^{1}$H NMR (300 MHz Varian Mercury) performed in D$_2$O.  In the case of 1-naphthalmethylamine-labeled PAA (NMA-PAA$_{450K}$) NMR spectrum analysis shows the expected ratio of naphthalene (7) and amide (1) protons at chemical shifts of 7-8 ppm while the alpha aromatic proton (1) appears at 4.7 ppm.  In unmodified PAA, only methylene protons from the backbone (1-2.3 ppm) appear in the NMR spectrum.  The NMR spectrum of dansyl ethylenediamine-labeled PAA (Dan-PAA$_{2K}$) also reveals the expected chemical shifts at 7.2-8.3 ppm from the aromatic protons of the fluorophore, and the $\beta$, $\gamma$ methylene protons (4) from the amide link at around 3.4 ppm.  Both UV-vis absorption (Varian Cary 300-Bio Spectrophotometer), and $^{1}$H NMR spectral analysis of the final product suggested little contamination of labeled PAA and the degree of modification was calculated by integration of the $^{1}$H NMR spectral peaks.  It was determined that PAA of 450 K was 3.8 mol\% modified while 4 mol\% of the 2 K PAA was labeled.  The degree of derivatization of PAA was kept at a low value to prevent interference from the hydrophobic fluorescent tags on the electrostatic adsorption of the polyelectrolyte.  Fluorescence intensity calibration plots at variable concentration of NMA-PAA\textsubscript{450K} and Dan-PAA\textsubscript{2K} were prepared using a FluoroMax-2 (Jobin Yvon-SPEX; slit width set to 2.5 cm). 
 
-\subsubsection{3.1.3a Preliminary Adsorption of PAH onto Colloids}
+\subsubsection{2.1.3a Preliminary Adsorption of PAH onto Colloids}   %3.1.3a
+    \label{sec-prelPAH}
+
 
 An excess amount of the polycation layer, poly(allylamine hydrochloride), was first provided for adsorption onto colloidal SiO$_2$ according to the following standard protocol previously outlined for the preparation of PAH/PAA multilayers onto SiO$_2$.\cite{Burke2003}  In this protocol the polyelectrolyte adsorption conditions are set to a pH value of 9.0 and 1.0 M of NaCl was used to ensure highest coverage of the colloid with the polycation.  Colloids were dispersed in a polyelectrolyte solution for 30 min, followed by 1 h of centrifugation at 4500 rpm.  The supernatant is then removed and the colloids are washed three times with copious amounts of Milli-Q H$_2$O (adjusted to pH = 9) to remove unadsorbed polymer.  Each wash step consists of 30 min of sonication (to expose colloids to wash solution while preventing aggregation), 1 h centrifugation, and finally extraction of the liquid.  
 
-\subsubsection{3.1.3b Competitive Adsorption of PAA onto a PAH-Coated Surface}
+\subsubsection{2.1.3b Competitive Adsorption of PAA onto a PAH-Coated Surface}    %3.1.3b
+    \label{sec-exp-compet}
 
 The competitive adsorption of long (450 K) versus short (2 K) chains of PAA was examined by supplying in solution a stoichiometric surface coverage amount of each of Dan-PAA\textsubscript{2K} and NMA-PAA\textsubscript{450K} to 2.0 g/L of PAH-coated particles.  This required surface coverage amount of polyelectrolyte (3\,--\,5$\,\times \,10^{-4}$ M repeat units of each type of PAA) for 2.0 g/L of PAH-coated particles was determined from quantitative titrations of PAH/PAA-coated particles with poly(diallyldimethyl-ammonium chloride) (PDAC).\cite{Burke2003}   The molar concentration of labeled PAA necessary to cover the PAH surface (3-5 $\times$ $10^{-4}$ M for 2.0 g/L of particles) was obtained by converting the bare mass of titrant (PDAC) required to achieve charge overcompensation, and thus multilayer formation, to a molar surface coverage value (as determined by $\zeta$ potential measurements).\cite{Burke2003}   Specifically, this point refers to the mass of titrant at the initial plateau point after the half neutralization point in the titration curve (i.e., 0.05g/L of PDAC for 2.0 g/L of coated particles).  Although this estimation of the surface coverage value is based on a titration experiment involving a different polyelectrolyte than that used in our experiment, it provides a reasonable approximation of the required coverage amount.  Furthermore, the titration experiment was performed under comparable solution conditions to our PAA adsorption study (1mM NaCl and solution pH = 9) and in both cases the adsorbing polyelectrolyte is strongly charged.  Thus, assuming that the adsorption isotherms are comparable, the error in determining the surface coverage value is estimated to be in the range of the experimental uncertainty reported in the titration study, $\pm$ 9.6 \%.  We allowed 24 h to ensure coverage adsorption of the labeled PAA onto PAH since previous PAH/PAA multilayer studies have shown significant time-dependent adsorption at low polyelectrolyte concentrations (i.e., $<10^{-3}$ M).\cite{Mermut2003}
 
@@ -196,13 +204,15 @@ Figure \ref{figure 4} illustrates the two extreme outcomes for this competitive 
 \end{figure}
 
 
-\subsubsection{3.2 Theoretical}
+\subsubsection{2.2  Theoretical}   %3.2
+    \label{sec-meth-theor}
 
-\subsubsection{3.2.1 Development of Mean-Field lattice model}
+\subsubsection{2.2.1 Development of Mean-Field lattice model}   %3.2.1
+   \label{sec-devMF}
 
 %Refer to 1st page of parkbarret
 Here we develop a combinatorial approximation method %that outputs a value that corresponds to the likelihood of each possible configuration, with which we 
-to model the preferential behaviour of our system.
+to model the preferential behavior of our system.
 %my intro above hopefully it flows...
 It has been recognized that long polymers are
 preferentially adsorbed compared to shorter polymers,
@@ -218,7 +228,7 @@ situation.  Our model maintains the property that the enthalpic energy is identi
 to one of pure combinatorial entropy. 
 
 The conclusion of our lattice model will essentially
-be the following. 
+be the following. ***TENSE***
 Assume that both short and long polymers 
 are dilute in the solvent, and that the 
 surface of each colloidal sphere is completely covered 
@@ -228,27 +238,27 @@ covered by short chains is small---more precisely, it
 is approximately proportional
 to the fraction of the solution's volume that is
 occupied by the short polymers (which is a small
-number).  See  Equation (\ref{eq.jstar}) and discussion thereof for a more precise statement.
+number).  See  Equation (\ref{eq.jstar}) and discussion thereof for a more precise statement.   (****SECTION????****)
 
 
-We shall use the following lattice model to describe our experimental situation.  
-Lattices will appear in two ways:  (1) covering the surface of a sphere by a two-dimensional lattice, and
+We use the following lattice model to describe our experimental situation.  
+Lattices appear in two ways:  (1) covering the surface of a sphere by a two-dimensional lattice, and
 (2) filling space (the solvent) with a regular three-dimensional cubic lattice.  
-The geometry of the lattices will not play a significant role.  
+The geometry of the lattices does not play a significant role.  
 %We shall use the simple cubic lattice for our three-dimensional lattice.
 We let $q$ be the coordination number of the two-dimensional lattice 
-(that is, each site on the surface has exactly $q$ neighbouring sites).  We assume that 
+(that is, each site on the surface has exactly $q$ neighboring sites).  We assume that 
 the distance between lattice sites corresponds to the distance between adjacent monomers within a polymer.  
 We assume that in equilibrium, every lattice site in the surface is covered by an adsorbed monomer.
 %Changed all V1 to V, in order to avoid confusion of it being some sort of index, as used in epsilon_i later on
 We also assume that each polymer either has every monomer adsorbed onto the surface, or else has no adsorbed monomers (in the terminology of Fleer \textit{et al.}\cite{Fleer1993}, the adsorbed chains
 have no ``loops'' or ``tails'').
 
-Our experiment has a large number $n_{sphere}$ of spheres in a solution of volume $V_{sol}$.  
+Our experiment had a large number $n_{sphere}$ of spheres in a solution of volume $V_{sol}$.  
 To simplify 
-our model and without changing the concentrations, we shall consider only a single sphere in a solution
-of volume $V:=V_{sol}/n_{sphere}$.  We shall refer to this as our model system (see Figure \ref{figure1volume}).
-We shall view this small three-dimensional region of the solution in our model system as being filled by a 
+our model and without changing the concentrations, we consider only a single sphere in a solution
+of volume $V:=V_{sol}/n_{sphere}$.  We refer to this as our model system (see Figure \ref{figure1volume}).
+We view this small three-dimensional region of the solution in our model system as being filled by a 
 cubic lattice.
 Let $V_{latt}$ be the number of sites of the cubic 
 lattice in our solution region of volume $V$.
@@ -257,7 +267,7 @@ lattice in our solution region of volume $V$.
 
 
  \begin{figure}[H] 
-  \includegraphics[scale=0.5]{fig7a_apr20_2020.pdf}
+  \includegraphics[scale=0.5]{fig7a_apr28_2020.pdf}
 \caption{Schematic of the model system (small box)
 inside the full solution (large box). The full system
 has volume $V_{sol}$ and contains many spheres.  The model
@@ -299,13 +309,13 @@ system has volume $V$ and contains one sphere.}
 % the three-dimensional solution than on the two-dimensional surface.
 
 
-We shall model our polymer configurations as walks in lattice, but we shall use slightly different approaches for the solution and for the surface.
+We model our polymer configurations as walks in lattice, but we use slightly different approaches for the solution and for the surface.
 The difference is due to the fact that the polymers are dense on the surface but 
-dilute in the solution.  We shall model the configurations of polymers in the solution as a collection of 
+dilute in the solution.  We model the configurations of polymers in the solution as a collection of 
 self-avoiding walks in the cubic lattice, with no interaction between walks (because of the dilute solution).
-We shall view the polymers adsorbed densely on the surface lattice as non-reversed walks constrained to
+We view the polymers adsorbed densely on the surface lattice as non-reversed walks constrained to
 be mutually and self-avoiding.  Since enumeration of
-dense walks is difficult, we shall use a mean-field 
+dense walks is difficult, we use a mean-field 
 approximation of the Flory-Huggins type \cite{Flory1953}.
 % (similar to the lattice approach in Park et al., Macromolecules 2001;
 %(see also Section XII.1 of \cite{Flory1953}).
@@ -315,11 +325,11 @@ Let $n_S$ be the number of short chains
 and let $n_L$ be the number long chains.
 We also assume that each
 short chain has the same number of monomers, 
-which we shall denote $\leng_S$.  This ``length'' 
+which we denote $\leng_S$.  This ``length'' 
 will equal the number of lattice sites (and be one
 more than the number of bonds or steps) in each
 walk that corresponds to a short chain.
-Similarly, we shall assume that each long 
+Similarly, we assume that each long 
 chain has $\leng_L$ monomers.
 In the rest of this section, a ``configuration''
 of our model system refers to a collection of $n_S$
@@ -329,7 +339,7 @@ where each walk is either entirely in the
 surface lattice or else does not touch the surface
 lattice, and the surface lattice is completely 
 covered by walks.  
-We shall write $\mathcal{E}$ for the 
+We write $\mathcal{E}$ for the 
 set of all configurations of our model system.
 This is a large but finite set.
 
@@ -355,10 +365,10 @@ the probability that exactly $j$ long polymers are adsorbed is $\frac{|\mathcal{
 for each $j=0,1,\ldots,a$.
 
 Thus, to find the most likely number of long chains %(and $W$-mers (short-chains))
-that will be adsorbed onto the sphere, we need to 
+that are adsorbed onto the sphere, we need to 
 find which of the sets $\mathcal{E}_j$ is largest.
-We shall show that there is a value $j^*$
-such that 
+Our goal is to show that there is a value $j^*$
+such that
 \begin{equation}
     \label{eq.EEcomp}
   |\mathcal{E}_0| \;<\; |\mathcal{E}_1|\; < \; 
@@ -378,7 +388,9 @@ number of long chains to be adsorbed.
 %the value of $j$ for which it equals 1 --- i.e., where
 %the ratio changes from being greater than 1 to being less than 1.
 
-\subsubsection{3.2.2 Calculating the Most Probable Outcome}
+\subsubsection{2.2.2 Calculating the Most Probable Outcome}   %3.2.2
+    \label{sec-calcMPO}
+
 %inserted a motivation that will explain why on page six we want to maximize epsilon j, also tried to flow into the first step of this modelling process being modelling the config of a single polymer
 We now wish to estimate the size of each set $\mathcal{E}_j$ ($j=0,1,\ldots,a$), in order to  determine which set is the largest.  
 As explained above, this corresponds to finding the most probable number of 
@@ -396,9 +408,9 @@ adsorbed onto the surface of a sphere, is
   \label{eq.aequal}
      a  \;=\;  \frac{S_{latt}}{\leng_L} \,.
 \end{equation}
-We shall assume that the right-hand side of this equation is an integer.  
+We assume that the right-hand side of this equation is an integer.  
 
-It will be convenient to define the quantity $n$ by \begin{equation}
+It is convenient to define the quantity $n$ by \begin{equation}
    \label{eq.ndefn}
     n\;=\;\leng_L/\leng_S  \,,  \hspace{6mm}\hbox{i.e.}
      \hspace{5mm}  \leng_L  \;=\;  n\leng_S \,,
@@ -415,7 +427,7 @@ are of similar orders of magnitude.
 
 
 
-As mentioned in Section 3.2.1, we model the configuration of a single  polymer in a dilute solution by a self-avoiding walk (SAW) in a lattice, which is a path in the lattice that does not visit any site more than once.
+As mentioned in Section 2.2.1, we model the configuration of a single  polymer in a dilute solution by a self-avoiding walk (SAW) in a lattice, which is a path in the lattice that does not visit any site more than once.
 %reordered this 
 %put it back as it was as per Madras
 For each positive integer $\ell$, let $c_{\ell}$ be
@@ -423,7 +435,7 @@ the number of SAWs that start from a specified site of the simple cubic lattice 
 %%KEPT MY SEQ VERSION OF THIS PART
 %The configuration of a single  polymer in a dilute solution is often modeled by a self-avoiding walk (SAW) in a lattice, i.e.\  a path in the lattice that does not visit any site more than once.
 %A fundamental property of SAWs is the following.  
-Then the asymptotic behaviour of $c_{\ell}$ 
+Then the asymptotic behavior of $c_{\ell}$ 
 %on the three-dimensional cubic lattice 
 is\cite{Madras2013} 
 \begin{equation}
@@ -488,7 +500,7 @@ approximate it using a mean field (Flory-Huggins) approach.  Details are given i
 %$|\mathcal{E}_{j+1}|/|\mathcal{E}_j|$ and to identify
 %the value of $j$ for which it equals 1 --- i.e., where
 %the ratio changes from being greater than 1 to being less than 1.
-In the section 1.1 of the Supporting Information, we show that
+In section 1.1 of the Supporting Information, we show that
 % To determine which value of $j$ maximizes $|\mathcal{E}_j|$, we look at ratios of consecutive terms
 %% took a risk at not putting a period there
 %through the following approximation, of which a full derivation can be found in the the supplementary materials :
@@ -504,7 +516,7 @@ Observe that $h(j)$ is a  decreasing function of $j$.
 Let $j^*$ be the smallest value of $j$ for which 
 %the right-hand side of Equation (\ref{eq.Yratio2}) 
 $h(j)$ is less than 1. 
-We shall now explain why Equation (\ref{eq.EEcomp}) holds 
+We now explain why Equation (\ref{eq.EEcomp}) holds 
 for this choice of $j^*$, which in turn tells us that
 $j^*$ is the most probable 
 %added this parenthesis as Ozzy notated the significance of j*. May be repetitive
@@ -522,7 +534,7 @@ where $h(j)$
 %the right-hand side of Equation (\ref{eq.Yratio2}) 
 is close to 1.   
 Moreover, the exponent $n$ in Equation (\ref{eq.Yratio2})
-shows that the size of $|\mathcal{E}_j|$  (and hence the 
+shows that the size of $|\mathcal{E}_j|$ (and hence the 
 corresponding probability) decays rapidly from the maximum 
 value as $j$ gets farther away from $j^*$.  Therefore the probability distribution for $j$ should be concentrated close to the most likely value $j^*$.
 
@@ -554,7 +566,8 @@ $h(j^*)\approx 1$ leads to the approximation
      1-\frac{j^*}{a}     \; \approx   \; 
         \left(  \frac{n_S\,\leng_S}{V_{latt} }\right) \,\left(   \frac{q}{A_3\leng_S^{\gamma_3-1}(q-1)^2}\right)  \,.
 \end{equation}
-The above equation can be interpreted as follows.  The left hand side, $1-\frac{j^*}{a}$, is the (most likely) fraction of the colloid sphere's surface that is covered by short monomers.  The ratio $n_S\leng_S/V_{latt}$ gives
+The above equation can be interpreted as follows.  The left hand side, $1-\frac{j^*}{a}$, is the (most likely) fraction of the colloid sphere's surface that is covered by short monomers.  
+The ratio $n_S\leng_S/V_{latt}$ gives
 the concentration of monomers corresponding to those appearing on the short chains only.
 %%commented it out as Ozzy asks if this is necessary
 %The quantity in the second set of parentheses in Equation (\ref{eq.jstar}) cannot be large, since $q<(q-1)^2$ and $\gamma_3>1$.
@@ -569,11 +582,14 @@ that only a small fraction of the surface is covered by short polymers.
 %expression that is raised to the power $n$, while $n_L$ appears outside this expression and is
 %raised to the power 1.]  
 
-\section{4. Results and Discussion}
+\section{3. Results and Discussion}   %4
+     \label{sec-results}
 
-\subsection{4.1 Experimental}
+\subsection{3.1 Experimental}   %4.1
+    \label{sec-res-exp}
 
-\subsubsection{4.1.1 Fluorescence Calibration Plots of Labeled PAA in Solution}
+\subsubsection{3.1.1 Fluorescence Calibration Plots of Labeled PAA in Solution}   %4.1.1
+    \label{sec-fluocalib}
 
 As shown in Figure \ref{figure 2}, we initially characterized the fluorescence emission intensity of the labels on the short- and long-chain PAA in solution.  Fluorescence spectra
 were acquired for NMA-PAA\textsubscript{450K} (by excitation at $\lambda_{Ex}$ = 290 nm; emission at $\lambda_{Em}$ = 340),\cite{Anghel1998} and Dan-PAA\textsubscript{2K} (by excitation at $\lambda_{Ex}$ = 335 nm; emission at $\lambda_{Em}$ = 550 nm)\cite{Bednar1985} in the concentration range of $10^{-1}$ to $10^{-5}$ g/L of PAA.  Note that the sharp peaks centered at twice the excitation wavelength, 580 nm (in the NMA-PAA\textsubscript{450K} sample) and 670 nm (in the Dan-PAA\textsubscript{2K} sample), are instrumental artefacts.  Specifically, they are scattered light transmitted as the second order diffraction of the emission monochromator. 
@@ -595,7 +611,9 @@ We compared the fluorescence intensity of the two fluorophore-labeled PAA sample
 \label{figure 3}
 \end{figure}
 
-\subsubsection{4.1.2 Competitive Adsorption of Labeled PAA onto a PAH Surface}
+\subsubsection{3.1.2 Competitive Adsorption of Labeled PAA onto a PAH Surface}   %4.1.2
+    \label{sec-res-compet}
+
 
 Successful adsorption of PAA onto a PAH coated surface is known from previous $\zeta$ potential measurements and solid-state NMR spectroscopy of similar multilayer systems.\cite{Burke2003,Smith2004}  We provided an equal surface coverage concentration of both the 2K and the 450K PAA repeat units to a quantitative amount of PAH layered SiO$_2$.  At concentrations lower than that required for complete coverage, both 2K and 450K PAA would adsorb to meet until surface coverage achieved, and such an experiment would fail to test for preferential adsorption.  If experiments are conducted at concentrations higher than that required for surface coverage, we might not observe a significant change in the 
 fluorescence signal to identify preferential adsorption. 
@@ -626,42 +644,47 @@ onto the particles and the PAA remaining in the supernatant suggest the preferre
 
 
 
-\subsubsection{4.1.3 General Processes in Adsorption}
+\subsubsection{3.1.3 General Processes in Adsorption}  %4.1.3
+     \label{sec-res-gen}
 
 To understand why there is preferential adsorption of longer chains of PAA onto PAH-coated particles, it is worthwhile to examine the general steps involved in the process of polymer adsorption.  The adsorption mechanism begins by the transport of bulk polymer to the surface-adsorbing site.  Kinetically, this diffusion-limited step would favor the arrival of shorter chains to the surface.  Transport is then followed by polymer attachment to the surface, and lastly rearrangements, which can occur in the adsorbing layer.  The two initial steps generally occur rapidly and the adsorption rate is usually transport-limited since the polymer arriving at the surface adsorbs immediately.\cite{Dijt1990} As surface coverage increases, adsorption becomes hindered.  At this stage, further adsorption is highly dependant on attachment to the remaining free sites.\cite{Hoogeveen1996}  At very high surface coverage and approaching maximum coverage, transport plays a minimal role and the specific attachment process becomes increasingly important.\cite{Hoogeveen1996} Rearrangement processes are also generally much slower and thus some polymer adsorption can be considered to be irreversible at relatively short time-scales.\cite{Cafe1982,Meadows1988}  Therefore, in the case where adsorption is examined at time-scales much larger than that required to achieve full surface coverage, kinetic contributions are less likely to influence the preferential adsorption of polymers and over much longer time-scales.  In this plateau region of an adsorption isotherm adsorption is less dependant on transport.\cite{Hoogeveen1996}
 
 
 
-\subsubsection{4.1.4 Polyelectrolyte Adsorption}
-
+\subsubsection{3.1.4 Polyelectrolyte Adsorption}  %4.1.4
+    \label{sec-polyads}
 
 In polyelectrolyte adsorption additional interactions need to be considered which have important thermodynamic implications. The theory of neutral polymer adsorption can be extended to polyelectrolyte adsorption by incorporating Debye-H\"uckel theory.\cite{Chatellier1996}  Polyelectrolytes adsorb onto oppositely charged surfaces when the energy of adsorption exceeds the net entropy resulting from the culmination of entropic losses (associated with the reduction in the number of configurations available to the polyelectrolyte), and entropic gains (associated with the release of counterions).  Whether or not adsorption will occur depends on if there is sufficient energy given to the system to overcome the entropy loss i.e. if the temperature is below a critical value to reduce the free energy and to drive towards adsorption.
 
 Enthalpic contributions include the interaction type and strength between the polyion and the surface (i.e., electrostatic attraction with each link of the order $k_B$T) as well as the interaction between charged segments (i.e., electrostatic repulsion), which oppose adsorption.\cite{Hoogeveen1996,VonGoeler1994}  In the adsorption of charged polymers the surface charge is compensated when the adsorbed charge balances with the surface charge such that the electrostatic attraction of the segments with the surface is balanced by the repulsion of segments in the adsorbing layer.  In polyelectrolyte multilayer adsorption the surface charge is overcompensated, causing net electrostatic repulsion.  In achieving charge overcompensation, weakly charged polyelectrolytes differ from strongly charged polyelectrolytes in that more polyion molecules have to adsorb in order to overcompensate the surface charge and this is why more polyelectrolyte adsorption is generally observed.  Chain stiffness and conformation also have significant effect on adsorption, particularly in the case of weak polyelectrolytes.\cite{Dzubiella2003}  For example, adsorption of weak charged polyelectrolytes onto an oppositely charged surface in the form of “loops and tails” can be favored over a more flat, “train-like” configuration where electrostatic interactions between polyion segments and the surface are maximized. \cite{Borisov1994}  The conformation of polyelectrolyte adsorption is thus highly sensitive to the electrostatic environment during adsorption, for example, the solvent pH and ionic strength.\cite{Notley2004}  In the case of polyelectrolyte multilayer adsorption, nonelectrostatic short range forces such as hydrophobic interactions have also been observed, which enhance stability in adsorption.\cite{Kotov1999}  
 
 
-\subsubsection{4.1.5 Long- versus Short-Chain Adsorption }
+\subsubsection{3.1.5 Long- versus Short-Chain Adsorption }  %4.1.5
+  \label{sec-longvsshort}
 
-\subsubsection{4.1.5a Enthalpic Considerations}
+\subsubsection{3.1.5a Enthalpic Considerations}  %4.1.5a
+    \label{sec-enthalpic}
 
 In considering the preferential adsorption of PAA onto PAH-coated particles, we assume uniform capping of the SiO$_2$ with the polycation, PAH.  Thus all potential adsorption surface sites are assumed to be entirely composed of PAH repeat units, and the adsorption occurs on a chemically homogeneous surface.  This is a reasonable assumption for PAH adsorbed in excess concentration and under solution conditions that render it a weakly charged polycation (i.e., adsorption solution adjusted to pH = 9, near the pK of PAH).\cite{Burke2003,Smith2003}  This implies that all electrostatic attractions between identical polycations and polyanions are energetically equivalent (i.e., of equivalent $k_B$T, since in both cases each PAA sample contains an equal number of repeat units).\cite{Dubas1999}  Additionally, the enthaplic loss derived from displacement of counterions from their associated polyelectrolytes is also similar for the short and long chain systems.  Hence, if we assume that the electrostatics is one of the dominant driving forces in multilayer formation, we can simplify the thermodynamic comparison by presenting an ideal case in which the enthalpic energy is identical in the two cases, under identical solvent conditions (i.e., pH value and ionic strength). 
 
 Interestingly, the addition of a high concentration of electrolyte has been shown to influence the adsorption of polyelectrolytes of varying chain lengths.  In previous adsorption studies of a strongly charged polyelectrolyte, poly(styrene sulfonate) onto a chemically homogeneous Fe$_2$O$_3$ surface, preferential adsorption was observed for shorter chains from a salt-free solution while longer chains were preferred in the presence of 0.1 M NaCl.\cite{Ramachandran1987,Ramachandran1988}  Adsorption studies of PAA,\cite{Wright1987} polyacrylate,\cite{Bain1982} and carboxymethyl cellulose\cite{Bain1982} adsorbed onto BaSO$_4$ report similar preferential adsorption of low molecular weight components in the absence of salt.  However, these adsorption isotherms reveal significant displacement of the low molecular weight with the high molecular weight in the presence of 0.5 M NaCl.\cite{Bain1982} This adsorption behavior is rationalized using a sequential adsorption process, which suggests that first, smaller chains are adsorbed.\cite{DeLaat1995}  For example, short PAA chains initially adsorbed eventually generate an electrostatic barrier from charge overcompensation occurring on the positive surface.  This barrier strongly affects the diffusion of chains towards the PAA covered surface.  Specifically, the barrier can prevent longer chains from accessing the surface, and thus limits their displacement of pre-adsorbed shorter chains.  With an increased salt concentration the barrier is lowered, permitting longer chains to reach the surface and adsorb.  At this point, the adsorption preference is shifted to longer chains as experimentally observed.\cite{DeLaat1995}  We therefore suggest that our observation of preferred adsorption of longer PAA chains onto PAH after a 24 h adsorption period is likely restricted to the time-window past which such displacement effects are likely to occur.  Further supporting evidence for the occurrence of short-chain displacement is given by recent adsorption experiments of model cationic oligomers onto colloids,\cite{Shin2001} and short polyions assembled onto proteins,\cite{Houska2004} which suggest that shorter chains have more difficulty forming loops and tails under assembly conditions where the polyion is weakly ionized.  As such, adsorbed short-chain polyions can be more easily displaced by longer chains from failure to make a sufficient number of ionic contacts.  
 
-\subsubsection{4.1.5b Entropic Considerations}
+\subsubsection{3.1.5b Entropic Considerations}  %4.1.5b
+    \label{sec-entropic}
 
 Although the LBL self-assembly technique is based on electrostatic attraction of positively and negatively charged polyions, the primary driving force is presumed to be entropy and not enthalpy.  In the electrostatic assembly of multilayers, the condensation of oppositely charged polyions liberates low molar mass counterions.  This process increases the entropy of the system, comparable to the polyelectrolyte complexes formed in solution.\cite{Kabanov1994,Philipp1989}  Thus, although other interactions such as hydrophobic interactions, charge transfer interactions, $\pi{-}\pi$ stacking forces, or H-bonding may also contribute, the successful formation of polyelectrolyte multilayers is primarily attributed to the entropy gain from ion 
 exchange.\cite{Kotov1999,Bertrand2000}  
 
 In determining the effect of entropy on the preferential adsorption of short versus long chains of polyelectrolytes, three entropic contributions need to be considered.  First is the net entropy associated with the liberation of the counterions.  Since we provide an identical number of repeat units for both long- and short-chain PAA, and assume coverage adsorption in both cases, the counterion release entropy should be similar for both 2 K and 450 K.  Secondly, we need to compare the configurational entropy of the short- versus long-chain polyelectrolyte upon adsorption.  As the polyelectrolyte chain length is increased, the entropy penalty associated with the adsorption becomes greater.  This is because there are more configurational restrictions to surface-bound long chains as compared to adsorbed short chains.  The loss in configurational entropy upon adsorption is therefore expected to be much larger for the 450 K PAA, which would favor short-chain adsorption.  Lastly, we need to compare the configurational entropy of the free polyelectrolytes in solution.  There is a far greater entropic gain from having more shorter chains in solution, which can explore a greater number of configurational states than a fewer longer chain species in solution.  Similar to the liberation of counterions which drives the LBL assembly process, the entropy gain of having more free short chains in solution favors the preferential adsorption of long-chain PAA onto the PAH surface.  Experimentally, the configurational entropy difference between short and long-chains of PAA in solution appears to be the governing factor leading to the preferential adsorption of 450 K PAA.  Moreover, this argument is supported by reports of shorter-chain polyelectrolyte displacement in exchange for adsorption of longer-chains on Fe$_2$O$_3$ and BaSO$_4$ in the presence of salt, as previously mentioned.\cite{DeLaat1995}  Analysis of both the fluorescence spectrum of the PAA-adsorbed particles, and that of the remaining supernatant after the adsorption, suggest that the preferential adsorption of long- over short-chain PAA is dominated by the entropy gain of keeping short chains free in solution.
 
-\subsection{4.2 Theoretical}
-
-\subsubsection{4.2.1 Validation of Model to Experimental Data}
+\subsection{3.2  Theoretical:
+%\subsubsection{4.2.1 
+Validation of Model to Experimental Data}    %4.2
+    \label{sec-res-theor}
 
 To verify the mean field lattice model, we test it with the data from the experiment. [***WHAT PARAMETER VALUES ARE WE USING
 IN THE MODEL?  IN PARTICULAR, WHAT IS $a$ ? ****]
-This is shown in Figure \ref{figure 11}, which demonstrates the decreasing behaviour of the ratio of probabilities 
+This is shown in Figure \ref{figure 11}, which demonstrates the decreasing behavior of the ratio of probabilities 
 $\left(\frac{|\mathcal{E}_{j+1}|}{|\mathcal{E}_j|}\right)$ as a function of the number $j$ of $\leng_L$-mers (long-chains) adsorbed to the colloid surface. We observe that the ratio of probabilities %approaching one, from functional values 
 are all much
 greater than one, corresponding to $|\mathcal{E}_j|$ 
@@ -671,7 +694,8 @@ This implies that the system has a preference for full coverage of colloid surfa
 
 
 \begin{figure}[H]
-\includegraphics[scale=0.10]{Figure_1.jpg}
+\centering
+\includegraphics[scale=0.45]{Figure_LONGSHORT.pdf}
 \caption{Ratio of Probabilities as a function of number of long chains bound to the colloid surface}
 \label{figure 11}
 \end{figure}
@@ -697,9 +721,10 @@ OR CAN IT BE MADE MORE CONCISE?  ****]
 %the one means that the values will never get any higher than that and thus it is a maximum (probability of occuring in relation to the rest), the location (on the j line , ie; number of longs on surface) of this maximum is key to seeing if our hypothesis is correct, that the maximum is complete coverge by longs 
 
 
-\section{Conclusions}
+\section{4. Conclusions}
+   \label{sec-conc}
 
-We have studied competitive adsorption of short- (2K) vs.\ long- (450 K) chain PAA polyelectrolyte macromolecules onto PAH coated silica spheres in aqueous solution. Observed both experimentally with optical fluorescence spectroscopy, and theoretically by a mean field lattice model, long-chains where preferentially adsorbed onto the surface when presented with an equal number of mers, while short chains preferred to reside in solution. This is rationalized and theoretically verified as due to a favorable gain in configurational entropy of long-chains at the surface in equilibrium. This study provides insights on entropy driven chain-length dependence in layer-by-layer assembly of polyelectrolyte multilayer surfaces and defines an important advancement in the development of a mathematical framework for directing adsorption behaviour and surface properties. Such insights on polyelectrolyte adsorption behavior and modeling will enable optimization of future industrial processes for developments of polyelectrolyte membranes, biomedical coatings, and applications in surface modification.
+We have studied competitive adsorption of short- (2K) vs.\ long- (450 K) chain PAA polyelectrolyte macromolecules onto PAH coated silica spheres in aqueous solution. Observed both experimentally with optical fluorescence spectroscopy, and theoretically by a mean field lattice model, long-chains where preferentially adsorbed onto the surface when presented with an equal number of mers, while short chains preferred to reside in solution. This is rationalized and theoretically verified as due to a favorable gain in configurational entropy of long-chains at the surface in equilibrium. This study provides insights on entropy driven chain-length dependence in layer-by-layer assembly of polyelectrolyte multilayer surfaces and defines an important advancement in the development of a mathematical framework for directing adsorption behavior and surface properties. Such insights on polyelectrolyte adsorption behavior and modeling will enable optimization of future industrial processes for developments of polyelectrolyte membranes, biomedical coatings, and applications in surface modification.
 
 
 \section{Acknowledgments}
