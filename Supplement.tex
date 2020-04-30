@@ -102,7 +102,7 @@ Our model system has a single sphere in a solution of
 volume $V$.  The model solution volume is filled by a 
 simple cubic lattice, with the number of lattice sites in this volume denoted by $V_{latt}$.
 The surface of the sphere is covered by a  two-dimensional lattice with coordination number $q$ 
-(that is, each site on the surface has exactly $q$ neighbouring sites).  We assume that 
+(that is, each site on the surface has exactly $q$ neighboring sites).  We assume that 
 the distance between lattice sites corresponds to the distance between adjacent monomers within a 
 polymer.  We assume that in equilibrium, every lattice site in the surface is covered by an adsorbed 
 monomer.  We also assume that in each polymer, either every 
@@ -117,8 +117,8 @@ chains, each with $\leng_S$ monomers.
 
 We define $n=\leng_L/\leng_S$, so that $\leng_L=n\leng_S$.   To make the total mass
 of the two sizes of polymers the same, we can
-declare $n_S=n \cdot n_L$, but we will not use
-this relation.  It will suffice that $n_S$ and 
+declare $n_S=n \cdot n_L$, but we do not require
+this relation.  It suffices that $n_S$ and 
 $n\cdot n_L$ have similar orders of magnitude.
 
 We let $S_{latt}$ be the number of lattice sites on 
@@ -209,7 +209,7 @@ In the parameters of this model, we have
 $S_{latt}=2025$, $\leng_S=25$,
 $\leng_L=75$,$n=3$, and $a=2025/75=27$.
 For simplicity, the figure shows each short chain
-fills a $5\times 5$ square of lattice points, and each
+filling a $5\times 5$ square of lattice points, and each
 long chain fills three adjacent $5\times 5$ squares.
 We can think of the model initially with the colloid surface sites fully covered exclusively by short chains, which in this concrete example requires 81 short chains (a). We then remove 3 short chains and replace them with our first long chain (b). 
 We can think of continuing this process of adding more and more long chains in place of the equivalent number of mers in short chains (c,d,e) until we reach the maximum number of long chains (f).
@@ -267,7 +267,7 @@ We can think of continuing this process of adding more and more long chains in p
 %Let $c_{\ell}$ be
 %the number of SAWs that start from a specified lattice site (``the origin'') and visit a total of $\ell$ sites
 %(including the starting site).   Then the 
-%asymptotic behaviour of $c_{\ell}$ on the three-dimensional cubic lattice is 
+%asymptotic behavior of $c_{\ell}$ on the three-dimensional cubic lattice is 
 %\begin{equation}
 %    \label{eq.sawscale}
 %       c_{\ell}  \;\sim  \;  A_3 \, {\ell}^{\gamma_3-1}  \mu_3^{\ell}    \hspace{5mm}\hbox{as $\ell\rightarrow\infty$}.
@@ -315,7 +315,7 @@ and $G(j)$ is the number of ways to cover the surface
 with $j$ $\leng_L$-mers and $n(a-j)$ $\leng_S$-mers.
 (Here $A_3$, $\gamma_3$, and $\mu_3$ are constants 
 related to self-avoiding walks.)  
-Computing $G(j)$ is a hard combinatorial problem, so we shall use a mean-field approximation of the Flory-Huggins type, which we now explain 
+Computing $G(j)$ is a hard combinatorial problem, so we use a mean-field approximation of the Flory-Huggins type, which we now explain 
 % (similar to the lattice approach in Park et al., Macromolecules 2001;
 (see also Section XII.1 of P.J. Flory, \textit{Principles of Polymer Chemistry}, Cornell University Press, 1953).
 %\cite{Flory1953}),
@@ -325,11 +325,11 @@ For a particular choice of $j$, we want to know the number of ways to place $j$ 
 and $a(n-j)$ $\leng_S$-mers on the surface,
 without overlapping.  %, to fill all % $anW$ 
 %the lattice sites on the sphere's surface.
-We shall place one polymer at a time, starting with the long ones.
+We place one polymer at a time, starting with the long ones.
 Let $\tilde{w}_k$ be the number of ways to place the $k^{th}$ $\leng_L$-mer on the surface, given that
 $(k-1)$ $\leng_L$-mers have already been placed.  
 To begin with, there are $a\leng_L-(k-1)\leng_L$ available sites for the first monomer.  Recall that  $q$ is the number of
-neighbours of each site in the surface lattice.
+neighbors of each site in the surface lattice.
 In the absence of other polymers, there would be $q$ choices for the second monomer in the chain,
 and $q-1$ choices for each monomer after that (here we are using the non-reversed walk model of a polymer
 instead of the fully self-avoiding model).  But the number of choices should on average be reduced 
@@ -504,7 +504,7 @@ raised to the power 1.]
 
 
 Figure \ref{figure 9} graphically portrays 
-that as one increases the number of long chains in a scenario of full surface coverage of the colloid, the ratio of probabilities decreases and 
+that as one increases the number of adsorbed long chains in a scenario of full surface coverage of the colloid, the ratio of probabilities decreases and 
 eventually crosses the threshold of 
 %the functional value 
 being equal to one ($\frac{|\mathcal{E}_{j+1}|}{|\mathcal{E}_{j}|}=1$). 
@@ -523,7 +523,7 @@ These statements indicate the existence of a maximal critical point at $j^*$.
 
 \subsection{Derivation of Boltzmann Entropy from Ratio Approximation}
 
-Initially, we shall take the natural logarithm of our ratio $\frac{|\mathcal{E}_{j+1}|}{|\mathcal{E}_{j}|}$. Then we proceed to expand the expression using known logarithmic properties and multiply the whole expression by the Boltzmann Constant.
+Initially, we take the natural logarithm of our ratio $\frac{|\mathcal{E}_{j+1}|}{|\mathcal{E}_{j}|}$. Then we  expand the expression using known logarithmic properties and multiply the whole expression by the Boltzmann Constant.
 \begin{eqnarray*}
 k_B\cdot \log\left(\frac{|\mathcal{E}_{j+1}|}{|\mathcal{E}_{j}|}\right)  & = & 
 k_B\cdot\left(\log\left|\mathcal{E}_{j+1}\right|-\log\left|\mathcal{E}_{j}\right|\right)  \\
